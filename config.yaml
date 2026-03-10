@@ -374,6 +374,8 @@ filters:
     url: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
   - name: AWAvenue Ads Rule
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
 whitelist:
   urls:
   - name: HyperADRules - Allow
@@ -419,4 +421,6 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   manual_rules: []
