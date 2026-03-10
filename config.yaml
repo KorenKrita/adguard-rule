@@ -297,18 +297,18 @@ filters:
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: NoAppDownload
     url: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
   - name: AWAvenue Ads Rule
@@ -354,75 +354,75 @@ dns:
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   - name: 去广告规则 - 酷安反馈反馈 DNS
     url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
+  - name: SMAdHosts
+    url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: 大圣
+    url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-  - name: SMAdHosts
-    url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
-  - name: 大圣
-    url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   manual_rules:
-    - 127.0.0.1 c.sayhi.360.cn
-    - 127.0.0.1 ggs.myzaker.com
-    - 127.0.0.1 p-l.play.aiseet.atianqi.com
-    - 127.0.0.1 tx-ad.a.yximgs.com
-    - 127.0.0.1 caing.adsame.com
-    - 127.0.0.1 s9.irs03.com
-    - 127.0.0.1 adasad.myweb.hinet.net
-    - 127.0.0.1 ad.12306.cn
-    - 127.0.0.1 vstat.my.tv.sohu.com
-    - 127.0.0.1 mobile.da.mgtv.com
-    - 127.0.0.1 rayli.adsame.com
-    - 127.0.0.1 ads.ttv.com.tw
-    - 127.0.0.1 hmma.baidu.com
-    - 127.0.0.1 autobild.adsame.com
-    - 127.0.0.1 s.youmi.net
-    - 127.0.0.1 du.163.com
-    - 127.0.0.1 www.adsmogo.com
-    - 127.0.0.1 ads.traffichunt.com
-    - 127.0.0.1 push.zhanzhang.baidu.com
-    - 127.0.0.1 api.domob.cn
-    - 127.0.0.1 jupiter1.appads.com
-    - 127.0.0.1 apiconfig.adwo.com
-    - 127.0.0.1 pagead2.googlesyndication.com
-    - 127.0.0.1 vapi.tiandi.com
-    - 127.0.0.1 zls.xz6d.com
-    - 127.0.0.1 sp0.baidu.com
-    - 127.0.0.1 cm.e.qq.com
-    - 127.0.0.1 sms.ads.oppomobile.com
-    - 127.0.0.1 cc.map.qq.com
-    - 127.0.0.1 livew.l.qq.com
-    - 127.0.0.1 im2.smartadserver.com
-    - 127.0.0.1 b-gtc.gepush.com
-    - 127.0.0.1 a-ad.adwo.com
-    - 127.0.0.1 juxiao.mediav.com
-    - 127.0.0.1 owads.audioadx.com
-    - 127.0.0.1 sambasys.adsame.com
-    - 127.0.0.1 gecko-hl.snssdk.com
-    - 127.0.0.1 fmg.aty.sohu.com
-    - 127.0.0.1 pc.da.mgtv.com
-    - 127.0.0.1 stat.56.com
-    - 127.0.0.1 sdk-ab-config.aiclk.com
-    - 127.0.0.1 biz5.sandai.net
-    - 127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
-    - 127.0.0.1 umdc.aliapp.org
-    - 127.0.0.1 ex.umengcloud.com
-    - 127.0.0.1 tmeadcomm.y.qq.com
-    - 127.0.0.1 vletv.admaster.com.cn
-    - 127.0.0.1 px.cdn.creative.medialytics.com
-    - 127.0.0.1 ad.advst.cp33.ott.cibntv.net
-    - 127.0.0.1 xladapi.izuiyou.com
-    - 127.0.0.1 push.pgl.qq.com
-    - 127.0.0.1 ads.youtube.com
-    - 127.0.0.1 ggx.cmvideo.cn
-    - 127.0.0.1 sdu.adwo.com
-    - 127.0.0.1 adimg.mobile.sina.cn
-    - 127.0.0.1 config.mobisage.cn
-    - 127.0.0.1 adshmmsg.qq.com
-    - 127.0.0.1 www.adview.cn
-    - 127.0.0.1 q14.cnzz.com
-    - 127.0.0.1 zs8.cnzz.com
-    - 127.0.0.1 adserviceretry.kugou.com
+  - 127.0.0.1 c.sayhi.360.cn
+  - 127.0.0.1 ggs.myzaker.com
+  - 127.0.0.1 p-l.play.aiseet.atianqi.com
+  - 127.0.0.1 tx-ad.a.yximgs.com
+  - 127.0.0.1 caing.adsame.com
+  - 127.0.0.1 s9.irs03.com
+  - 127.0.0.1 adasad.myweb.hinet.net
+  - 127.0.0.1 ad.12306.cn
+  - 127.0.0.1 vstat.my.tv.sohu.com
+  - 127.0.0.1 mobile.da.mgtv.com
+  - 127.0.0.1 rayli.adsame.com
+  - 127.0.0.1 ads.ttv.com.tw
+  - 127.0.0.1 hmma.baidu.com
+  - 127.0.0.1 autobild.adsame.com
+  - 127.0.0.1 s.youmi.net
+  - 127.0.0.1 du.163.com
+  - 127.0.0.1 www.adsmogo.com
+  - 127.0.0.1 ads.traffichunt.com
+  - 127.0.0.1 push.zhanzhang.baidu.com
+  - 127.0.0.1 api.domob.cn
+  - 127.0.0.1 jupiter1.appads.com
+  - 127.0.0.1 apiconfig.adwo.com
+  - 127.0.0.1 pagead2.googlesyndication.com
+  - 127.0.0.1 vapi.tiandi.com
+  - 127.0.0.1 zls.xz6d.com
+  - 127.0.0.1 sp0.baidu.com
+  - 127.0.0.1 cm.e.qq.com
+  - 127.0.0.1 sms.ads.oppomobile.com
+  - 127.0.0.1 cc.map.qq.com
+  - 127.0.0.1 livew.l.qq.com
+  - 127.0.0.1 im2.smartadserver.com
+  - 127.0.0.1 b-gtc.gepush.com
+  - 127.0.0.1 a-ad.adwo.com
+  - 127.0.0.1 juxiao.mediav.com
+  - 127.0.0.1 owads.audioadx.com
+  - 127.0.0.1 sambasys.adsame.com
+  - 127.0.0.1 gecko-hl.snssdk.com
+  - 127.0.0.1 fmg.aty.sohu.com
+  - 127.0.0.1 pc.da.mgtv.com
+  - 127.0.0.1 stat.56.com
+  - 127.0.0.1 sdk-ab-config.aiclk.com
+  - 127.0.0.1 biz5.sandai.net
+  - 127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
+  - 127.0.0.1 umdc.aliapp.org
+  - 127.0.0.1 ex.umengcloud.com
+  - 127.0.0.1 tmeadcomm.y.qq.com
+  - 127.0.0.1 vletv.admaster.com.cn
+  - 127.0.0.1 px.cdn.creative.medialytics.com
+  - 127.0.0.1 ad.advst.cp33.ott.cibntv.net
+  - 127.0.0.1 xladapi.izuiyou.com
+  - 127.0.0.1 push.pgl.qq.com
+  - 127.0.0.1 ads.youtube.com
+  - 127.0.0.1 ggx.cmvideo.cn
+  - 127.0.0.1 sdu.adwo.com
+  - 127.0.0.1 adimg.mobile.sina.cn
+  - 127.0.0.1 config.mobisage.cn
+  - 127.0.0.1 adshmmsg.qq.com
+  - 127.0.0.1 www.adview.cn
+  - 127.0.0.1 q14.cnzz.com
+  - 127.0.0.1 zs8.cnzz.com
+  - 127.0.0.1 adserviceretry.kugou.com
