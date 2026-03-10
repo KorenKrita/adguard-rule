@@ -348,10 +348,6 @@ filters:
     - "127.0.0.1 adserviceretry.kugou.com"
   # 订阅源
   urls:
-    - name: "AdGuard Base"
-      url: "https://filters.adtidy.org/extension/chromium/filters/2.txt"
-    - name: "AdGuard Chinese"
-      url: "https://filters.adtidy.org/extension/chromium/filters/224.txt"
     - name: "SMAdHosts"
       url: "https://ghproxy.net/https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts"
     - name: "TT拒绝列表"
@@ -384,8 +380,6 @@ whitelist:
       url: "https://ghfast.top/raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt"
   # 直接配置的独立规则
   rules:
-    - "@@||baidu.com^"
-    - "@@||weibo.com^"
     - "@@||pan.quark.cn^"
     - "@@||316.coolapk1s.com^"
     - "@@||pic.imgdb.cn"
@@ -413,8 +407,6 @@ whitelist:
 
 # DNS 过滤订阅
 dns:
-  - name: "AdGuard DNS Filter"
-    url: "https://filters.adtidy.org/extension/chromium/filters/15.txt"
   - name: "DNS拒绝清单"
     url: "https://ghproxy.net/https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT"
   - name: "去广告规则 - 酷安反馈反馈 DNS"
