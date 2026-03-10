@@ -293,20 +293,16 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/122.txt
   - name: 混合规则(自动更新)
     url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
+  - name: Dandelion Sprout's Annoyances List
+    url: https://filters.adtidy.org/extension/chromium/filters/250.txt
   - name: 去广告规则 - 酷安反馈反馈
     url: https://raw.githubusercontent.com/qq5460168/me/master/rules.txt
   - name: Web Annoyances Ultralist
     url: https://filters.adtidy.org/extension/chromium/filters/201.txt
-  - name: Dandelion Sprout's Annoyances List
-    url: https://filters.adtidy.org/extension/chromium/filters/250.txt
   - name: AdGuard Social Media filter
     url: https://filters.adtidy.org/extension/chromium/filters/4.txt
-  - name: Fanboy's Social Blocking List
-    url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: Online Malicious URL Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/208.txt
-  - name: Legitimate URL Shortener
-    url: https://filters.adtidy.org/extension/chromium/filters/251.txt
   - name: uBlock Origin – Badware risks
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
   - name: Scam Blocklist by DurableNapkin
@@ -317,10 +313,10 @@ filters:
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
-  - name: Fanboy's Anti-Facebook List
-    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  - name: Fanboy's Anti-Facebook List
+    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: anti-AD
@@ -343,10 +339,14 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
+  - name: Fanboy's Social Blocking List
+    url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: Legitimate URL Shortener
+    url: https://filters.adtidy.org/extension/chromium/filters/251.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Mobile App Banners filter
@@ -396,10 +396,10 @@ dns:
   urls:
   - name: oisd big
     url: https://big.oisd.nl
-  - name: AdGuard DNS
-    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: HageziPro++
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
+  - name: AdGuard DNS
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   - name: DanPollocksList
@@ -416,14 +416,14 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: PeterLoweFilter
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
+  - name: PeterLoweFilter
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
