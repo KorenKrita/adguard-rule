@@ -15,6 +15,7 @@ def download_content(url: str, timeout: int = 30, retries: int = 3) -> Tuple[Opt
     Returns:
         (内容字符串, 规则数量)，失败返回 (None, 0)
     """
+    last_error = None
     for attempt in range(retries):
         try:
             response = requests.get(url, timeout=timeout, headers={
@@ -27,24 +28,21 @@ def download_content(url: str, timeout: int = 30, retries: int = 3) -> Tuple[Opt
                         if line.strip() and not line.strip().startswith('!')])
             return content, count
         except Exception as e:
-            if attempt == retries - 1:
-                print(f"Failed to download {url} after {retries} attempts: {e}")
-                return None, 0
-            continue
+            last_error = e
+
+    print(f"Failed to download {url} after {retries} attempts: {last_error}")
     return None, 0
 
 
 def download_all(sources: List[Dict]) -> List[Dict]:
-    """并行下载多个订阅源
+    """并行下载多个订阅源，结果顺序与 sources 输入顺序保持一致
 
     Args:
         sources: 订阅源列表，每项包含 name 和 url
 
     Returns:
-        下载结果列表，每项包含 name, url, content, count
+        下载结果列表，每项包含 name, url, content, count，顺序与输入一致
     """
-    results = []
-
     def download_one(source: Dict) -> Dict:
         url = source['url']
         name = source['name']
@@ -57,10 +55,9 @@ def download_all(sources: List[Dict]) -> List[Dict]:
             'success': content is not None
         }
 
-    # 使用线程池并行下载
+    # 使用线程池并行下载，按提交顺序收集结果以保持与 sources 一致的顺序
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
         futures = [executor.submit(download_one, source) for source in sources]
-        for future in concurrent.futures.as_completed(futures):
-            results.append(future.result())
+        results = [future.result() for future in futures]
 
     return results

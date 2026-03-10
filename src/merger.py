@@ -1,5 +1,6 @@
 from datetime import datetime, timezone
-from typing import List, Dict, Tuple
+from pathlib import Path
+from typing import List, Dict, Tuple, Union
 
 
 def parse_rules(content: str) -> List[str]:
@@ -55,7 +56,7 @@ def generate_header(title: str, total: int, source_stats: List[Dict]) -> str:
     return '\n'.join(lines)
 
 
-def write_output(filepath: str, header: str, rules: List[str]) -> None:
+def write_output(filepath: Union[Path, str], header: str, rules: List[str]) -> None:
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(header)
         f.write('\n'.join(rules))
