@@ -39,9 +39,9 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        FILTER_COUNT=$(grep -c '^||' output/filter.txt 2>/dev/null || echo 0)
-        WHITELIST_COUNT=$(grep -c '^@@' output/whitelist.txt 2>/dev/null || echo 0)
-        DNS_COUNT=$(grep -c '^||' output/dns.txt 2>/dev/null || echo 0)
+        FILTER_COUNT=$(grep "^! Total:" output/filter.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
+        WHITELIST_COUNT=$(grep "^! Total:" output/whitelist.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
+        DNS_COUNT=$(grep "^! Total:" output/dns.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
 
         git add output/
 
