@@ -12,3 +12,9 @@ build/
 .coverage
 .env
 venv/
+
+# IDE
+.idea/
+
+# Plans
+docs/plans/
