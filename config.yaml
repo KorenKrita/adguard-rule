@@ -1,431 +1,420 @@
-# AdGuard 规则合并配置
-
-# 广告过滤规则订阅
 filters:
-  # 手动配置的规则
   manual_rules:
-    - "||llumeng.com^"
-    - "||v3-novelapp.fqnovelvod.com^$app=com.dragon.read"
-    - "||v26-novelapp.fqnovelvod.com^$app=com.dragon.read"
-    - "||p3-ad-sign.byteimg.com^$app=com.dragon.read"
-    - "||p9-pack.byteimg.com^$app=com.dragon.read"
-    - "||ecombdapi.com^$app=com.dragon.read"
-    - "||p3-orange-sign.byteimg.com^$app=com.dragon.read"
-    - "||api-access.pangolin-sdk-toutiao1.com^$app=com.dragon.read"
-    - "||api5-normal-sinfonlinec.fqnovel.com^$app=com.dragon.read"
-    - "||api3-normal-sinfonlinec.fqnovel.com^$app=com.dragon.read"
-    - "||dig.bdurl.net^$app=com.dragon.read"
-    - "||ads5-normal-lf.zijieapi.com^$app=com.dragon.read"
-    - "||p3-ecom-qualification-sign.ecombdimg.com^$app=com.dragon.read"
-    - "||mon11-misc-lf.fqnovel.com^$app=com.dragon.read"
-    - "/.*pangolin.*/"
-    - "||localads.chengzijianzhan.cn^"
-    - "||xiedao.hk^"
-    - "||img.mjhsghnwg.xyz^"
-    - "||secgw-default.cn.nt.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^"
-    - "||configv2.unityads.unitychina.cn^"
-    - "||mads.meituan.com^"
-    - "||googleads.g.doubleclick.net^"
-    - "||sv.adintl.cn^"
-    - "||miav-cse.avlyun.com^"
-    - "||pangolin-sdk-toutiao.com^"
-    - "||img.syebgng.xyz^"
-    - "||miaozhen.com^"
-    - "||share.jileme.net^"
-    - "||adashx.ut.dingtalk.com^"
-    - "||opencdnpddpic2.cdn.vsjwtcdn.com^"
-    - "||uploads2.gifshow.com^"
-    - "||open-set-api.shenshiads.com^"
-    - "||applog.snssdk.com^"
-    - "||abtest3-misc-lq.zijieapi.com^"
-    - "||ad.oceanengine.com.queniukw.com^"
-    - "||cl-data.ads.heytapmobi.com^"
-    - "||default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^"
-    - "||adskp.org^"
-    - "||api.th.wanzjhb.com^"
-    - "||ad-r.soulapp.cn^"
-    - "||advertising.yahoo.com^"
-    - "||cdn-ad.wtzw.com^"
-    - "||sdk.alibaba.com.ailbaba.me^"
-    - "||opehs.tanx.com^"
-    - "||ali2.a.yximgs.com^"
-    - "||ad-audit-provider.soulapp.cn^"
-    - "||uploads2.ksapisrv.com^"
-    - "||ads-video-al.xhscdn.com^"
-    - "||img.leiahngiuheong.xyz^"
-    - "||dm.wo.com.cn^"
-    - "||pangolin-sdk-toutiao-b.com^"
-    - "||adserv.ontek.com.tr^"
-    - "||sis.jpush.io^"
-    - "||cross-ad-api.afunapp.com^"
-    - "||api.open.adsaide.cn^"
-    - "||ncbtsdea.xyz^"
-    - "||ulogs.umeng.com^"
-    - "||skadsdk.appsflyer.com^"
-    - "||api.installer.xiaomi.com^"
-    - "||image-ad.sm.cn^"
-    - "||x61.inyvf.top^"
-    - "||adsfile20.bssdlbig.kugou.com^"
-    - "||ads5-normal-lf.zijieapi.com.skyworth^"
-    - "||bdapi.ads.heytapmobi.com^"
-    - "||sdk.beizi.biz^"
-    - "||adsbdfs.heytapimage.com^"
-    - "||pglstatp-toutiao.com^"
-    - "||ad.letmeads.com^"
-    - "||mssdk.volces.com^"
-    - "||ad-log-upload.mihoyo.com^"
-    - "||saad.ms.zhangyue.net^"
-    - "||ads.zhinengxiyifang.cn^"
-    - "||mssdk-bu.bytedance.com^"
-    - "||localads.chengzijianzhan.cn.queniurc.com^"
-    - "||ad.cyapi.cn^"
-    - "||a-remad.qm989.com^"
-    - "||adx.ads.heytapmobi.com^"
-    - "||ad.zijieapi.com^"
-    - "||ad.k98y.cn^"
-    - "||p1-lm.adukwai.com^"
-    - "||ads.superawesome.tv^"
-    - "||ads.chuanmeixing.com^"
-    - "||yh.yanghetp.vip^"
-    - "||ads.linkedin.com^"
-    - "||mbads.paas.cmbchina.com^"
-    - "||rtb.voiceads.cn^"
-    - "||mktadsodr.ppdai.com^"
-    - "||ads-sg.tiktok.com^"
-    - "||sdklog.adintl.cn^"
-    - "||auth-uploads.dhcc.wang^"
-    - "||hot.browser.miui.com^"
-    - "||ad-trace.lenovomm.com^"
-    - "||bjm.1vkx.cn^"
-    - "||uu5512uu.com^"
-    - "||line.txwlwwvvimg.com^"
-    - "||ads.serving-sys.cn^"
-    - "||adsmind.gdtimg.com.svideolego-dk.sched.dcloudstc.com^"
-    - "||telemetry-sdk-metrics.inmobi.cn^"
-    - "||ads.cup.com.cn^"
-    - "||ad.oceanengine.com^"
-    - "||apps.bytesfield.com^"
-    - "||pangolin-sdk-toutiao1.com^"
-    - "||soul-ad.soulapp.cn^"
-    - "||mkt-advertisement.tuhu.cn^"
-    - "||dig.zjurl.cn^"
-    - "||kde.qq.com^"
-    - "||v6-adashx.ut.amap.com^"
-    - "||cdn-new-ad.wtzw.com^"
-    - "||line3-adscore-api.biligame.net^"
-    - "||vjyaghdw.icu^"
-    - "||img.wqpamgngnb.xyz^"
-    - "||sms.ads.heytapmobi.com^"
-    - "||ads.games.laohu.com^"
-    - "||adsdk.state.duoku.com^"
-    - "||3p4.cn^"
-    - "||a-qmad.qimao.com^"
-    - "||advert.swiftpass.cn^"
-    - "||aiclk.com^"
-    - "||bsccdn.net^"
-    - "||advice-ads.s3.amazonaws.com^"
-    - "||dm.kantsuu.com^"
-    - "||dsp-x.jd.com^"
-    - "||img.zhangilihew.xyz^"
-    - "||ad-sdk-config.youdao.com^"
-    - "||ads5-normal-lq.zijieapi.com.c.dsa.cdnbuild.net^"
-    - "||ads3-normal-lf.zijieapi.com.skyworth^"
-    - "||ads-shopping.shouqianba.com^"
-    - "||s364-ad-canl5.nbjz.db9w.com^"
-    - "||wcp.taobao.com^"
-    - "||img.ayghbngnazh.xyz^"
-    - "||monitor.ads.8le8le.com^"
-    - "||hlryzsqo.icu^"
-    - "||cm.ads.oppomobile.com^"
-    - "||janapi.jd.com^"
-    - "||www.9129666tp.com^"
-    - "||xmadsdk.cos.tx.xmcdn.com^"
-    - "||ads.sunmaker.com^"
-    - "||sdkcfg.adintl.cn^"
-    - "||partner.uc.cn^"
-    - "||ads.bjlxin.cn^"
-    - "||b1-data.ads.heytapmobi.com^"
-    - "||ck.ads.oppomobile.com^"
-    - "||social.pinduoduo.com^"
-    - "||adserving-oss.bangdao-tech.com^"
-    - "||abtest3-misc-hl.zijieapi.com^"
-    - "||aqdlt.com^"
-    - "||sentry-app.ireader.com^"
-    - "||mssdk3-normal-lf.zijieapi.com^"
-    - "||h-adashx.ut.dingtalk.com^"
-    - "||settings.ttwebview.com^"
-    - "||advertising.yandex.ru^"
-    - "||adashx.ut.cainiao.com^"
-    - "||img.juhagngj.xyz^"
-    - "||ads.api.fakeloc.cc^"
-    - "||open.kuaishouzt.com^"
-    - "||adsdk.9imobi.com^"
-    - "||partnerads.ysm.yahoo.com^"
-    - "||dig.bdurl.net^"
-    - "||t.jmads.net^"
-    - "||ad.zhuanzhuan.com^"
-    - "||ctobsnssdk.com^"
-    - "||scenery.hk^"
-    - "||bcnsport.us^"
-    - "||s2s.adjust.cn^"
-    - "||img.shznegh.xyz^"
-    - "||4pn.cn^"
-    - "||adx-cn.ads.vungle.com^"
-    - "||adservice.aiyouaiyou.cn^"
-    - "||v6-adashx.ut.cainiao.com^"
-    - "||advertising.apple.com^"
-    - "||adserviceretry.kglink.cn^"
-    - "||aqdz91.com^"
-    - "||ad-sdk.lenovomm.com^"
-    - "||b2.ghj7l.com^"
-    - "||smad.ms.zhangyue.net^"
-    - "||iadsdk.qtlcdn.com^"
-    - "||ecombdapi.com^"
-    - "||ads3.fingersoft.net^"
-    - "||ad.oceanengine.com.w.cdngslb.com^"
-    - "||adsfs.heytapimage.com^"
-    - "||adsfileretry.service.kugou.com^"
-    - "||ads-api.tiktok.com^"
-    - "||v6-adashx.ut.ele.me^"
-    - "||st-ads-jssdk.vivo.com.cn^"
-    - "||nosup-jd1.127.net^"
-    - "||adserver.unityads.unity3d.com^"
-    - "||multi-az-ad.kuaishou.cn^"
-    - "||adsfilebssdlbig.ali.kugou.com^"
-    - "||api-access.pangolin-sdk-toutiao.com.queniuyk.com^"
-    - "||ads.uutest.cn^"
-    - "||img.huanagyehgn.xyz^"
-    - "||config.ads.vungle.com^"
-    - "||trc-sdk.inmobi.cn^"
-    - "||adsmind.ugdtimg.com^"
-    - "||h-adashx.ut.cainiao.com^"
-    - "||ad.e.kuaishou.com^"
-    - "||business-ad.cdn-go.cn^"
-    - "||miui-fxcse.avlyun.com^"
-    - "||sdk-infra.inmobi.cn^"
-    - "||adsdkapi.dxys.pro^"
-    - "||ad.tianmu.mobi^"
-    - "||mos.m.taobao.com^"
-    - "||ads-lb.serving-sys.cn^"
-    - "||ads-video-1251524319.cos.ap-shanghai.myqcloud.com^"
-    - "||m1.ad.10010.com.w.cdngslb.com^"
-    - "||ads30.adcolony.com^"
-    - "||na61-na62.wagbridge.advertisement.tanx.com^"
-    - "||ad.mcloud.139.com^"
-    - "||xlog.jd.com^"
-    - "||catalog.gamepass.com^"
-    - "||stg-data.ads.heytapmobi.com^"
-    - "||is.snssdk.com.queniukw.com^"
-    - "||market-ad.oss-cn-shenzhen.aliyuncs.com^"
-    - "||uapi.ads.heytapmobi.com^"
-    - "||4a9.cn^"
-    - "||o2o-ad-log-gateway.alibaba.com^"
-    - "||ads-drcn.platform.hihonorcloud.com^"
-    - "||ads.huawei.com^"
-    - "||partnerads-test.ysm.yahoo.net^"
-    - "||xoxo.xoxoimg.com^"
-    - "||y4n.cn^"
-    - "||ads.tiktok.com^"
-    - "||toblog.ctobsnssdk.com^"
-    - "||ad.bczcdn.com^"
-    - "||flnet.com^"
-    - "||ck.ads.heytapmobi.com^"
-    - "||optimus-ads.amap.com^"
-    - "||st-adsgame.vivo.com.cn^"
-    - "||img.yuwhehan.xyz^"
-    - "||api.adserver.jvmai.com^"
-    - "||opencdnpddvod2.jomodns.com^"
-    - "||u7x.cn^"
-    - "||pangolin.snssdk.com^"
-    - "||uapi-ads.vivo.com.cn^"
-    - "||ad.qingcigame.com^"
-    - "||abtest3-misc-lf.zijieapi.com^"
-    - "||uploads1.gifshow.com^"
-    - "||ads-img-al.xhscdn.com^"
-    - "||uploads1.ksapisrv.com^"
-    - "||ads.pinterest.com^"
-    - "||mobads-pre-config.cdn.bcebos.com^"
-    - "||v6-novelapp-nxyd.fqnovelvod.com^"
-    - "||volcsirius.com"
-    - "||img.soweonglsh.xyz^"
-    - "||api-htp.beizi.biz^"
-    - "||tu.mt20230625tu.com^"
-    - "||ads-marketing-vivofs.vivo.com.cn"
-    - "||h-adashx4bc.ut.taobao.com^"
-    - "||union.w.inmobi.cn^"
-    - "||i.snssdk.com^"
-    - "||dm.video.weibocdn.com^"
-    - "||aaid.umeng.com^"
-    - "||sdk-log.partner.sm.cn^"
-    - "||aqdz149.com^"
-    - "||ads.themoneytizer.com^"
-    - "||leads.baidu.com^"
-    - "||adserver.html.it^"
-    - "||mobads.baidu.com^"
-    - "||a0.app.xiaomi.com^"
-    - "||p*.adkwai.com^"
-    - "||p*-ad.byteimg.com^"
-    - "||ads*-normal-lq.zijieapi.com^"
-    - "||ads*-normal-lf.zijieapi.com^"
-    - "||p*-local-ads.byteimg.com.queniuso.com^"
-    - "||lf*-orange.byteorge.com^"
-    - "||p*-webcast-sign.douyinpic.com^"
-    - "||v*-novelapp.fqnovelvod.com^"
-    - "||p*-local-ads.byteimg.com^"
-    - "||ads*-normal.zijieapi.com^"
-    - "||p*-ad-aweme.byteimg.com^"
-    - "||p*-ad-sign.byteimg.com^"
-    - "||sf*-ttcdn-tos.pstatp.com^"
-    - "||ads*-normal-hl.zijieapi.com^"
-    - "||v*-ad.video.yximgs.com^"
-    - "||*-ad.wtzw.com^"
-    - "/pangolin-sdk-toutiao.*/"
-    - "/pangolin-sdk-toutiao1.*/"
-    - "/pglstatp-toutiao.*/"
-    - "||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^"
-    - "/pangolin-sdk.*/"
-    # hosts 格式规则
-    - "127.0.0.1 c.sayhi.360.cn"
-    - "127.0.0.1 ggs.myzaker.com"
-    - "127.0.0.1 p-l.play.aiseet.atianqi.com"
-    - "127.0.0.1 tx-ad.a.yximgs.com"
-    - "127.0.0.1 caing.adsame.com"
-    - "127.0.0.1 s9.irs03.com"
-    - "127.0.0.1 adasad.myweb.hinet.net"
-    - "127.0.0.1 ad.12306.cn"
-    - "127.0.0.1 vstat.my.tv.sohu.com"
-    - "127.0.0.1 mobile.da.mgtv.com"
-    - "127.0.0.1 rayli.adsame.com"
-    - "127.0.0.1 ads.ttv.com.tw"
-    - "127.0.0.1 hmma.baidu.com"
-    - "127.0.0.1 autobild.adsame.com"
-    - "127.0.0.1 s.youmi.net"
-    - "127.0.0.1 du.163.com"
-    - "127.0.0.1 www.adsmogo.com"
-    - "127.0.0.1 ads.traffichunt.com"
-    - "127.0.0.1 push.zhanzhang.baidu.com"
-    - "127.0.0.1 api.domob.cn"
-    - "127.0.0.1 jupiter1.appads.com"
-    - "127.0.0.1 apiconfig.adwo.com"
-    - "127.0.0.1 pagead2.googlesyndication.com"
-    - "127.0.0.1 vapi.tiandi.com"
-    - "127.0.0.1 zls.xz6d.com"
-    - "127.0.0.1 sp0.baidu.com"
-    - "127.0.0.1 cm.e.qq.com"
-    - "127.0.0.1 sms.ads.oppomobile.com"
-    - "127.0.0.1 cc.map.qq.com"
-    - "127.0.0.1 livew.l.qq.com"
-    - "127.0.0.1 im2.smartadserver.com"
-    - "127.0.0.1 b-gtc.gepush.com"
-    - "127.0.0.1 a-ad.adwo.com"
-    - "127.0.0.1 juxiao.mediav.com"
-    - "127.0.0.1 owads.audioadx.com"
-    - "127.0.0.1 sambasys.adsame.com"
-    - "127.0.0.1 gecko-hl.snssdk.com"
-    - "127.0.0.1 fmg.aty.sohu.com"
-    - "127.0.0.1 pc.da.mgtv.com"
-    - "127.0.0.1 stat.56.com"
-    - "127.0.0.1 sdk-ab-config.aiclk.com"
-    - "127.0.0.1 biz5.sandai.net"
-    - "127.0.0.1 api-access.pangolin-sdk-toutiao-b.com"
-    - "127.0.0.1 umdc.aliapp.org"
-    - "127.0.0.1 ex.umengcloud.com"
-    - "127.0.0.1 tmeadcomm.y.qq.com"
-    - "127.0.0.1 vletv.admaster.com.cn"
-    - "127.0.0.1 px.cdn.creative.medialytics.com"
-    - "127.0.0.1 ad.advst.cp33.ott.cibntv.net"
-    - "127.0.0.1 xladapi.izuiyou.com"
-    - "127.0.0.1 push.pgl.qq.com"
-    - "127.0.0.1 ads.youtube.com"
-    - "127.0.0.1 ggx.cmvideo.cn"
-    - "127.0.0.1 sdu.adwo.com"
-    - "127.0.0.1 adimg.mobile.sina.cn"
-    - "127.0.0.1 config.mobisage.cn"
-    - "127.0.0.1 adshmmsg.qq.com"
-    - "127.0.0.1 www.adview.cn"
-    - "127.0.0.1 q14.cnzz.com"
-    - "127.0.0.1 zs8.cnzz.com"
-    - "127.0.0.1 adserviceretry.kugou.com"
-  # 订阅源
+  - '||llumeng.com^'
+  - '||v3-novelapp.fqnovelvod.com^$app=com.dragon.read'
+  - '||v26-novelapp.fqnovelvod.com^$app=com.dragon.read'
+  - '||p3-ad-sign.byteimg.com^$app=com.dragon.read'
+  - '||p9-pack.byteimg.com^$app=com.dragon.read'
+  - '||ecombdapi.com^$app=com.dragon.read'
+  - '||p3-orange-sign.byteimg.com^$app=com.dragon.read'
+  - '||api-access.pangolin-sdk-toutiao1.com^$app=com.dragon.read'
+  - '||api5-normal-sinfonlinec.fqnovel.com^$app=com.dragon.read'
+  - '||api3-normal-sinfonlinec.fqnovel.com^$app=com.dragon.read'
+  - '||dig.bdurl.net^$app=com.dragon.read'
+  - '||ads5-normal-lf.zijieapi.com^$app=com.dragon.read'
+  - '||p3-ecom-qualification-sign.ecombdimg.com^$app=com.dragon.read'
+  - '||mon11-misc-lf.fqnovel.com^$app=com.dragon.read'
+  - /.*pangolin.*/
+  - '||localads.chengzijianzhan.cn^'
+  - '||xiedao.hk^'
+  - '||img.mjhsghnwg.xyz^'
+  - '||secgw-default.cn.nt.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^'
+  - '||configv2.unityads.unitychina.cn^'
+  - '||mads.meituan.com^'
+  - '||googleads.g.doubleclick.net^'
+  - '||sv.adintl.cn^'
+  - '||miav-cse.avlyun.com^'
+  - '||pangolin-sdk-toutiao.com^'
+  - '||img.syebgng.xyz^'
+  - '||miaozhen.com^'
+  - '||share.jileme.net^'
+  - '||adashx.ut.dingtalk.com^'
+  - '||opencdnpddpic2.cdn.vsjwtcdn.com^'
+  - '||uploads2.gifshow.com^'
+  - '||open-set-api.shenshiads.com^'
+  - '||applog.snssdk.com^'
+  - '||abtest3-misc-lq.zijieapi.com^'
+  - '||ad.oceanengine.com.queniukw.com^'
+  - '||cl-data.ads.heytapmobi.com^'
+  - '||default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^'
+  - '||adskp.org^'
+  - '||api.th.wanzjhb.com^'
+  - '||ad-r.soulapp.cn^'
+  - '||advertising.yahoo.com^'
+  - '||cdn-ad.wtzw.com^'
+  - '||sdk.alibaba.com.ailbaba.me^'
+  - '||opehs.tanx.com^'
+  - '||ali2.a.yximgs.com^'
+  - '||ad-audit-provider.soulapp.cn^'
+  - '||uploads2.ksapisrv.com^'
+  - '||ads-video-al.xhscdn.com^'
+  - '||img.leiahngiuheong.xyz^'
+  - '||dm.wo.com.cn^'
+  - '||pangolin-sdk-toutiao-b.com^'
+  - '||adserv.ontek.com.tr^'
+  - '||sis.jpush.io^'
+  - '||cross-ad-api.afunapp.com^'
+  - '||api.open.adsaide.cn^'
+  - '||ncbtsdea.xyz^'
+  - '||ulogs.umeng.com^'
+  - '||skadsdk.appsflyer.com^'
+  - '||api.installer.xiaomi.com^'
+  - '||image-ad.sm.cn^'
+  - '||x61.inyvf.top^'
+  - '||adsfile20.bssdlbig.kugou.com^'
+  - '||ads5-normal-lf.zijieapi.com.skyworth^'
+  - '||bdapi.ads.heytapmobi.com^'
+  - '||sdk.beizi.biz^'
+  - '||adsbdfs.heytapimage.com^'
+  - '||pglstatp-toutiao.com^'
+  - '||ad.letmeads.com^'
+  - '||mssdk.volces.com^'
+  - '||ad-log-upload.mihoyo.com^'
+  - '||saad.ms.zhangyue.net^'
+  - '||ads.zhinengxiyifang.cn^'
+  - '||mssdk-bu.bytedance.com^'
+  - '||localads.chengzijianzhan.cn.queniurc.com^'
+  - '||ad.cyapi.cn^'
+  - '||a-remad.qm989.com^'
+  - '||adx.ads.heytapmobi.com^'
+  - '||ad.zijieapi.com^'
+  - '||ad.k98y.cn^'
+  - '||p1-lm.adukwai.com^'
+  - '||ads.superawesome.tv^'
+  - '||ads.chuanmeixing.com^'
+  - '||yh.yanghetp.vip^'
+  - '||ads.linkedin.com^'
+  - '||mbads.paas.cmbchina.com^'
+  - '||rtb.voiceads.cn^'
+  - '||mktadsodr.ppdai.com^'
+  - '||ads-sg.tiktok.com^'
+  - '||sdklog.adintl.cn^'
+  - '||auth-uploads.dhcc.wang^'
+  - '||hot.browser.miui.com^'
+  - '||ad-trace.lenovomm.com^'
+  - '||bjm.1vkx.cn^'
+  - '||uu5512uu.com^'
+  - '||line.txwlwwvvimg.com^'
+  - '||ads.serving-sys.cn^'
+  - '||adsmind.gdtimg.com.svideolego-dk.sched.dcloudstc.com^'
+  - '||telemetry-sdk-metrics.inmobi.cn^'
+  - '||ads.cup.com.cn^'
+  - '||ad.oceanengine.com^'
+  - '||apps.bytesfield.com^'
+  - '||pangolin-sdk-toutiao1.com^'
+  - '||soul-ad.soulapp.cn^'
+  - '||mkt-advertisement.tuhu.cn^'
+  - '||dig.zjurl.cn^'
+  - '||kde.qq.com^'
+  - '||v6-adashx.ut.amap.com^'
+  - '||cdn-new-ad.wtzw.com^'
+  - '||line3-adscore-api.biligame.net^'
+  - '||vjyaghdw.icu^'
+  - '||img.wqpamgngnb.xyz^'
+  - '||sms.ads.heytapmobi.com^'
+  - '||ads.games.laohu.com^'
+  - '||adsdk.state.duoku.com^'
+  - '||3p4.cn^'
+  - '||a-qmad.qimao.com^'
+  - '||advert.swiftpass.cn^'
+  - '||aiclk.com^'
+  - '||bsccdn.net^'
+  - '||advice-ads.s3.amazonaws.com^'
+  - '||dm.kantsuu.com^'
+  - '||dsp-x.jd.com^'
+  - '||img.zhangilihew.xyz^'
+  - '||ad-sdk-config.youdao.com^'
+  - '||ads5-normal-lq.zijieapi.com.c.dsa.cdnbuild.net^'
+  - '||ads3-normal-lf.zijieapi.com.skyworth^'
+  - '||ads-shopping.shouqianba.com^'
+  - '||s364-ad-canl5.nbjz.db9w.com^'
+  - '||wcp.taobao.com^'
+  - '||img.ayghbngnazh.xyz^'
+  - '||monitor.ads.8le8le.com^'
+  - '||hlryzsqo.icu^'
+  - '||cm.ads.oppomobile.com^'
+  - '||janapi.jd.com^'
+  - '||www.9129666tp.com^'
+  - '||xmadsdk.cos.tx.xmcdn.com^'
+  - '||ads.sunmaker.com^'
+  - '||sdkcfg.adintl.cn^'
+  - '||partner.uc.cn^'
+  - '||ads.bjlxin.cn^'
+  - '||b1-data.ads.heytapmobi.com^'
+  - '||ck.ads.oppomobile.com^'
+  - '||social.pinduoduo.com^'
+  - '||adserving-oss.bangdao-tech.com^'
+  - '||abtest3-misc-hl.zijieapi.com^'
+  - '||aqdlt.com^'
+  - '||sentry-app.ireader.com^'
+  - '||mssdk3-normal-lf.zijieapi.com^'
+  - '||h-adashx.ut.dingtalk.com^'
+  - '||settings.ttwebview.com^'
+  - '||advertising.yandex.ru^'
+  - '||adashx.ut.cainiao.com^'
+  - '||img.juhagngj.xyz^'
+  - '||ads.api.fakeloc.cc^'
+  - '||open.kuaishouzt.com^'
+  - '||adsdk.9imobi.com^'
+  - '||partnerads.ysm.yahoo.com^'
+  - '||dig.bdurl.net^'
+  - '||t.jmads.net^'
+  - '||ad.zhuanzhuan.com^'
+  - '||ctobsnssdk.com^'
+  - '||scenery.hk^'
+  - '||bcnsport.us^'
+  - '||s2s.adjust.cn^'
+  - '||img.shznegh.xyz^'
+  - '||4pn.cn^'
+  - '||adx-cn.ads.vungle.com^'
+  - '||adservice.aiyouaiyou.cn^'
+  - '||v6-adashx.ut.cainiao.com^'
+  - '||advertising.apple.com^'
+  - '||adserviceretry.kglink.cn^'
+  - '||aqdz91.com^'
+  - '||ad-sdk.lenovomm.com^'
+  - '||b2.ghj7l.com^'
+  - '||smad.ms.zhangyue.net^'
+  - '||iadsdk.qtlcdn.com^'
+  - '||ecombdapi.com^'
+  - '||ads3.fingersoft.net^'
+  - '||ad.oceanengine.com.w.cdngslb.com^'
+  - '||adsfs.heytapimage.com^'
+  - '||adsfileretry.service.kugou.com^'
+  - '||ads-api.tiktok.com^'
+  - '||v6-adashx.ut.ele.me^'
+  - '||st-ads-jssdk.vivo.com.cn^'
+  - '||nosup-jd1.127.net^'
+  - '||adserver.unityads.unity3d.com^'
+  - '||multi-az-ad.kuaishou.cn^'
+  - '||adsfilebssdlbig.ali.kugou.com^'
+  - '||api-access.pangolin-sdk-toutiao.com.queniuyk.com^'
+  - '||ads.uutest.cn^'
+  - '||img.huanagyehgn.xyz^'
+  - '||config.ads.vungle.com^'
+  - '||trc-sdk.inmobi.cn^'
+  - '||adsmind.ugdtimg.com^'
+  - '||h-adashx.ut.cainiao.com^'
+  - '||ad.e.kuaishou.com^'
+  - '||business-ad.cdn-go.cn^'
+  - '||miui-fxcse.avlyun.com^'
+  - '||sdk-infra.inmobi.cn^'
+  - '||adsdkapi.dxys.pro^'
+  - '||ad.tianmu.mobi^'
+  - '||mos.m.taobao.com^'
+  - '||ads-lb.serving-sys.cn^'
+  - '||ads-video-1251524319.cos.ap-shanghai.myqcloud.com^'
+  - '||m1.ad.10010.com.w.cdngslb.com^'
+  - '||ads30.adcolony.com^'
+  - '||na61-na62.wagbridge.advertisement.tanx.com^'
+  - '||ad.mcloud.139.com^'
+  - '||xlog.jd.com^'
+  - '||catalog.gamepass.com^'
+  - '||stg-data.ads.heytapmobi.com^'
+  - '||is.snssdk.com.queniukw.com^'
+  - '||market-ad.oss-cn-shenzhen.aliyuncs.com^'
+  - '||uapi.ads.heytapmobi.com^'
+  - '||4a9.cn^'
+  - '||o2o-ad-log-gateway.alibaba.com^'
+  - '||ads-drcn.platform.hihonorcloud.com^'
+  - '||ads.huawei.com^'
+  - '||partnerads-test.ysm.yahoo.net^'
+  - '||xoxo.xoxoimg.com^'
+  - '||y4n.cn^'
+  - '||ads.tiktok.com^'
+  - '||toblog.ctobsnssdk.com^'
+  - '||ad.bczcdn.com^'
+  - '||flnet.com^'
+  - '||ck.ads.heytapmobi.com^'
+  - '||optimus-ads.amap.com^'
+  - '||st-adsgame.vivo.com.cn^'
+  - '||img.yuwhehan.xyz^'
+  - '||api.adserver.jvmai.com^'
+  - '||opencdnpddvod2.jomodns.com^'
+  - '||u7x.cn^'
+  - '||pangolin.snssdk.com^'
+  - '||uapi-ads.vivo.com.cn^'
+  - '||ad.qingcigame.com^'
+  - '||abtest3-misc-lf.zijieapi.com^'
+  - '||uploads1.gifshow.com^'
+  - '||ads-img-al.xhscdn.com^'
+  - '||uploads1.ksapisrv.com^'
+  - '||ads.pinterest.com^'
+  - '||mobads-pre-config.cdn.bcebos.com^'
+  - '||v6-novelapp-nxyd.fqnovelvod.com^'
+  - '||volcsirius.com'
+  - '||img.soweonglsh.xyz^'
+  - '||api-htp.beizi.biz^'
+  - '||tu.mt20230625tu.com^'
+  - '||ads-marketing-vivofs.vivo.com.cn'
+  - '||h-adashx4bc.ut.taobao.com^'
+  - '||union.w.inmobi.cn^'
+  - '||i.snssdk.com^'
+  - '||dm.video.weibocdn.com^'
+  - '||aaid.umeng.com^'
+  - '||sdk-log.partner.sm.cn^'
+  - '||aqdz149.com^'
+  - '||ads.themoneytizer.com^'
+  - '||leads.baidu.com^'
+  - '||adserver.html.it^'
+  - '||mobads.baidu.com^'
+  - '||a0.app.xiaomi.com^'
+  - '||p*.adkwai.com^'
+  - '||p*-ad.byteimg.com^'
+  - '||ads*-normal-lq.zijieapi.com^'
+  - '||ads*-normal-lf.zijieapi.com^'
+  - '||p*-local-ads.byteimg.com.queniuso.com^'
+  - '||lf*-orange.byteorge.com^'
+  - '||p*-webcast-sign.douyinpic.com^'
+  - '||v*-novelapp.fqnovelvod.com^'
+  - '||p*-local-ads.byteimg.com^'
+  - '||ads*-normal.zijieapi.com^'
+  - '||p*-ad-aweme.byteimg.com^'
+  - '||p*-ad-sign.byteimg.com^'
+  - '||sf*-ttcdn-tos.pstatp.com^'
+  - '||ads*-normal-hl.zijieapi.com^'
+  - '||v*-ad.video.yximgs.com^'
+  - '||*-ad.wtzw.com^'
+  - /pangolin-sdk-toutiao.*/
+  - /pangolin-sdk-toutiao1.*/
+  - /pglstatp-toutiao.*/
+  - '||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^'
+  - /pangolin-sdk.*/
+  - 127.0.0.1 c.sayhi.360.cn
+  - 127.0.0.1 ggs.myzaker.com
+  - 127.0.0.1 p-l.play.aiseet.atianqi.com
+  - 127.0.0.1 tx-ad.a.yximgs.com
+  - 127.0.0.1 caing.adsame.com
+  - 127.0.0.1 s9.irs03.com
+  - 127.0.0.1 adasad.myweb.hinet.net
+  - 127.0.0.1 ad.12306.cn
+  - 127.0.0.1 vstat.my.tv.sohu.com
+  - 127.0.0.1 mobile.da.mgtv.com
+  - 127.0.0.1 rayli.adsame.com
+  - 127.0.0.1 ads.ttv.com.tw
+  - 127.0.0.1 hmma.baidu.com
+  - 127.0.0.1 autobild.adsame.com
+  - 127.0.0.1 s.youmi.net
+  - 127.0.0.1 du.163.com
+  - 127.0.0.1 www.adsmogo.com
+  - 127.0.0.1 ads.traffichunt.com
+  - 127.0.0.1 push.zhanzhang.baidu.com
+  - 127.0.0.1 api.domob.cn
+  - 127.0.0.1 jupiter1.appads.com
+  - 127.0.0.1 apiconfig.adwo.com
+  - 127.0.0.1 pagead2.googlesyndication.com
+  - 127.0.0.1 vapi.tiandi.com
+  - 127.0.0.1 zls.xz6d.com
+  - 127.0.0.1 sp0.baidu.com
+  - 127.0.0.1 cm.e.qq.com
+  - 127.0.0.1 sms.ads.oppomobile.com
+  - 127.0.0.1 cc.map.qq.com
+  - 127.0.0.1 livew.l.qq.com
+  - 127.0.0.1 im2.smartadserver.com
+  - 127.0.0.1 b-gtc.gepush.com
+  - 127.0.0.1 a-ad.adwo.com
+  - 127.0.0.1 juxiao.mediav.com
+  - 127.0.0.1 owads.audioadx.com
+  - 127.0.0.1 sambasys.adsame.com
+  - 127.0.0.1 gecko-hl.snssdk.com
+  - 127.0.0.1 fmg.aty.sohu.com
+  - 127.0.0.1 pc.da.mgtv.com
+  - 127.0.0.1 stat.56.com
+  - 127.0.0.1 sdk-ab-config.aiclk.com
+  - 127.0.0.1 biz5.sandai.net
+  - 127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
+  - 127.0.0.1 umdc.aliapp.org
+  - 127.0.0.1 ex.umengcloud.com
+  - 127.0.0.1 tmeadcomm.y.qq.com
+  - 127.0.0.1 vletv.admaster.com.cn
+  - 127.0.0.1 px.cdn.creative.medialytics.com
+  - 127.0.0.1 ad.advst.cp33.ott.cibntv.net
+  - 127.0.0.1 xladapi.izuiyou.com
+  - 127.0.0.1 push.pgl.qq.com
+  - 127.0.0.1 ads.youtube.com
+  - 127.0.0.1 ggx.cmvideo.cn
+  - 127.0.0.1 sdu.adwo.com
+  - 127.0.0.1 adimg.mobile.sina.cn
+  - 127.0.0.1 config.mobisage.cn
+  - 127.0.0.1 adshmmsg.qq.com
+  - 127.0.0.1 www.adview.cn
+  - 127.0.0.1 q14.cnzz.com
+  - 127.0.0.1 zs8.cnzz.com
+  - 127.0.0.1 adserviceretry.kugou.com
   urls:
-    - name: "AdGuard Base"
-      url: "https://filters.adtidy.org/extension/chromium/filters/2.txt"
-    - name: "AdGuard Chinese"
-      url: "https://filters.adtidy.org/extension/chromium/filters/224.txt"
-    - name: "AdGuard Moblie"
-      url: "https://filters.adtidy.org/extension/chromium/filters/11.txt"
-    - name: "CJX's Annoyances List"
-      url: "https://filters.adtidy.org/extension/chromium/filters/220.txt"
-    - name: "xinggsf"
-      url: "https://filters.adtidy.org/extension/chromium/filters/228.txt"
-    - name: "SMAdHosts"
-      url: "https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts"
-    - name: "TT拒绝列表"
-      url: "https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt"
-    - name: "去广告规则 - 酷安反馈反馈"
-      url: "https://raw.githubusercontent.com/qq5460168/me/master/rules.txt"
-    - name: "HyperADRules - Rules"
-      url: "https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt"
-    - name: "NoAppDownload"
-      url: "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt"
-    - name: "AWAvenue Ads Rule"
-      url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
-    - name: "自用规则3.0"
-      url: "https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt"
-    - name: "AdBlock Filter"
-      url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt"
-    - name: "all.txt"
-      url: "https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt"
-    - name: "AdRules AdBlock List Plus"
-      url: "https://adrules.top/adblock_plus.txt"
-    - name: "混合规则(自动更新)"
-      url: "https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt"
-
-# 白名单订阅
+  - name: HyperADRules - Rules
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
+  - name: all.txt
+    url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  - name: AdRules AdBlock List Plus
+    url: https://adrules.top/adblock_plus.txt
+  - name: 混合规则(自动更新)
+    url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
+  - name: 去广告规则 - 酷安反馈反馈
+    url: https://raw.githubusercontent.com/qq5460168/me/master/rules.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  - name: AdGuard Moblie
+    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  - name: AdBlock Filter
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
+  - name: SMAdHosts
+    url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: CJX's Annoyances List
+    url: https://filters.adtidy.org/extension/chromium/filters/220.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: TT拒绝列表
+    url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
+  - name: 自用规则3.0
+    url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: NoAppDownload
+    url: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
+  - name: AWAvenue Ads Rule
+    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
 whitelist:
   urls:
-    - name: "去广告规则 - 酷安反馈反馈 Allow"
-      url: "https://raw.githubusercontent.com/qq5460168/666/master/allow.txt"
-    - name: "HyperADRules - Allow"
-      url: "https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt"
-  # 直接配置的独立规则
+  - name: HyperADRules - Allow
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+  - name: 去广告规则 - 酷安反馈反馈 Allow
+    url: https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
   rules:
-    - "@@||pan.quark.cn^"
-    - "@@||316.coolapk1s.com^"
-    - "@@||pic.imgdb.cn"
-    - "@@||360.cn^"
-    - "@@||cn.app.chat.xiaomi.net^"
-    - "@@||www.bqgyy.com^"
-    - "@@||avatar.coolapk.com^"
-    - "@@||bootcdn.net^"
-    - "@@||api.sec.miui.com^"
-    - "@@||gift.douyucdn.cn^"
-    - "@@||umengjmacs.m.taobao.com^"
-    - "@@||is.snssdk.com^"
-    - "@@||lf6-cdn-tos.bytegoofy.com^"
-    - "@@||m.jingxi.com^"
-    - "@@||myquark.cn^"
-    - "@@||payapp.weixin.qq.com^"
-    - "@@||lf3-cdn-tos.bytegoofy.com^"
-    - "@@||drive.quark.cn^"
-    - "@@||lf1-cdn-tos.bytegoofy.com^"
-    - "@@||ib.snssdk.com^"
-    - "@@||api.coolapk.com^"
-    - "@@||msg.douyu.com^"
-    - "@@||bjfesdk.douyucdn.cn^"
-    - "@@||c.pc.qq.com^"
-
-# DNS 过滤订阅
+  - '@@||pan.quark.cn^'
+  - '@@||316.coolapk1s.com^'
+  - '@@||pic.imgdb.cn'
+  - '@@||360.cn^'
+  - '@@||cn.app.chat.xiaomi.net^'
+  - '@@||www.bqgyy.com^'
+  - '@@||avatar.coolapk.com^'
+  - '@@||bootcdn.net^'
+  - '@@||api.sec.miui.com^'
+  - '@@||gift.douyucdn.cn^'
+  - '@@||umengjmacs.m.taobao.com^'
+  - '@@||is.snssdk.com^'
+  - '@@||lf6-cdn-tos.bytegoofy.com^'
+  - '@@||m.jingxi.com^'
+  - '@@||myquark.cn^'
+  - '@@||payapp.weixin.qq.com^'
+  - '@@||lf3-cdn-tos.bytegoofy.com^'
+  - '@@||drive.quark.cn^'
+  - '@@||lf1-cdn-tos.bytegoofy.com^'
+  - '@@||ib.snssdk.com^'
+  - '@@||api.coolapk.com^'
+  - '@@||msg.douyu.com^'
+  - '@@||bjfesdk.douyucdn.cn^'
+  - '@@||c.pc.qq.com^'
 dns:
-  - name: "AdGuard DNS"
-    url: "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
-  - name: "DNS拒绝清单"
-    url: "https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT"
-  - name: "去广告规则 - 酷安反馈反馈 DNS"
-    url: "https://raw.githubusercontent.com/qq5460168/666/master/dns.txt"
-  - name: "HyperADRules - DNS"
-    url: "https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt"
-  - name: "oisd big"
-    url: "https://big.oisd.nl"
-  - name: "AdBlock DNS"
-    url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt"
+- name: oisd big
+  url: https://big.oisd.nl
+- name: AdGuard DNS
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+- name: HyperADRules - DNS
+  url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
+- name: 去广告规则 - 酷安反馈反馈 DNS
+  url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
+- name: AdBlock DNS
+  url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+- name: DNS拒绝清单
+  url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
