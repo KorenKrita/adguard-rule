@@ -16,7 +16,16 @@ def load_config(config_path: str = "config.yaml") -> dict:
 
 def get_filter_urls(config: dict) -> list:
     """获取广告过滤订阅 URL 列表"""
-    return config.get('filters', [])
+    filters = config.get('filters', {})
+    return filters.get('urls', []) if isinstance(filters, dict) else filters
+
+
+def get_filter_manual_rules(config: dict) -> list:
+    """获取手动配置的广告过滤规则"""
+    filters = config.get('filters', {})
+    if isinstance(filters, dict):
+        return filters.get('manual_rules', [])
+    return []
 
 
 def get_whitelist_urls(config: dict) -> list:
