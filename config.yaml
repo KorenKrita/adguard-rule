@@ -412,9 +412,9 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
-  - name: CHN: AdRules DNS List
+  - name: AdRules DNS List
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-  - name: CHN: anti-AD
+  - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
