@@ -1,0 +1,23 @@
+# AdGuard 规则合并配置
+
+# 广告过滤规则订阅
+filters:
+  - name: "AdGuard Base"
+    url: "https://filters.adtidy.org/extension/chromium/filters/2.txt"
+  - name: "AdGuard Chinese"
+    url: "https://filters.adtidy.org/extension/chromium/filters/224.txt"
+
+# 白名单订阅
+whitelist:
+  urls:
+    - name: "Example Allowlist"
+      url: "https://example.com/allowlist.txt"
+  # 直接配置的独立规则
+  rules:
+    - "@@||baidu.com^"
+    - "@@||weibo.com^"
+
+# DNS 过滤订阅
+dns:
+  - name: "AdGuard DNS Filter"
+    url: "https://filters.adtidy.org/extension/chromium/filters/15.txt"
