@@ -6,7 +6,7 @@
 
 - 合并广告过滤规则（支持订阅源 + 手动规则）
 - 合并白名单规则（支持订阅源 + 手动规则）
-- 合并 DNS 过滤规则
+- 合并 DNS 过滤规则（支持订阅源 + 手动规则）
 - 精确去重，保留首次出现的规则
 - 显示每个订阅源的规则总数、有效数、使用率
 - **自适应排序**：根据每次运行结果自动调整订阅源顺序（使用率高的优先）
@@ -40,8 +40,13 @@ whitelist:
 
 # DNS 过滤规则
 dns:
-  - name: "AdGuard DNS"
-    url: "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+  # 订阅源
+  urls:
+    - name: "AdGuard DNS"
+      url: "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+  # 手动配置的规则
+  manual_rules:
+    - "||dns.example.com^"
 ```
 
 ## 输出

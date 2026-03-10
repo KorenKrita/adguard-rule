@@ -6,7 +6,8 @@ from typing import List, Dict, Tuple
 from src.config import (
     load_config, save_config, sort_urls_by_count,
     get_filter_urls, get_filter_manual_rules,
-    get_whitelist_urls, get_whitelist_rules, get_dns_urls
+    get_whitelist_urls, get_whitelist_rules,
+    get_dns_urls, get_dns_manual_rules
 )
 from src.downloader import download_all
 from src.merger import merge_rules, generate_header, write_output
@@ -42,6 +43,7 @@ def process_rules(
 
     if manual_rules:
         seen = set(all_rules)
+        manual_total = len(manual_rules)
         manual_count = 0
         for rule in manual_rules:
             if rule not in seen:
@@ -49,11 +51,12 @@ def process_rules(
                 all_rules.append(rule)
                 manual_count += 1
         if manual_count > 0:
+            percentage = (manual_count / manual_total * 100) if manual_total > 0 else 0.0
             all_stats.append({
                 'name': 'Manual Rules',
-                'total': manual_count,
+                'total': manual_total,
                 'count': manual_count,
-                'percentage': 100.0,
+                'percentage': percentage,
                 'url': 'config.yaml'
             })
 
@@ -99,17 +102,13 @@ def main():
 
     # 3. 处理 DNS 过滤规则
     print("\n[3/3] Processing DNS filter rules...")
-    dns_sources = get_dns_urls(config)
-    dns_stats = []
-    if dns_sources:
-        results = download_all(dns_sources)
-        rules, stats = merge_rules(results)
-        dns_stats = stats
-        header = generate_header("Merged DNS Filter", len(rules), stats)
-        write_output(output_dir / "dns.txt", header, rules)
-        print(f"  -> {len(rules)} rules written to output/dns.txt")
-    else:
-        print("  -> No DNS sources configured")
+    dns_stats = process_rules(
+        sources=get_dns_urls(config),
+        manual_rules=get_dns_manual_rules(config),
+        title="Merged DNS Filter",
+        output_path=output_dir / "dns.txt",
+        label="output/dns.txt",
+    )
 
     # 4. 根据本次运行统计排序配置并保存
     print("\n[4/4] Optimizing config order...")

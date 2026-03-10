@@ -406,15 +406,17 @@ whitelist:
   - '@@||bjfesdk.douyucdn.cn^'
   - '@@||c.pc.qq.com^'
 dns:
-- name: oisd big
-  url: https://big.oisd.nl
-- name: AdGuard DNS
-  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-- name: HyperADRules - DNS
-  url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
-- name: 去广告规则 - 酷安反馈反馈 DNS
-  url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
-- name: AdBlock DNS
-  url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
-- name: DNS拒绝清单
-  url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
+  urls:
+  - name: oisd big
+    url: https://big.oisd.nl
+  - name: AdGuard DNS
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  - name: HyperADRules - DNS
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
+  - name: 去广告规则 - 酷安反馈反馈 DNS
+    url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+  - name: DNS拒绝清单
+    url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
+  manual_rules: []

@@ -42,7 +42,9 @@ def load_config(config_path: Union[str, Path] = "config.yaml") -> dict:
         _validate_source_list(whitelist.get('urls', []), 'whitelist.urls')
 
     # 校验 dns
-    _validate_source_list(config.get('dns', []), 'dns')
+    dns = config.get('dns', {})
+    if isinstance(dns, dict):
+        _validate_source_list(dns.get('urls', []), 'dns.urls')
 
     return config
 
@@ -75,7 +77,14 @@ def get_whitelist_rules(config: dict) -> list:
 
 def get_dns_urls(config: dict) -> list:
     """获取 DNS 过滤订阅 URL 列表"""
-    return config.get('dns', [])
+    dns = config.get('dns', {})
+    return dns.get('urls', [])
+
+
+def get_dns_manual_rules(config: dict) -> list:
+    """获取手动配置的 DNS 过滤规则"""
+    dns = config.get('dns', {})
+    return dns.get('manual_rules', [])
 
 
 def _sort_urls_by_stats(urls: list, stats: List[Dict]) -> list:
@@ -116,8 +125,9 @@ def sort_urls_by_count(config: dict, section: str, stats: List[Dict]) -> dict:
         if isinstance(whitelist, dict) and 'urls' in whitelist:
             whitelist['urls'] = _sort_urls_by_stats(whitelist['urls'], stats)
     elif section == 'dns':
-        if 'dns' in config:
-            config['dns'] = _sort_urls_by_stats(config['dns'], stats)
+        dns = config.get('dns', {})
+        if isinstance(dns, dict) and 'urls' in dns:
+            dns['urls'] = _sort_urls_by_stats(dns['urls'], stats)
 
     return config
 

@@ -4,7 +4,8 @@ import os
 from src.config import (
     load_config, save_config, sort_urls_by_count,
     get_filter_urls, get_filter_manual_rules,
-    get_whitelist_urls, get_whitelist_rules, get_dns_urls
+    get_whitelist_urls, get_whitelist_rules,
+    get_dns_urls, get_dns_manual_rules
 )
 
 
@@ -26,8 +27,11 @@ whitelist:
     - "@@||test.com^"
 
 dns:
-  - name: "Test DNS"
-    url: "https://example.com/dns.txt"
+  urls:
+    - name: "Test DNS"
+      url: "https://example.com/dns.txt"
+  manual_rules:
+    - "||manual.dns.example.com^"
 """
     with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
         f.write(config_content)
@@ -62,6 +66,11 @@ dns:
         dns_urls = get_dns_urls(config)
         assert len(dns_urls) == 1
         assert dns_urls[0]['name'] == "Test DNS"
+
+        # 测试 get_dns_manual_rules
+        dns_manual = get_dns_manual_rules(config)
+        assert len(dns_manual) == 1
+        assert dns_manual[0] == "||manual.dns.example.com^"
     finally:
         os.unlink(config_path)
 
@@ -96,6 +105,7 @@ def test_load_config_empty_sections():
     config_content = """
 filters: {}
 whitelist: {}
+dns: {}
 """
     with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
         f.write(config_content)
@@ -109,6 +119,7 @@ whitelist: {}
         assert get_whitelist_urls(config) == []
         assert get_whitelist_rules(config) == []
         assert get_dns_urls(config) == []
+        assert get_dns_manual_rules(config) == []
     finally:
         os.unlink(config_path)
 
@@ -117,7 +128,8 @@ def test_load_config_missing_name_field():
     """测试订阅源缺少 name 字段时抛出 ValueError"""
     config_content = """
 dns:
-  - url: "https://example.com/dns.txt"
+  urls:
+    - url: "https://example.com/dns.txt"
 """
     with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
         f.write(config_content)
@@ -215,7 +227,10 @@ def test_save_config_preserves_structure():
             'urls': [],
             'rules': []
         },
-        'dns': []
+        'dns': {
+            'urls': [],
+            'manual_rules': []
+        }
     }
 
     with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
