@@ -1,5 +1,5 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-10 11:42:46 UTC
+! Updated: 2026-03-10 11:43:47 UTC
 ! Total: 11951 rules
 ! Sources:
 !   - HyperADRules - Allow: 8698 total, 8698 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
