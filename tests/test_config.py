@@ -1,7 +1,11 @@
 import pytest
 import tempfile
 import os
-from src.config import load_config, get_filter_urls, get_filter_manual_rules, get_whitelist_urls, get_whitelist_rules, get_dns_urls
+from src.config import (
+    load_config, save_config, sort_urls_by_count,
+    get_filter_urls, get_filter_manual_rules,
+    get_whitelist_urls, get_whitelist_rules, get_dns_urls
+)
 
 
 def test_load_config_valid():
@@ -150,3 +154,84 @@ def test_load_config_file_not_found():
     """测试文件不存在时抛出异常"""
     with pytest.raises(FileNotFoundError):
         load_config("/nonexistent/config.yaml")
+
+
+def test_sort_urls_by_count():
+    """测试按 count 排序功能"""
+    config = {
+        'filters': {
+            'urls': [
+                {'name': 'Low', 'url': 'https://low.com'},
+                {'name': 'High', 'url': 'https://high.com'},
+                {'name': 'Medium', 'url': 'https://medium.com'},
+            ]
+        }
+    }
+    stats = [
+        {'name': 'Low', 'count': 10},
+        {'name': 'High', 'count': 100},
+        {'name': 'Medium', 'count': 50},
+    ]
+
+    sort_urls_by_count(config, 'filters', stats)
+
+    urls = config['filters']['urls']
+    assert urls[0]['name'] == 'High'
+    assert urls[1]['name'] == 'Medium'
+    assert urls[2]['name'] == 'Low'
+
+
+def test_sort_urls_by_count_missing_stat():
+    """测试统计信息缺失时默认 count=0"""
+    config = {
+        'filters': {
+            'urls': [
+                {'name': 'Known', 'url': 'https://known.com'},
+                {'name': 'Unknown', 'url': 'https://unknown.com'},
+            ]
+        }
+    }
+    stats = [
+        {'name': 'Known', 'count': 50},
+    ]
+
+    sort_urls_by_count(config, 'filters', stats)
+
+    urls = config['filters']['urls']
+    assert urls[0]['name'] == 'Known'
+    assert urls[1]['name'] == 'Unknown'
+
+
+def test_save_config_preserves_structure():
+    """测试保存配置保持结构完整"""
+    config = {
+        'filters': {
+            'manual_rules': ['||test.com^'],
+            'urls': [
+                {'name': 'Test Filter', 'url': 'https://test.com/filter.txt'}
+            ]
+        },
+        'whitelist': {
+            'urls': [],
+            'rules': []
+        },
+        'dns': []
+    }
+
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
+        config_path = f.name
+
+    try:
+        save_config(config, config_path)
+        loaded = load_config(config_path)
+
+        assert 'filters' in loaded
+        assert loaded['filters']['manual_rules'] == ['||test.com^']
+        assert len(loaded['filters']['urls']) == 1
+        assert loaded['filters']['urls'][0]['name'] == 'Test Filter'
+    finally:
+        if os.path.exists(config_path):
+            os.unlink(config_path)
+        bak_path = config_path + '.bak'
+        if os.path.exists(bak_path):
+            os.unlink(bak_path)

@@ -3,7 +3,11 @@ import sys
 from pathlib import Path
 from typing import List, Dict, Tuple
 
-from src.config import load_config, get_filter_urls, get_filter_manual_rules, get_whitelist_urls, get_whitelist_rules, get_dns_urls
+from src.config import (
+    load_config, save_config, sort_urls_by_count,
+    get_filter_urls, get_filter_manual_rules,
+    get_whitelist_urls, get_whitelist_rules, get_dns_urls
+)
 from src.downloader import download_all
 from src.merger import merge_rules, generate_header, write_output
 
@@ -14,7 +18,7 @@ def process_rules(
     title: str,
     output_path: Path,
     label: str,
-) -> None:
+) -> List[Dict]:
     """下载、合并、去重并写出规则文件
 
     Args:
@@ -23,6 +27,9 @@ def process_rules(
         title: 输出文件标题
         output_path: 输出文件路径
         label: 用于打印日志的文件名标识
+
+    Returns:
+        统计信息列表
     """
     all_rules: List[str] = []
     all_stats: List[Dict] = []
@@ -57,6 +64,8 @@ def process_rules(
     else:
         print(f"  -> No sources configured for {label}")
 
+    return all_stats
+
 
 def main():
     """主程序入口"""
@@ -70,7 +79,7 @@ def main():
 
     # 1. 处理广告过滤规则
     print("\n[1/3] Processing filter rules...")
-    process_rules(
+    filter_stats = process_rules(
         sources=get_filter_urls(config),
         manual_rules=get_filter_manual_rules(config),
         title="Merged Filter",
@@ -80,7 +89,7 @@ def main():
 
     # 2. 处理白名单规则
     print("\n[2/3] Processing whitelist rules...")
-    process_rules(
+    whitelist_stats = process_rules(
         sources=get_whitelist_urls(config),
         manual_rules=get_whitelist_rules(config),
         title="Merged Whitelist",
@@ -91,14 +100,28 @@ def main():
     # 3. 处理 DNS 过滤规则
     print("\n[3/3] Processing DNS filter rules...")
     dns_sources = get_dns_urls(config)
+    dns_stats = []
     if dns_sources:
         results = download_all(dns_sources)
         rules, stats = merge_rules(results)
+        dns_stats = stats
         header = generate_header("Merged DNS Filter", len(rules), stats)
         write_output(output_dir / "dns.txt", header, rules)
         print(f"  -> {len(rules)} rules written to output/dns.txt")
     else:
         print("  -> No DNS sources configured")
+
+    # 4. 根据本次运行统计排序配置并保存
+    print("\n[4/4] Optimizing config order...")
+    sort_urls_by_count(config, 'filters', filter_stats)
+    sort_urls_by_count(config, 'whitelist', whitelist_stats)
+    sort_urls_by_count(config, 'dns', dns_stats)
+
+    try:
+        save_config(config, config_path)
+        print("  -> Config order updated")
+    except Exception as e:
+        print(f"  -> Failed to save config: {e}")
 
     print("\nDone!")
     return 0

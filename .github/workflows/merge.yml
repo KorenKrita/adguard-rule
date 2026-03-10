@@ -43,7 +43,7 @@ jobs:
         WHITELIST_COUNT=$(grep "^! Total:" output/whitelist.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
         DNS_COUNT=$(grep "^! Total:" output/dns.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
 
-        git add output/
+        git add output/ config.yaml
 
         if git diff --cached --quiet; then
           echo "No changes to commit"
