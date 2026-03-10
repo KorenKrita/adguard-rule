@@ -1,10 +1,10 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-10 11:16:17 UTC
+! Updated: 2026-03-10 11:32:45 UTC
 ! Total: 11951 rules
 ! Sources:
 !   - HyperADRules - Allow: 8698 total, 8698 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3318 total, 3252 used (98.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
-!   - Manual Rules: 1 total, 1 used (100.0%) - config.yaml
+!   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
