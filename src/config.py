@@ -69,10 +69,10 @@ def get_whitelist_urls(config: dict) -> list:
     return whitelist.get('urls', [])
 
 
-def get_whitelist_rules(config: dict) -> list:
-    """获取独立白名单规则"""
+def get_whitelist_manual_rules(config: dict) -> list:
+    """获取手动配置的白名单规则"""
     whitelist = config.get('whitelist', {})
-    return whitelist.get('rules', [])
+    return whitelist.get('manual_rules', [])
 
 
 def get_dns_urls(config: dict) -> list:

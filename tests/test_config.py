@@ -4,7 +4,7 @@ import os
 from src.config import (
     load_config, save_config, sort_urls_by_count,
     get_filter_urls, get_filter_manual_rules,
-    get_whitelist_urls, get_whitelist_rules,
+    get_whitelist_urls, get_whitelist_manual_rules,
     get_dns_urls, get_dns_manual_rules
 )
 
@@ -23,7 +23,7 @@ whitelist:
   urls:
     - name: "Test Allow"
       url: "https://example.com/allow.txt"
-  rules:
+  manual_rules:
     - "@@||test.com^"
 
 dns:
@@ -57,8 +57,8 @@ dns:
         assert len(whitelist_urls) == 1
         assert whitelist_urls[0]['name'] == "Test Allow"
 
-        # 测试 get_whitelist_rules
-        whitelist_rules = get_whitelist_rules(config)
+        # 测试 get_whitelist_manual_rules
+        whitelist_rules = get_whitelist_manual_rules(config)
         assert len(whitelist_rules) == 1
         assert whitelist_rules[0] == "@@||test.com^"
 
@@ -117,7 +117,7 @@ dns: {}
         assert get_filter_urls(config) == []
         assert get_filter_manual_rules(config) == []
         assert get_whitelist_urls(config) == []
-        assert get_whitelist_rules(config) == []
+        assert get_whitelist_manual_rules(config) == []
         assert get_dns_urls(config) == []
         assert get_dns_manual_rules(config) == []
     finally:
@@ -225,7 +225,7 @@ def test_save_config_preserves_structure():
         },
         'whitelist': {
             'urls': [],
-            'rules': []
+            'manual_rules': []
         },
         'dns': {
             'urls': [],

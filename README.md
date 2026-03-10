@@ -35,7 +35,7 @@ whitelist:
     - name: "Example Allowlist"
       url: "https://example.com/allow.txt"
   # 手动配置的规则
-  rules:
+  manual_rules:
     - "@@||baidu.com^"
 
 # DNS 过滤规则

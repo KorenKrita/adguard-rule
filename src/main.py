@@ -6,7 +6,7 @@ from typing import List, Dict, Tuple
 from src.config import (
     load_config, save_config, sort_urls_by_count,
     get_filter_urls, get_filter_manual_rules,
-    get_whitelist_urls, get_whitelist_rules,
+    get_whitelist_urls, get_whitelist_manual_rules,
     get_dns_urls, get_dns_manual_rules
 )
 from src.downloader import download_all
@@ -94,7 +94,7 @@ def main():
     print("\n[2/3] Processing whitelist rules...")
     whitelist_stats = process_rules(
         sources=get_whitelist_urls(config),
-        manual_rules=get_whitelist_rules(config),
+        manual_rules=get_whitelist_manual_rules(config),
         title="Merged Whitelist",
         output_path=output_dir / "whitelist.txt",
         label="output/whitelist.txt",
