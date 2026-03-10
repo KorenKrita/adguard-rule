@@ -364,6 +364,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: AdGuard Chinese
@@ -374,8 +376,6 @@ filters:
     url: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
   - name: AWAvenue Ads Rule
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
 whitelist:
   urls:
   - name: HyperADRules - Allow
