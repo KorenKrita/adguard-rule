@@ -42,10 +42,10 @@ def test_generate_header():
     header = generate_header(
         title="Test Filter",
         total=100,
-        source_stats=[{'name': 'Source1', 'count': 60, 'url': 'https://a.com'},
-                      {'name': 'Source2', 'count': 40, 'url': 'https://b.com'}]
+        source_stats=[{'name': 'Source1', 'total': 60, 'count': 60, 'percentage': 100.0, 'url': 'https://a.com'},
+                      {'name': 'Source2', 'total': 40, 'count': 40, 'percentage': 100.0, 'url': 'https://b.com'}]
     )
     assert "Test Filter" in header
     assert "Total: 100" in header
-    assert "Source1: 60" in header
-    assert "Source2: 40" in header
+    assert "60 total, 60 used (100.0%)" in header
+    assert "40 total, 40 used (100.0%)" in header

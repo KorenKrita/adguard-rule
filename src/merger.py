@@ -24,17 +24,28 @@ def merge_rules(sources: List[Dict]) -> Tuple[List[str], List[Dict]]:
     source_stats = []
     for source in sources:
         if not source['success'] or not source['content']:
+            source_stats.append({
+                'name': source['name'],
+                'total': 0,
+                'count': 0,
+                'percentage': 0.0,
+                'url': source['url']
+            })
             continue
         rules = parse_rules(source['content'])
+        total_count = len(rules)
         actual_count = 0
         for rule in rules:
             if rule not in seen:
                 seen.add(rule)
                 all_rules.append(rule)
                 actual_count += 1
+        percentage = (actual_count / total_count * 100) if total_count > 0 else 0.0
         source_stats.append({
             'name': source['name'],
+            'total': total_count,
             'count': actual_count,
+            'percentage': percentage,
             'url': source['url']
         })
     return all_rules, source_stats
@@ -50,7 +61,10 @@ def generate_header(title: str, total: int, source_stats: List[Dict]) -> str:
         "! Sources:",
     ]
     for stat in source_stats:
-        lines.append(f"!   - {stat['name']}: {stat['count']} rules ({stat['url']})")
+        total_rules = stat.get('total', stat['count'])
+        used_rules = stat['count']
+        percentage = stat.get('percentage', 100.0)
+        lines.append(f"!   - {stat['name']}: {total_rules} total, {used_rules} used ({percentage:.1f}%) - {stat['url']}")
     lines.append("!")
     lines.append("")
     return '\n'.join(lines)

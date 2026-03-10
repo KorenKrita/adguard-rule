@@ -44,7 +44,9 @@ def process_rules(
         if manual_count > 0:
             all_stats.append({
                 'name': 'Manual Rules',
+                'total': manual_count,
                 'count': manual_count,
+                'percentage': 100.0,
                 'url': 'config.yaml'
             })
 
