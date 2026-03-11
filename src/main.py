@@ -192,6 +192,22 @@ def main():
     print(f"DNS_TOTAL={dns_summary['total']}")
     print(f"DNS_COUNT={dns_summary['count']}")
 
+    # 7. 输出变体统计（供 GitHub Actions 使用）
+    print("\n[Variant Stats]")
+    print(f"DNS_FULL_COUNT={len(variants['dns_full'])}")
+    print(f"FILTER_LITE_COUNT={len(variants['filter_lite'])}")
+    print(f"DNS_LITE_COUNT={len(variants['dns_lite'])}")
+    print(f"FILTER_FULL_COUNT={len(variants['filter_full'])}")
+    # 计算去重数量
+    dns_full_filtered = dns_summary['count'] + whitelist_summary['count'] - len(variants['dns_full'])
+    filter_lite_filtered = filter_summary['count'] + whitelist_summary['count'] - len(variants['filter_lite'])
+    dns_lite_filtered = dns_summary['count'] + whitelist_summary['count'] - len(variants['dns_lite'])
+    filter_full_filtered = filter_summary['count'] + whitelist_summary['count'] - len(variants['filter_full'])
+    print(f"DNS_FULL_FILTERED={dns_full_filtered}")
+    print(f"FILTER_LITE_FILTERED={filter_lite_filtered}")
+    print(f"DNS_LITE_FILTERED={dns_lite_filtered}")
+    print(f"FILTER_FULL_FILTERED={filter_full_filtered}")
+
     print("\nDone!")
     return 0
 
