@@ -323,12 +323,12 @@ filters:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
+  - name: AdGuard Popups filter
+    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
-  - name: AdGuard Popups filter
-    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Cookie Notices filter
@@ -345,6 +345,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: Legitimate URL Shortener
@@ -353,8 +355,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Widgets filter
     url: https://filters.adtidy.org/extension/chromium/filters/22.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: Dandelion Sprout's Anti-Malware List
     url: https://filters.adtidy.org/extension/chromium/filters/259.txt
   - name: NoAppDownload
