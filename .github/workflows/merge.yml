@@ -38,6 +38,15 @@ jobs:
         grep "WHITELIST_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
         grep "DNS_TOTAL=" merger_output.log | tail -1 >> $GITHUB_ENV
         grep "DNS_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        # 变体统计
+        grep "DNS_FULL_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "FILTER_LITE_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "DNS_LITE_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "FILTER_FULL_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "DNS_FULL_FILTERED=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "FILTER_LITE_FILTERED=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "DNS_LITE_FILTERED=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "FILTER_FULL_FILTERED=" merger_output.log | tail -1 >> $GITHUB_ENV
 
     - name: Get current timestamp
       id: timestamp
@@ -67,6 +76,10 @@ jobs:
         - Filter: ${FILTER_COUNT} 条 (去重 ${FILTER_FILTERED})
         - DNS: ${DNS_COUNT} 条 (去重 ${DNS_FILTERED})
         - Whitelist: ${WHITELIST_COUNT} 条 (去重 ${WHITELIST_FILTERED})
-        
-        🔗 含变体: dns-full / filter-lite / dns-lite / filter-full"
+
+        🔀 变体统计:
+        - DNS Full: ${DNS_FULL_COUNT} 条 (去重 ${DNS_FULL_FILTERED})
+        - Filter Lite: ${FILTER_LITE_COUNT} 条 (去重 ${FILTER_LITE_FILTERED})
+        - DNS Lite: ${DNS_LITE_COUNT} 条 (去重 ${DNS_LITE_FILTERED})
+        - Filter Full: ${FILTER_FULL_COUNT} 条 (去重 ${FILTER_FULL_FILTERED})"
         git push
