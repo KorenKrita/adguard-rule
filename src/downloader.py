@@ -4,6 +4,48 @@ import concurrent.futures
 from typing import List, Dict, Optional, Tuple
 
 
+# 本地/阻止 IP 集合（用于识别 hosts 风格阻断规则）
+BLOCK_IPS = {
+    '0.0.0.0', '127.0.0.1', '::1', '0:0:0:0:0:0:0:1',
+    '127.0.1.1', '255.255.255.255'
+}
+
+
+def _is_blocking_hosts(line: str) -> bool:
+    """检查是否为屏蔽类型的 hosts 规则（指向阻止 IP）"""
+    import re
+    hosts_pattern = re.compile(
+        r'^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|'
+        r'\[?([0-9a-fA-F:]+)\]?)\s+'
+        r'(\S+)'
+    )
+    match = hosts_pattern.match(line)
+    if not match:
+        return True  # 不是 hosts 格式，保留
+    ip = match.group(1)
+    return ip in BLOCK_IPS
+
+
+def _count_rules(content: str) -> int:
+    """统计内容中的有效规则数量（与 merger.parse_rules 逻辑一致）
+
+    统计标准：
+    - 非空行
+    - 非注释行（不以 ! 开头）
+    - 非屏蔽类型的 hosts 规则（127.0.0.1, 0.0.0.0, ::1 等）
+    """
+    count = 0
+    for line in content.split('\n'):
+        line = line.strip()
+        if not line or line.startswith('!'):
+            continue
+        # 过滤非屏蔽 hosts 规则
+        if not _is_blocking_hosts(line):
+            continue
+        count += 1
+    return count
+
+
 def download_content(url: str, timeout: int = 30, retries: int = 3) -> Tuple[Optional[str], int]:
     """下载单个 URL 内容
 
@@ -23,9 +65,8 @@ def download_content(url: str, timeout: int = 30, retries: int = 3) -> Tuple[Opt
             })
             response.raise_for_status()
             content = response.text
-            # 统计非空非注释行数
-            count = len([line for line in content.split('\n')
-                        if line.strip() and not line.strip().startswith('!')])
+            # 统计有效规则数（与 merger.parse_rules 逻辑一致）
+            count = _count_rules(content)
             return content, count
         except Exception as e:
             last_error = e
