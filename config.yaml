@@ -325,10 +325,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Experimental filter
@@ -418,6 +418,8 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
@@ -428,8 +430,6 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
