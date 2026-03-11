@@ -1,8 +1,31 @@
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Dict, Tuple, Union
 
 from .semantic.deduplicator import SemanticDeduplicator
+
+# 本地/阻止 IP 集合（用于识别 hosts 风格阻断规则）
+BLOCK_IPS = {
+    '0.0.0.0', '127.0.0.1', '::1', '0:0:0:0:0:0:0:0:1',
+    '127.0.1.1', '255.255.255.255'
+}
+
+# Hosts 风格规则匹配模式
+HOSTS_PATTERN = re.compile(
+    r'^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|'  # IPv4
+    r'\[?([0-9a-fA-F:]+)\]?)\s+'              # IPv6
+    r'(\S+)'                                    # 域名
+)
+
+
+def _is_blocking_hosts(line: str) -> bool:
+    """检查是否为屏蔽类型的 hosts 规则（指向阻止 IP）"""
+    match = HOSTS_PATTERN.match(line)
+    if not match:
+        return True  # 不是 hosts 格式，保留
+    ip = match.group(1)
+    return ip in BLOCK_IPS
 
 
 def parse_rules(content: str) -> List[str]:
@@ -10,13 +33,20 @@ def parse_rules(content: str) -> List[str]:
         return []
     rules = []
     seen = set()
+    skipped_non_blocking = 0
     for line in content.split('\n'):
         line = line.strip()
         if not line or line.startswith('!'):
             continue
+        # 过滤非屏蔽 hosts 规则（如指向真实 IP 的 mtalk.google.com）
+        if not _is_blocking_hosts(line):
+            skipped_non_blocking += 1
+            continue
         if line not in seen:
             seen.add(line)
             rules.append(line)
+    if skipped_non_blocking > 0:
+        print(f"    Filtered {skipped_non_blocking} non-blocking hosts")
     return rules
 
 
