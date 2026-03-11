@@ -313,10 +313,10 @@ filters:
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
-  - name: Fanboy's Anti-Facebook List
-    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  - name: Fanboy's Anti-Facebook List
+    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: anti-AD
