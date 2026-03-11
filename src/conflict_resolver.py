@@ -58,8 +58,9 @@ class ConflictResolver:
         # 按域名对黑名单分组
         domain_groups = self._group_by_domain(blacklist)
 
-        # 跟踪要消除的黑名单规则
+        # 跟踪要消除的规则
         eliminated_blacklist: Set[ParsedRule] = set()
+        eliminated_whitelist: Set[ParsedRule] = set()
 
         # 处理每个白名单规则
         for white_rule in whitelist:
@@ -67,7 +68,8 @@ class ConflictResolver:
             related_blacklists = self._find_related_blacklists(white_rule, domain_groups)
 
             if not related_blacklists:
-                # 没有相关的黑名单，这个白名单规则不需要
+                # 没有相关的黑名单，这个白名单规则没有用处，消除
+                eliminated_whitelist.add(white_rule)
                 continue
 
             # 检查是否为"注册模式"
@@ -87,11 +89,13 @@ class ConflictResolver:
             # 将被覆盖的规则加入消除集合
             eliminated_blacklist.update(covered_blacklists)
 
-        # 计算保留的黑名单（未被消除的）
-        kept_blacklist = [rule for rule in blacklist if rule not in eliminated_blacklist]
+            # 完全覆盖：白名单也消除（原始需求：完全冲突的就完全消除掉两者）
+            if len(covered_blacklists) == len(related_blacklists) and covered_blacklists:
+                eliminated_whitelist.add(white_rule)
 
-        # 白名单全部保留（它们有明确的豁免意图）
-        kept_whitelist = whitelist
+        # 计算保留的规则（未被消除的）
+        kept_blacklist = [rule for rule in blacklist if rule not in eliminated_blacklist]
+        kept_whitelist = [rule for rule in whitelist if rule not in eliminated_whitelist]
 
         return kept_blacklist, kept_whitelist
 
@@ -246,8 +250,8 @@ class ConflictResolver:
                 related.extend(domain_groups[pattern])
             return related
 
-        # DNS 相关的规则类型
-        dns_types = {RuleType.HOSTS, RuleType.DOMAIN_ONLY, RuleType.DNS_FILTER, RuleType.AD_BLOCK}
+        # DNS 相关的规则类型（包含 EXCEPTION 以支持 @@ 白名单规则）
+        dns_types = {RuleType.HOSTS, RuleType.DOMAIN_ONLY, RuleType.DNS_FILTER, RuleType.AD_BLOCK, RuleType.EXCEPTION}
 
         # 直接查找相同域名的规则
         if white_domain in domain_groups:

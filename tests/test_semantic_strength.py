@@ -196,6 +196,11 @@ class TestStrengthCovers:
         assert evaluator.covers(rule1, rule2)
 
     def test_exception_incompatible(self):
+        """Test exception/normal coverage directionality.
+
+        - Normal CANNOT cover exception (blacklist can't cancel whitelist)
+        - Exception CAN cover normal (whitelist cancels blacklist - needed for conflict resolution)
+        """
         evaluator = StrengthEvaluator()
         normal = ParsedRule(
             raw="||example.com^",
@@ -214,8 +219,8 @@ class TestStrengthCovers:
             normalized_domain="example.com"
         )
 
-        assert not evaluator.covers(normal, exception)
-        assert not evaluator.covers(exception, normal)
+        assert not evaluator.covers(normal, exception)  # blacklist can't cancel whitelist
+        assert evaluator.covers(exception, normal)  # whitelist CAN cancel blacklist
 
     def test_no_domain_info(self):
         evaluator = StrengthEvaluator()

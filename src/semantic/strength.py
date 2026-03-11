@@ -157,9 +157,14 @@ class StrengthEvaluator:
         # 类型必须相同或是父子关系
         if rule1.rule_type != rule2.rule_type:
             # DNS 规则类型之间可以比较
-            dns_types = {RuleType.HOSTS, RuleType.DOMAIN_ONLY, RuleType.DNS_FILTER}
+            dns_types = {RuleType.HOSTS, RuleType.DOMAIN_ONLY, RuleType.DNS_FILTER, RuleType.EXCEPTION}
             if rule1.rule_type not in dns_types or rule2.rule_type not in dns_types:
                 return False
+
+        # 非例外规则不能覆盖例外规则（语义方向不同）
+        # 例外规则可以覆盖非例外规则（白名单消除黑名单）
+        if not rule1.is_exception and rule2.is_exception:
+            return False
 
         # 获取域名
         domain1 = rule1.normalized_domain

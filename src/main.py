@@ -21,7 +21,7 @@ def process_rules(
     title: str,
     output_path: Path,
     label: str,
-) -> Tuple[Dict, List[Dict]]:
+) -> Tuple[Dict, List[Dict], List[str]]:
     """下载、合并、去重并写出规则文件
 
     Args:
@@ -171,7 +171,7 @@ def main():
         write_output(output_path, header, rules)
         print(f"  -> {len(rules)} rules written to output/{filename}.txt")
 
-    # 5. 输出去重统计（供 GitHub Actions 使用）
+    # 6. 输出去重统计（供 GitHub Actions 使用）
     print("\n[Dedup Stats]")
     print(f"FILTER_TOTAL={filter_summary['total']}")
     print(f"FILTER_COUNT={filter_summary['count']}")
