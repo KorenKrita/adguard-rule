@@ -11,6 +11,7 @@ from src.config import (
 )
 from src.downloader import download_all
 from src.merger import merge_rules, generate_header, write_output
+from src.semantic.deduplicator import SemanticDeduplicator
 
 
 def process_rules(
@@ -19,7 +20,7 @@ def process_rules(
     title: str,
     output_path: Path,
     label: str,
-) -> List[Dict]:
+) -> Tuple[Dict, List[Dict]]:
     """下载、合并、去重并写出规则文件
 
     Args:
@@ -30,16 +31,21 @@ def process_rules(
         label: 用于打印日志的文件名标识
 
     Returns:
-        统计信息列表
+        (汇总统计, 详细统计信息列表)
+        汇总统计包含: total(原始总数), count(去重后数量)
     """
     all_rules: List[str] = []
     all_stats: List[Dict] = []
+    total_input = 0
 
     if sources:
         results = download_all(sources)
         rules, stats = merge_rules(results)
         all_rules.extend(rules)
         all_stats.extend(stats)
+        # 计算原始总数
+        for stat in stats:
+            total_input += stat.get('total', 0)
 
     if manual_rules:
         seen = set(all_rules)
@@ -50,6 +56,7 @@ def process_rules(
                 seen.add(rule)
                 all_rules.append(rule)
                 manual_count += 1
+        total_input += manual_total
         if manual_count > 0:
             percentage = (manual_count / manual_total * 100) if manual_total > 0 else 0.0
             all_stats.append({
@@ -60,14 +67,31 @@ def process_rules(
                 'url': 'config.yaml'
             })
 
+    # 阶段2：语义去重（识别功能等价但语法不同的规则，保留更强的规则）
+    semantic_deduped_count = 0
+    if all_rules:
+        deduplicator = SemanticDeduplicator()
+        final_rules = deduplicator.process_batch(all_rules)
+        semantic_deduped_count = len(all_rules) - len(final_rules)
+        all_rules = final_rules
+
     if all_rules:
         header = generate_header(title, len(all_rules), all_stats)
         write_output(output_path, header, all_rules)
-        print(f"  -> {len(all_rules)} rules written to {label}")
+        total_filtered = total_input - len(all_rules)
+        print(f"  -> {len(all_rules)} rules written to {label} (filtered {total_filtered} duplicates")
+        if semantic_deduped_count > 0:
+            print(f"      including {semantic_deduped_count} semantic duplicates)")
+        else:
+            print(")")
     else:
         print(f"  -> No sources configured for {label}")
 
-    return all_stats
+    summary = {
+        'total': total_input,
+        'count': len(all_rules)
+    }
+    return summary, all_stats
 
 
 def main():
@@ -82,7 +106,7 @@ def main():
 
     # 1. 处理广告过滤规则
     print("\n[1/3] Processing filter rules...")
-    filter_stats = process_rules(
+    filter_summary, filter_stats = process_rules(
         sources=get_filter_urls(config),
         manual_rules=get_filter_manual_rules(config),
         title="Merged Filter",
@@ -92,7 +116,7 @@ def main():
 
     # 2. 处理白名单规则
     print("\n[2/3] Processing whitelist rules...")
-    whitelist_stats = process_rules(
+    whitelist_summary, whitelist_stats = process_rules(
         sources=get_whitelist_urls(config),
         manual_rules=get_whitelist_manual_rules(config),
         title="Merged Whitelist",
@@ -102,7 +126,7 @@ def main():
 
     # 3. 处理 DNS 过滤规则
     print("\n[3/3] Processing DNS filter rules...")
-    dns_stats = process_rules(
+    dns_summary, dns_stats = process_rules(
         sources=get_dns_urls(config),
         manual_rules=get_dns_manual_rules(config),
         title="Merged DNS Filter",
@@ -121,6 +145,15 @@ def main():
         print("  -> Config order updated")
     except Exception as e:
         print(f"  -> Failed to save config: {e}")
+
+    # 5. 输出去重统计（供 GitHub Actions 使用）
+    print("\n[Dedup Stats]")
+    print(f"FILTER_TOTAL={filter_summary['total']}")
+    print(f"FILTER_COUNT={filter_summary['count']}")
+    print(f"WHITELIST_TOTAL={whitelist_summary['total']}")
+    print(f"WHITELIST_COUNT={whitelist_summary['count']}")
+    print(f"DNS_TOTAL={dns_summary['total']}")
+    print(f"DNS_COUNT={dns_summary['count']}")
 
     print("\nDone!")
     return 0

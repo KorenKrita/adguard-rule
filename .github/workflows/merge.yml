@@ -27,7 +27,14 @@ jobs:
 
     - name: Run merger
       run: |
-        python -m src.main
+        python -m src.main | tee merger_output.log
+        # 解析统计信息到环境变量
+        grep "FILTER_TOTAL=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "FILTER_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "WHITELIST_TOTAL=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "WHITELIST_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "DNS_TOTAL=" merger_output.log | tail -1 >> $GITHUB_ENV
+        grep "DNS_COUNT=" merger_output.log | tail -1 >> $GITHUB_ENV
 
     - name: Get current timestamp
       id: timestamp
@@ -39,9 +46,10 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        FILTER_COUNT=$(grep "^! Total:" output/filter.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
-        WHITELIST_COUNT=$(grep "^! Total:" output/whitelist.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
-        DNS_COUNT=$(grep "^! Total:" output/dns.txt | head -1 | sed 's/.*Total: \([0-9]*\).*/\1/' || echo 0)
+        # 计算去重数量
+        FILTER_FILTERED=$((FILTER_TOTAL - FILTER_COUNT))
+        WHITELIST_FILTERED=$((WHITELIST_TOTAL - WHITELIST_COUNT))
+        DNS_FILTERED=$((DNS_TOTAL - DNS_COUNT))
 
         git add output/ config.yaml
 
@@ -50,5 +58,5 @@ jobs:
           exit 0
         fi
 
-        git commit -m "Update rules: filter=${FILTER_COUNT}, whitelist=${WHITELIST_COUNT}, dns=${DNS_COUNT} [${{ steps.timestamp.outputs.time }}]"
+        git commit -m "Update rules: filter=${FILTER_COUNT}(-${FILTER_FILTERED}), whitelist=${WHITELIST_COUNT}(-${WHITELIST_FILTERED}), dns=${DNS_COUNT}(-${DNS_FILTERED}) [${{ steps.timestamp.outputs.time }}]"
         git push
