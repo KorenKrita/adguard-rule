@@ -12,6 +12,7 @@ from src.config import (
 from src.downloader import download_all
 from src.merger import merge_rules, generate_header, write_output
 from src.semantic.deduplicator import SemanticDeduplicator
+from src.variant_generator import VariantGenerator
 
 
 def process_rules(
@@ -91,7 +92,7 @@ def process_rules(
         'total': total_input,
         'count': len(all_rules)
     }
-    return summary, all_stats
+    return summary, all_stats, all_rules  # Return rules for variant generation
 
 
 def main():
@@ -106,7 +107,7 @@ def main():
 
     # 1. 处理广告过滤规则
     print("\n[1/3] Processing filter rules...")
-    filter_summary, filter_stats = process_rules(
+    filter_summary, filter_stats, filter_rules = process_rules(
         sources=get_filter_urls(config),
         manual_rules=get_filter_manual_rules(config),
         title="Merged Filter",
@@ -116,7 +117,7 @@ def main():
 
     # 2. 处理白名单规则
     print("\n[2/3] Processing whitelist rules...")
-    whitelist_summary, whitelist_stats = process_rules(
+    whitelist_summary, whitelist_stats, whitelist_rules = process_rules(
         sources=get_whitelist_urls(config),
         manual_rules=get_whitelist_manual_rules(config),
         title="Merged Whitelist",
@@ -126,7 +127,7 @@ def main():
 
     # 3. 处理 DNS 过滤规则
     print("\n[3/3] Processing DNS filter rules...")
-    dns_summary, dns_stats = process_rules(
+    dns_summary, dns_stats, dns_rules = process_rules(
         sources=get_dns_urls(config),
         manual_rules=get_dns_manual_rules(config),
         title="Merged DNS Filter",
@@ -145,6 +146,30 @@ def main():
         print("  -> Config order updated")
     except Exception as e:
         print(f"  -> Failed to save config: {e}")
+
+    # 5. 生成高级变体文件
+    print("\n[5/5] Generating variant files...")
+    generator = VariantGenerator()
+    variants = generator.generate(
+        filter_rules=filter_rules,
+        dns_rules=dns_rules,
+        whitelist_rules=whitelist_rules
+    )
+
+    # 写入变体文件
+    variant_names = {
+        'dns_full': ("Merged DNS Full (DNS Priority)", "dns-full"),
+        'filter_lite': ("Merged Filter Lite (DNS Priority)", "filter-lite"),
+        'dns_lite': ("Merged DNS Lite (Filter Priority)", "dns-lite"),
+        'filter_full': ("Merged Filter Full (Filter Priority)", "filter-full"),
+    }
+
+    for name, rules in variants.items():
+        title, filename = variant_names[name]
+        output_path = output_dir / f"{filename}.txt"
+        header = generate_header(title, len(rules), [])
+        write_output(output_path, header, rules)
+        print(f"  -> {len(rules)} rules written to output/{filename}.txt")
 
     # 5. 输出去重统计（供 GitHub Actions 使用）
     print("\n[Dedup Stats]")
