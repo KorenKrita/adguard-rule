@@ -157,17 +157,29 @@ def main():
     )
 
     # 写入变体文件
-    variant_names = {
-        'dns_full': ("Merged DNS Full (DNS Priority)", "dns-full"),
-        'filter_lite': ("Merged Filter Lite (DNS Priority)", "filter-lite"),
-        'dns_lite': ("Merged DNS Lite (Filter Priority)", "dns-lite"),
-        'filter_full': ("Merged Filter Full (Filter Priority)", "filter-full"),
+    variant_meta = {
+        'dns_full': ("Merged DNS Full (DNS Priority)", "dns-full",
+                     f"DNS priority variant: original DNS {dns_summary['count']}, whitelist {whitelist_summary['count']} applied"),
+        'filter_lite': ("Merged Filter Lite (DNS Priority)", "filter-lite",
+                        f"DNS priority variant: original Filter {filter_summary['count']}, DNS duplicates removed"),
+        'dns_lite': ("Merged DNS Lite (Filter Priority)", "dns-lite",
+                     f"Filter priority variant: original DNS {dns_summary['count']}, Filter duplicates removed"),
+        'filter_full': ("Merged Filter Full (Filter Priority)", "filter-full",
+                        f"Filter priority variant: original Filter {filter_summary['count']}, whitelist {whitelist_summary['count']} applied"),
     }
 
     for name, rules in variants.items():
-        title, filename = variant_names[name]
+        title, filename, description = variant_meta[name]
         output_path = output_dir / f"{filename}.txt"
-        header = generate_header(title, len(rules), [])
+        # 为变体文件生成简要统计
+        variant_stats = [{
+            'name': description,
+            'total': len(rules),
+            'count': len(rules),
+            'percentage': 100.0,
+            'url': 'variant'
+        }]
+        header = generate_header(title, len(rules), variant_stats)
         write_output(output_path, header, rules)
         print(f"  -> {len(rules)} rules written to output/{filename}.txt")
 

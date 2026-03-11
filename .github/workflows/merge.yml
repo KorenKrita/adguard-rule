@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   merge:
     runs-on: ubuntu-latest
@@ -58,5 +61,12 @@ jobs:
           exit 0
         fi
 
-        git commit -m "Update rules: filter=${FILTER_COUNT}(-${FILTER_FILTERED}), whitelist=${WHITELIST_COUNT}(-${WHITELIST_FILTERED}), dns=${DNS_COUNT}(-${DNS_FILTERED}) [${{ steps.timestamp.outputs.time }}]"
+        git commit -m "chore: 🔄 更新规则 ${{ steps.timestamp.outputs.time }}
+
+        📊 规则统计:
+        - Filter: ${FILTER_COUNT} 条 (去重 ${FILTER_FILTERED})
+        - DNS: ${DNS_COUNT} 条 (去重 ${DNS_FILTERED})
+        - Whitelist: ${WHITELIST_COUNT} 条 (去重 ${WHITELIST_FILTERED})
+        
+        🔗 含变体: dns-full / filter-lite / dns-lite / filter-full"
         git push
