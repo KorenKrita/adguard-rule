@@ -313,38 +313,40 @@ filters:
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+  - name: AdGuard Moblie
+    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
-  - name: AdGuard Moblie
-    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  - name: AdGuard Cookie Notices filter
+    url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard URL Tracking filter
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
-  - name: AdGuard Cookie Notices filter
-    url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: AdGuard Widgets filter
+    url: https://filters.adtidy.org/extension/chromium/filters/22.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
@@ -353,8 +355,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/251.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
-  - name: AdGuard Widgets filter
-    url: https://filters.adtidy.org/extension/chromium/filters/22.txt
   - name: Dandelion Sprout's Anti-Malware List
     url: https://filters.adtidy.org/extension/chromium/filters/259.txt
   - name: NoAppDownload
