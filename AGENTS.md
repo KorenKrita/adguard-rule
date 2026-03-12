@@ -1,0 +1,35 @@
+These instructions apply to the entire repository unless a deeper `AGENTS.md` overrides them.
+- This repository is a Python tool that merges AdGuard filter sources, removes duplicates, and generates optimized output rule files.
+- Main code lives in `src/`.
+- Tests live in `tests/`.
+- Design notes live in `docs/`.
+- Generated rule outputs live in `output/`.
+- Keep changes focused and minimal.
+- Fix root causes rather than layering on one-off patches.
+- Do not manually edit generated files in `output/` unless the user explicitly asks for that.
+- Prefer changing source code, tests, or docs instead of checking in regenerated output files unless the task specifically requires regeneration.
+- Preserve existing public behavior unless the task requires a behavior change.
+- Use Python 3.
+- Install dependencies with:
+  - `pip install -r requirements.txt`
+- Run the app with:
+  - `python -m src.main`
+- Run tests with:
+  - `python -m pytest tests/ -v`
+- Match the existing straightforward Python style.
+- Keep functions small and readable.
+- Preserve and extend type hints where practical.
+- Follow existing naming patterns in `src/` and `tests/`.
+- Prefer explicit logic over clever abstractions.
+- Keep comments and docstrings concise; existing Chinese comments/docstrings are fine and should stay consistent with nearby code.
+- For behavior changes, run the most relevant targeted tests first, then broaden only as needed.
+- When changing semantic deduplication logic, prioritize the `tests/test_semantic_*.py` suite.
+- When changing merge/output behavior, prioritize `tests/test_merger.py`, `tests/test_conflict_resolver.py`, and `tests/test_variant_generator.py`.
+- Avoid network-dependent tests; mock downloads instead of relying on live remote lists.
+- `config.yaml` is user configuration; only modify it when the task explicitly requires config changes.
+- `docs/` contains design documentation; update it when behavior or architecture meaningfully changes.
+- `output/*.txt` are generated artifacts; treat them as build outputs even if they are committed.
+- `tools/` contains helper scripts for analysis; prefer reusing them over writing throwaway scripts when applicable.
+- Normal application runs may download remote filter lists. Be careful when running the full pipeline in restricted or offline environments.
+- Do not introduce dependencies without a clear need.
+- If a change affects generated rule counts or output formats, mention that in the final summary.
