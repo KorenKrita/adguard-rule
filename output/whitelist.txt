@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-11 11:08:54 UTC
-! Total: 6638 rules
+! Updated: 2026-03-12 04:13:36 UTC
+! Total: 6639 rules
 ! Sources:
-!   - HyperADRules - Allow: 8700 total, 8700 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 8706 total, 8706 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3318 total, 3251 used (98.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -233,7 +233,6 @@
 @@||9zvip.net/wp-content/plugins/detect-adblock/js/ads.js
 @@||a-adq.mediation.unity3d.com^$app=jp.step_official
 @@||a-fds.youborafds01.com/data?$xmlhttprequest,domain=pluto.tv
-@@||a.adwolf.ru^
 @@||a.alimama.cn/tkapi$domain=ieeee.com
 @@||a.applovin.com^$app=ac.hush.app
 @@||a.bf-ad.net/adengine/fff/adengine.js$domain=fitforfun.de
@@ -310,7 +309,7 @@
 @@||ad.crwdcntrl.net^$domain=ap.org
 @@||ad.de.doubleclick.net/imp;$object,domain=rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
 @@||ad.dotandad.com/mediamond_vm.jsp$domain=video.mediaset.it
-@@||ad.doubleclick.net/clk;$urlblock
+@@||ad.doubleclick.net/clk*&destinationURL=$popup
 @@||ad.ettoday.net/msg_liveshow.php^$domain=ettoday.net
 @@||ad.ext.azure.cn^
 @@||ad.ext.azure.com^
@@ -357,6 +356,7 @@
 @@||adm.fwmrm.net^$domain=revision3.com
 @@||adm.fwmrm.net^*/TremorAdRenderer.$object,domain=go.com
 @@||admin.corrata.com/console/dcconsolews/event-log?$~third-party
+@@||admin.dable.io^
 @@||admin.mailchimp.com^
 @@||admin.memberspace.com/sites/*/analytics/views$~third-party
 @@||admob.google.com/static/$domain=admob.google.com
@@ -417,7 +417,7 @@
 @@||ads.mperience.net/vast$domain=imasdk.googleapis.com
 @@||ads.pinterest.com^
 @@||ads.privacy.qq.com^
-@@||ads.pubmatic.com/AdServer/js/pwtSync/$script,subdocument,domain=dnaindia.com|independent.co.uk
+@@||ads.pubmatic.com/adserver/js/$script,domain=wionews.com|zeebiz.com
 @@||ads.pubmatic.com^|$xmlhttprequest,domain=cuttlinks.com|exe-links.com|cuttty.com|cuttyy.com|cutynow.com|exnion.com|cutyion.com|jixo.online|exe-urls.com|evernia.site|ijvam.com|mrgec.com|emxaw.com|cety.app|cutnet.net
 @@||ads.reddit.com^$domain=myqqjd.com
 @@||ads.remix.es/advertisement.js|
@@ -1084,6 +1084,7 @@
 @@||cdek.ru^$stealth=useragent
 @@||cdn*.anyclip.com^$domain=content.dictionary.com
 @@||cdn*.jianshu.io^$stealth=referrer
+@@||cdn*.merrypsycho.xyz^$image,stealth=referrer,domain=bbato.com
 @@||cdn*.movcdn.*^$xmlhttprequest,stealth=referrer|ip,domain=moeni.net
 @@||cdn*.pw/stream2/cdn-*/index.m3u8$stealth=ip|referrer
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
@@ -1213,6 +1214,7 @@
 @@||cdn.vox-cdn.com/packs/js/concert_ads-*.js$domain=arrowheadpride.com
 @@||cdn.wazimo.com/engine/common/js/$domain=lastnighton.com
 @@||cdn.wgchrrammzv.com/prod/ajc/loader.min.js$domain=journal-news.com
+@@||cdn.zinmanga1.com^$image,stealth=referrer,domain=shonenmangaz.com
 @@||cdn1.comicknew.pictures^$image,stealth=referrer
 @@||cdncontent.wakanim.tv/scripts/dist/ads.js
 @@||cdndm5.com^$stealth=referrer
@@ -1796,6 +1798,7 @@
 @@||embed.redditmedia.com/widgets/platform.js$domain=gamerant.com
 @@||embed.wcostream.com/inc/embed/*.js$domain=embed.wcostream.com
 @@||embeddedanalytics.com/updateeakpi.html$domain=brocardi.it
+@@||embedseek.online^$subdocument,stealth=referrer
 @@||emea.api.flow.microsoft.com/providers/Microsoft.ProcessSimple/environments/$domain=make.powerautomate.com,stealth=referrer
 @@||emerald.omeda.com/npdn/custsrv_login.do
 @@||emjcd.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
@@ -2437,7 +2440,6 @@
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infotop.jp/html/ad/$image,~third-party
 @@||infowars.com/wp-content/themes/$image
-@@||infra-api.newrelic.com^
 @@||infusionsoft.app/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||infusionsoft.com/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||ing-diba.de^*/sitestat.js
@@ -2808,6 +2810,7 @@
 @@||m.youtube.com^$important
 @@||m.zhuanzhuan.com^$important
 @@||m1tm.insideevs.com/gtm.js$~third-party
+@@||m3pd.com/key=$media,stealth=referrer
 @@||ma-x.org^$generichide
 @@||mabanque.fortuneo.fr/js/front/fingerprint2.js$script,domain=mabanque.fortuneo.fr
 @@||macan-native.com/sdk/latest/sensorsdata.min.js$domain=streamelements.com
@@ -3001,7 +3004,6 @@
 @@||mmaa99.xyz^$generichide
 @@||mmcref.pl/?$removeparam=utm_medium
 @@||mmee04.com^$generichide
-@@||mmff30.com^$generichide
 @@||mmgd.xyz^$generichide
 @@||mmstat.com/eg.js$domain=1688.com|taobao.com|tmall.com|tudou.com|youku.com
 @@||mmuu22.link^$generichide
@@ -3232,6 +3234,7 @@
 @@||offgamers.com/checkout/buyNow/$document,xmlhttprequest
 @@||officeapps.live.com/*.aspx$stealth
 @@||officeworks.com.au^*/site-tracker.js
+@@||official.paymaya.com^
 @@||oglaszamy24.pl/*js-css/reklamy/bannery/*/adv.js
 @@||ohmanhua.com/js/*.js
 @@||ohmynews.com/NWS_Web/Common/JS/TagManager.JS
@@ -3515,6 +3518,7 @@
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
 @@||promiflash.de/static/js/pf-web-*.js$domain=promiflash.de
 @@||promo.com/embed/$subdocument,third-party
+@@||promo.gramedia.com^
 @@||promo.zendesk.com^$xmlhttprequest,domain=promo.com
 @@||promods.net/*.js$~third-party
 @@||proper.io/embed/$domain=explosm.net
@@ -3532,7 +3536,6 @@
 @@||pstatic.net^$image,stealth=referrer
 @@||pstatp.com^$important
 @@||pt.afl.rakuten.co.jp^
-@@||ptah.m3pd.com/key=$media,domain=porntop.com,stealth=referrer
 @@||pttcell.com.tr^$stealth=dpi
 @@||pttplay.com/js/momo/adsbygoogle.js
 @@||pub.doubleverify.com/dvtag/$domain=time.com
@@ -3786,7 +3789,6 @@
 @@||seadragons.io/ads.js
 @@||seal.globalsign.com^$app=jp.co.alc.eow
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
-@@||searchtap.net^$stealth=3p-auth,domain=designerframesoutlet.com
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||sec-cdn.static.xiaomi.net^$important
 @@||sec.resource.xiaomi.net^$important
@@ -4097,7 +4099,7 @@
 @@||sto520.com^$generichide
 @@||storage.embluemail.com/pixeltracking^$domain=lavoz.com.ar
 @@||storage.live.com^
-@@||storage.waitst.com^$stealth=referrer,image,domain=mangakakalot.gg
+@@||storage.waitst.com^$image,stealth=referrer,domain=mangabats.com
 @@||storage.yandex.net/rdisk/$stealth=referrer
 @@||store-web.dynamics.com^$stealth=3p-auth
 @@||store.storeimages.cdn-apple.com^$domain=apple.com,stealth=referrer
@@ -4117,6 +4119,7 @@
 @@||streanplay.cc^$stealth
 @@||stripe.com^$domain=app.axenthost.com
 @@||studioclassroom.com/ad/
+@@||stvkr.com/v*/click-$popup,domain=pepper.*
 @@||stylished.de/js/vendors/emos2.js$domain=stylished.de
 @@||stylist.co.uk^$stealth=dpi
 @@||succeedscene.com^$script
@@ -5648,7 +5651,6 @@
 @@||intro.limestart.cn^
 @@||io75a.ocloud.heytapmobi.com^
 @@||ip.900cha.com^
-@@||iptn.m3pd.com^
 @@||ipv4dns.com^
 @@||ipv6.ping0.cc^
 @@||ipw.cn^
@@ -6118,7 +6120,6 @@
 @@||protection.office.com^$important
 @@||provisioningapi.microsoftonline.com^$important
 @@||ptlogin.yuewen.com^
-@@||pttn.m3pd.com^
 @@||ptx.cdntrex.com^
 @@||pub.idqqimg.com^
 @@||puds.ucweb.com^
