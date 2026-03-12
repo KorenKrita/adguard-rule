@@ -2,16 +2,7 @@ import re
 from typing import Optional, Tuple, Dict, Any
 
 from .types import ParsedRule, RuleType
-
-
-# 最大规则长度（与 AdGuard 一致）
-MAX_RULE_LENGTH = 4096
-
-# 本地/阻止 IP 集合（用于识别 hosts 风格阻断规则）
-BLOCK_IPS = {
-    '0.0.0.0', '127.0.0.1', '::1', '0:0:0:0:0:0:0:1',
-    '127.0.1.1', '255.255.255.255'
-}
+from ..constants import BLOCK_IPS, HOSTS_PATTERN, MAX_RULE_LENGTH
 
 # 修饰符分隔符
 MODIFIER_SEPARATORS = {',', '|'}
@@ -23,12 +14,8 @@ COMMENT_MARKERS = {'!', '#'}
 class RuleParser:
     """AdGuard 规则专用解析器"""
 
-    # 正则表达式模式
-    HOSTS_PATTERN = re.compile(
-        r'^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|'  # IPv4
-        r'\[?([0-9a-fA-F:]+)\]?)\s+'              # IPv6
-        r'(\S+)'                                    # 域名
-    )
+    # 正则表达式模式（使用预编译的正则提高性能）
+    HOSTS_REGEX = re.compile(HOSTS_PATTERN)
 
     DOMAIN_ONLY_PATTERN = re.compile(
         r'^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+'
@@ -111,7 +98,7 @@ class RuleParser:
 
     def _is_hosts_style(self, line: str) -> bool:
         """检查是否为 /etc/hosts 风格"""
-        return bool(self.HOSTS_PATTERN.match(line))
+        return bool(self.HOSTS_REGEX.match(line))
 
     def _is_domain_only(self, line: str) -> bool:
         """检查是否为纯域名"""
@@ -131,7 +118,7 @@ class RuleParser:
 
     def _parse_hosts(self, line: str) -> ParsedRule:
         """解析 /etc/hosts 风格规则"""
-        match = self.HOSTS_PATTERN.match(line)
+        match = self.HOSTS_REGEX.match(line)
         if not match:
             raise ValueError(f"Invalid hosts rule: {line}")
 

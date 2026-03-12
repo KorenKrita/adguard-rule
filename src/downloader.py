@@ -1,25 +1,19 @@
 # src/downloader.py
+import re
 import requests
 import concurrent.futures
 from typing import List, Dict, Optional, Tuple
 
+from .constants import BLOCK_IPS, HOSTS_PATTERN
 
-# 本地/阻止 IP 集合（用于识别 hosts 风格阻断规则）
-BLOCK_IPS = {
-    '0.0.0.0', '127.0.0.1', '::1', '0:0:0:0:0:0:0:1',
-    '127.0.1.1', '255.255.255.255'
-}
+
+# 编译正则表达式（模块级别只编译一次）
+HOSTS_REGEX = re.compile(HOSTS_PATTERN)
 
 
 def _is_blocking_hosts(line: str) -> bool:
     """检查是否为屏蔽类型的 hosts 规则（指向阻止 IP）"""
-    import re
-    hosts_pattern = re.compile(
-        r'^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|'
-        r'\[?([0-9a-fA-F:]+)\]?)\s+'
-        r'(\S+)'
-    )
-    match = hosts_pattern.match(line)
+    match = HOSTS_REGEX.match(line)
     if not match:
         return True  # 不是 hosts 格式，保留
     ip = match.group(1)

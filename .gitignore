@@ -21,3 +21,6 @@ docs/plans/
 
 # Worktrees
 .worktrees/
+
+# Self-improvement learnings (per-developer)
+.learnings/

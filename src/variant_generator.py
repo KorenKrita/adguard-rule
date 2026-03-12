@@ -230,7 +230,7 @@ class VariantGenerator:
             (includes both surviving blacklist AND surviving whitelist rules)
         """
         if not whitelist:
-            return list(rules)
+            return rules
 
         kept_blacklist, kept_whitelist = self.conflict.resolve(whitelist, rules)
         return kept_blacklist + kept_whitelist

@@ -9,6 +9,20 @@ class CanonicalFormBuilder:
     注意：只用于比较，不改变原始输出
     """
 
+    def __init__(self):
+        """初始化规范化构建器"""
+        # 使用简单 dict 缓存，key 为规则原始文本，value 为规范化键
+        # 规则总量在 10 万级别，内存占用很小，无需 LRU 策略
+        self._cache: Dict[str, str] = {}
+
+    def _get_from_cache(self, rule: ParsedRule) -> Optional[str]:
+        """从缓存获取结果"""
+        return self._cache.get(rule.raw)
+
+    def _add_to_cache(self, rule: ParsedRule, canonical_key: str) -> None:
+        """添加结果到缓存"""
+        self._cache[rule.raw] = canonical_key
+
     # 修饰符别名映射（简写 -> 标准名）
     MODIFIER_ALIASES = {
         'doc': 'document',
@@ -48,24 +62,32 @@ class CanonicalFormBuilder:
         返回的字符串格式：
         - DNS规则: "dns:block:example.com" 或 "dns:allow:example.com"
         - 过滤规则: "filter:block:example.com:modifier1,modifier2"
+
+        注意：使用缓存机制优化重复计算
         """
+        # 首先检查缓存
+        cached = self._get_from_cache(rule)
+        if cached is not None:
+            return cached
+
+        # 计算规范化键
         if rule.rule_type in (RuleType.HOSTS, RuleType.DOMAIN_ONLY):
-            return self._canonical_dns_exact(rule)
+            result = self._canonical_dns_exact(rule)
+        elif rule.rule_type == RuleType.DNS_FILTER:
+            result = self._canonical_dns_wildcard(rule)
+        elif rule.rule_type == RuleType.AD_BLOCK:
+            result = self._canonical_adblock(rule)
+        elif rule.rule_type == RuleType.EXCEPTION:
+            result = self._canonical_exception(rule)
+        elif rule.rule_type == RuleType.COSMETIC:
+            result = self._canonical_cosmetic(rule)
+        else:
+            # 未知类型返回原始文本
+            result = f"unknown:{rule.raw}"
 
-        if rule.rule_type == RuleType.DNS_FILTER:
-            return self._canonical_dns_wildcard(rule)
-
-        if rule.rule_type == RuleType.AD_BLOCK:
-            return self._canonical_adblock(rule)
-
-        if rule.rule_type == RuleType.EXCEPTION:
-            return self._canonical_exception(rule)
-
-        if rule.rule_type == RuleType.COSMETIC:
-            return self._canonical_cosmetic(rule)
-
-        # 未知类型返回原始文本
-        return f"unknown:{rule.raw}"
+        # 存入缓存
+        self._add_to_cache(rule, result)
+        return result
 
     def _canonical_dns_exact(self, rule: ParsedRule) -> str:
         """
