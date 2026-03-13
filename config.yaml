@@ -317,20 +317,20 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
-  - name: AdGuard Popups filter
-    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  - name: AdGuard Popups filter
+    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard URL Tracking filter
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
@@ -345,6 +345,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: Peter Lowe's Blocklist
+    url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Widgets filter
     url: https://filters.adtidy.org/extension/chromium/filters/22.txt
   - name: EasyList Cookie List
@@ -353,8 +355,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: Legitimate URL Shortener
     url: https://filters.adtidy.org/extension/chromium/filters/251.txt
-  - name: Peter Lowe's Blocklist
-    url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: Dandelion Sprout's Anti-Malware List
     url: https://filters.adtidy.org/extension/chromium/filters/259.txt
   - name: NoAppDownload
@@ -424,10 +424,10 @@ dns:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
