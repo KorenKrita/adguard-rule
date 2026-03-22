@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-21 01:57:07 UTC
-! Total: 6657 rules
+! Updated: 2026-03-22 02:09:49 UTC
+! Total: 6660 rules
 ! Sources:
 !   - HyperADRules - Allow: 8699 total, 8699 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3370 total, 3303 used (98.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3373 total, 3306 used (98.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -260,7 +260,6 @@
 @@||abt.nike.com^$domain=nike.com
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
-@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||accaii.com^$domain=kyuusai2nd.net
@@ -280,10 +279,7 @@
 @@||acid3.acidtests.org^$document
 @@||acornsquare.jp^$stealth=dpi
 @@||acortalink.me/s.php?$stealth=referrer
-@@||acs-m.daraz.com.bd^
-@@||acs-m.daraz.pk^
 @@||acs.m.taobao.com^
-@@||action.metaffiliation.com^
 @@||actiris.be/urchin.js
 @@||activity.tuiapple.com^$important
 @@||ad-api-v01.uliza.jp^$script,xmlhttprequest,domain=golfnetwork.co.jp|tv-asahi.co.jp
@@ -346,6 +342,7 @@
 @@||addons.opera.com/extensions/download/$stealth
 @@||addthis.com/*-angularjs.min.js$script,domain=ead.senac.br|missingkids.com|missingkids.org
 @@||adguard.com^$stealth
+@@||adguardpartner.com^$generichide,genericblock
 @@||adidas.com^*/adidasAnalytics.js?
 @@||adidasapp.api.adidas.com.cn^$important
 @@||adidasoriginals-lookbook.com.tw/js/adtracking.js
@@ -1068,6 +1065,7 @@
 @@||cat.telia.no/gtm.js$script,domain=telia.no
 @@||catalog.mann-filter.com/media/werbebanner^
 @@||catchapp.net/ad/img/$~third-party
+@@||catchup.thisisdax.com^
 @@||cbn.globoradio.globo.com/estaticos/js/google-analytics.js$domain=cbn.globoradio.globo.com
 @@||cbox.ws/box/$stealth
 @@||cbs.com^$generichide
@@ -1113,6 +1111,7 @@
 @@||cdn.appdynamics.com/adrum$domain=cvs.com
 @@||cdn.apple-cloudkit.com^$domain=apple.com,stealth=referrer
 @@||cdn.ark.qq.com^$important
+@@||cdn.atmedia.hu^
 @@||cdn.avansas.com/content/img/home/banner^
 @@||cdn.bannersnack.com/banners/$~third-party,image,subdocument
 @@||cdn.bewab.co/embed-$subdocument,stealth=referrer
@@ -1135,6 +1134,7 @@
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dotstream.buzz^$stealth=referrer,domain=megaplay.*
 @@||cdn.dsmcdn.com/sfx/mergen/*.js$domain=trendyol-milla.com
+@@||cdn.duurzaam.greenchoice.nl^
 @@||cdn.dynamicyield.com^$domain=dafiti.com.co
 @@||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,domain=homedepot.ca
 @@||cdn.ex.co/player/$domain=reviewjournal.com
@@ -1182,6 +1182,7 @@
 @@||cdn.retailrocket.*/*/tracking.js$domain=ozerki.ru
 @@||cdn.retailrocket.ru/content/javascript/tracking.js$domain=comfy.ua
 @@||cdn.reverso.net/*/static/js/advertising.js^
+@@||cdn.rozetka.com.ua^
 @@||cdn.runative-syndicate.com/sdk/*/n.js$domain=onemanhua.com
 @@||cdn.sajari.com/embed/*/*.js$domain=insurancebusinessmag.com
 @@||cdn.scarabresearch.com/js/*/scarab-v2.js$domain=nkd.com
@@ -1606,7 +1607,7 @@
 @@||dev.virtualearth.net/REST/*/Autosuggest?query=$stealth=referrer
 @@||dev.visualwebsiteoptimizer.com/j.php$script,domain=kb.arlo.com
 @@||developer.qcloudimg.com/http-save/$image,stealth=referrer
-@@||developers.google.com^
+@@||developers.google.com^$domain=developers.google.com
 @@||devfaq.ru/*/search?*&method=HEAD$xmlhttprequest,document
 @@||deviantart.com^$stealth=ip
 @@||device-api.urbanairship.com^$app=com.caribou.caribouapp
@@ -1630,7 +1631,6 @@
 @@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
 @@||discretemath.org^$image,stylesheet
-@@||disney.aicdn.live/videos/$stealth=referrer
 @@||disneyplus.com^$generichide
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
 @@||disqus.com/api/3.0/embed/threadDetails.json
@@ -2497,6 +2497,7 @@
 @@||iteye.com^$important
 @@||itmedia.co.jp^$cookie=cX_G
 @@||itnews.com.au/scripts/js_*.js
+@@||itoya.ec-optimizer.com^
 @@||itv.1tv.ru/stat.php?
 @@||itv.com/itv/hserver/*/site=itv/$xmlhttprequest
 @@||itworld.com/elqnow/elq*.js
@@ -3833,7 +3834,6 @@
 @@||service-public.fr^*/assets/js/eulerian/eulerian.js$~third-party
 @@||service.apport.net/apport-spa-common/src/tracking/tracking.js$~third-party
 @@||service.collarity.com/cust/nbcu/ucs.js$xmlhttprequest
-@@||service.hotstar.com/vs/getad.php?*adspot=
 @@||service.maxymiser.net/api/eu/mediamarkt.tr/*/mmapi.js$domain=mediamarkt.com.tr
 @@||services.bilsyndication.com^$domain=atozmath.com,~media
 @@||services.chipotle.com/__imp_apg__/$~third-party
@@ -4188,6 +4188,7 @@
 @@||tablespoon.com/library/js/TBSP_ntpagetag.js
 @@||tablica.pl^*/xtcore.js
 @@||taboola.com/libtrc/$script,domain=bild.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|sueddeutsche.de|techbook.de|travelbook.de|welt.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
+@@||taboolanews.com/feed/summary?publisherId=Taboola_samsung-carnival-us&key=Taboola&viewID=$generichide
 @@||tacirler.com.tr^$stealth=dpi
 @@||tacool.com^$stealth=dpi
 @@||tag.perfectaudience.com/serve/*.js$domain=asana.com
@@ -4312,6 +4313,7 @@
 @@||tipico.de/js/modules/fingerprintjs2/fingerprint2.min.js$script,~third-party
 @@||tiscali.it/js/webtrends/$script,domain=mail.tiscali.it
 @@||titlestorage.xboxlive.com/json/*/data/Ads/$app=Solitaire.exe
+@@||titulky.com/exitpop*.js$domain=titulky.com
 @@||tix.axs.com^$removeparam
 @@||tkec.com.tw/api/ad/
 @@||tkqlhce.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
@@ -4500,7 +4502,7 @@
 @@||ups.com/*/WebTracking/track&dcs
 @@||ups.ksmobile.net^$app=com.cleanmaster.security
 @@||ups.xplosion.de/ctx$domain=ingame.de
-@@||upstream.to/js/dnsads.js
+@@||upstream.to/ads/pop.js
 @@||uptodate.com^$stealth=dpi
 @@||upxin.net^$generichide
 @@||urbanmilwaukee.com/wp-content/themes/*/js/prebid-ads.js
@@ -4542,8 +4544,6 @@
 @@||vatanbilgisayar.com/upload/banner/
 @@||vattastic.com/js/fp2/fingerprint2.min.js
 @@||vaughnsoft.net/play/$stealth=referrer,domain=vaughn.live
-@@||vcentry2.valuecommerce.ne.jp^
-@@||vcentry3.valuecommerce.ne.jp^
 @@||vdncloud.org/iframe/$stealth=referrer
 @@||vdun.weibo.com^$important
 @@||vector.hereapi.com/v*/vectortiles/$stealth=referrer
@@ -4617,6 +4617,7 @@
 @@||vulture.com/decor/javascript/magnify_stats.js
 @@||vvic.com/monetize/ads/index/
 @@||w.pandora.xiaomi.com^$important
+@@||w2g.tv/rooms/$stealth=webrtc
 @@||w3spy.org/etc/geo.php?
 @@||walla.co.il^$csp
 @@||wallpaper*.site/*.jpg$xmlhttprequest,stealth=referrer
@@ -5882,6 +5883,7 @@
 @@||mp.yidianzixun.com^
 @@||mpsapi.amap.com^
 @@||msdn.itellyou.cn^
+@@||msec.opposhop.cn^$important
 @@||msedown.360safe.com^
 @@||msg.douyu.com^
 @@||msg.video.qiyi.com^
@@ -5954,6 +5956,7 @@
 @@||obs.sa-brazil-1.myhuaweicloud.com^
 @@||obs.sa-peru-1.myhuaweicloud.com^
 @@||obs.tr-west-1.myhuaweicloud.com^
+@@||obus-cn.dc.heytapmobi.com^$important
 @@||ocos-office365-s2s.msedge.net^$important
 @@||ocsp.digicert.cn^$important
 @@||ocsp.digicert.com^$important
