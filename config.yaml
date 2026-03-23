@@ -400,10 +400,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
-  - name: AdGuard DNS
-    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: DanPollocksList
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
+  - name: AdGuard DNS
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: 去广告规则 - 酷安反馈反馈 DNS
     url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
   - name: AdRules DNS List
@@ -416,20 +416,20 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: AdBlock DNS
-    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
