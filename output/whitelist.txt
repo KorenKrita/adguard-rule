@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-24 02:02:34 UTC
-! Total: 6800 rules
+! Updated: 2026-03-25 02:08:15 UTC
+! Total: 6837 rules
 ! Sources:
-!   - HyperADRules - Allow: 8709 total, 8709 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3600 total, 3532 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 8701 total, 8701 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3658 total, 3590 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -91,11 +91,11 @@
 @@ticketmaster.com/fau/account/log
 @@url.cn
 @@verify.sec.xiaomi.com
+@@ws://localhost^$stealth,domain=play.sooplive.com
 @@yandex.*/user-id?$stealth=referrer|searchqueries
 @@|data:text^$popup,domain=box.com|clker.com|labcorp.com
 @@|http$script,~third-party,domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@|http*://*.*/*.$image,third-party,domain=a2zupload.com
-@@|ws://*$websocket,domain=flirt4free.com
 @@||*.alipay.com^
 @@||*.cdninstagram.com^$important
 @@||*.gtimg.cn^$important
@@ -191,7 +191,6 @@
 @@||520click.com/ad.php$domain=520cc.cc
 @@||5278.cool^$generichide
 @@||52zy.com/gg/
-@@||5471782.fls.doubleclick.net^
 @@||5692.com.ua/assets/*/ads-complain.js
 @@||58.com/adJump?adType=
 @@||58b.tv/static/js/ad.js
@@ -260,7 +259,6 @@
 @@||abt.nike.com^$domain=nike.com
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
-@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||accaii.com^$domain=kyuusai2nd.net
@@ -655,7 +653,6 @@
 @@||api.leanplum.com^$app=com.dolap.android
 @@||api.mapbox.com/*?secure&access_token=$stealth
 @@||api.mapy.cz/*/maptiles/$stealth=referrer
-@@||api.mghubcdn.com/graphql$stealth=referrer
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
 @@||api.mindbox.ru/scripts/v1/tracker.js$domain=xcom-shop.ru
@@ -1738,7 +1735,6 @@
 @@||e.zg-api.com/*/analytics.js$domain=zillow.com
 @@||e9china.net^$generichide
 @@||eapi.pcloud.com/getpublinkdownload$stealth=referrer
-@@||eapteka.ru/*/personal/$stealth=ip
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||easylife.tw/js/adblockDetector.js
@@ -2304,7 +2300,6 @@
 @@||hqq.to/e/$generichide
 @@||hqq.tv/*player/*.php$popup
 @@||hr-online.de/website/includes/webanalyse/xtcore.js
-@@||href.li^
 @@||hse24.de^*/emos2.js
 @@||htlb.casalemedia.com/openrtb/pbjs$domain=youmath.it
 @@||htlbid.com^*/htlbid.js$domain=hodinkee.com
@@ -2447,7 +2442,6 @@
 @@||infobel.com/Scripts/custom/*.js
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infotop.jp/html/ad/$image,~third-party
-@@||infowars.com/wp-content/themes/$image
 @@||infra-api.newrelic.com^
 @@||infusionsoft.app/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||infusionsoft.com/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
@@ -3340,7 +3334,7 @@
 @@||pages.dev^$stealth=referrer
 @@||palmettostatearmory.com/static/$script,~third-party
 @@||pals.pa.gov/vendor/analytics/$~third-party
-@@||pandora.com/images/public/devicead/$image
+@@||pandora.com/static/ads/
 @@||panel.flops.ru/js/member/evercookie_init.js
 @@||panel.play.hosting/js/jquery.openxtag.js
 @@||papalah.com^$generichide
@@ -3528,6 +3522,7 @@
 @@||prod.adobeccstatic.com/unav/*/AnalyticsProvider.*.bundle.js$domain=acrobat.adobe.com
 @@||prod.adspsp.com/adb.*.min.js$domain=healthline.com
 @@||prod.impartner.live^
+@@||production-public.tubi.io^$stealth=3p-auth
 @@||profile*.se.360.cn^
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
 @@||promiflash.de/static/js/pf-web-*.js$domain=promiflash.de
@@ -3843,7 +3838,6 @@
 @@||services.bilsyndication.com^$domain=atozmath.com,~media
 @@||services.chipotle.com/__imp_apg__/$~third-party
 @@||services.postcodeanywhere.co.uk/Capture/Interactive/$stealth=referrer
-@@||services.vlitag.com/adv1/$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in
 @@||serving-sys.com/serving/adServer.bs?$popup,domain=hongkongcard.com
 @@||seselah.com^$generichide
 @@||sextb.date^$generichide
@@ -4027,7 +4021,6 @@
 @@||st.wetteronline.de/dr/*/css/p_*.css
 @@||stackblitz.com^$generichide
 @@||stacksocial.com^$cookie=ajs_anonymous_id
-@@||standard.co.uk/js/third-party/prebid8.$~third-party
 @@||standardmedia.co.ke/assets/js/prebid-google-ads.js
 @@||stapewithadblock.monster^$generichide
 @@||star-telegram.com/mistats/sites/dfw/startelegram.js
@@ -4088,6 +4081,7 @@
 @@||static.webshark.pl/adserver/*/main_script.js?advertise_check=1
 @@||static.wikia.nocookie.net^$domain=fandom.com,stealth=referrer
 @@||static00.forvo.com/_presentation/assets/js/vendor_mobile_no_ads.js
+@@||static5.hsg.com.pl/adv-scroll-sidebar.js$domain=jelonka.com
 @@||statics.zcool.com.cn/track/sensors.$script,~third-party
 @@||stats.britishbaseball.org.uk^
 @@||stats.e-go.gr/rx.asp?$domain=megatv.com
@@ -4129,6 +4123,7 @@
 @@||stream1.store^$stealth=referrer
 @@||stream4free.live^$generichide
 @@||streamlive.to^$generichide
+@@||streammovie.club/video/$stealth=referrer
 @@||streamtape.com^$popup,domain=streamtape.to
 @@||streamwish.com/js/dnsads.js?ads
 @@||streanplay.cc^$stealth
@@ -4349,7 +4344,6 @@
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||tools.pinpoll.com^$script,subdocument,domain=iframely.net
 @@||tools.services.tvn.pl/maertsg.js$domain=tvn24.pl
-@@||tools.usps.com/go/TrackConfirmAction$stealth=ip
 @@||toolsforworkingwood.com/blogimg/
 @@||top.list.ru/counter?id=$domain=crimea-kurort.com
 @@||topembed.pw^$stealth=referrer
@@ -4549,15 +4543,13 @@
 @@||vatanbilgisayar.com/upload/banner/
 @@||vattastic.com/js/fp2/fingerprint2.min.js
 @@||vaughnsoft.net/play/$stealth=referrer,domain=vaughn.live
-@@||vcentry2.valuecommerce.ne.jp^
-@@||vcentry3.valuecommerce.ne.jp^
 @@||vdncloud.org/iframe/$stealth=referrer
 @@||vdun.weibo.com^$important
 @@||vector.hereapi.com/v*/vectortiles/$stealth=referrer
 @@||veev.to^$generichide
 @@||vegetariantimes.com^$stealth=dpi
 @@||verizon.com/images/track/track.gif?track=load&$xmlhttprequest
-@@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=avsforum.com
+@@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=skyscrapercity.com
 @@||vg247.com/wp-content/themes/vg247/scripts/AdsLoad.js
 @@||viamichelin.*/jQuery/ntpagetag.js
 @@||vidbox.site/streaming/$stealth=referrer
@@ -5066,6 +5058,8 @@
 @@||account.dianping.com^
 @@||account.huawei.com^
 @@||account.live.com^$important
+@@||account.oneplus.com^
+@@||account.oneplus.net^
 @@||account.oppo.com^
 @@||account.realme.com^
 @@||account.vivo.com^
@@ -5189,6 +5183,8 @@
 @@||app.biligame.com^
 @@||app.chat.xiaomi.net^
 @@||app.dangbei.com^
+@@||app.oneplus.com^
+@@||app.oneplus.net^
 @@||app.toutiao.com^
 @@||appcenter.ms^
 @@||appcloud2.zhihu.com^
@@ -5239,6 +5235,8 @@
 @@||b3log.org^
 @@||b3logfile.com^
 @@||backup.huawei.com^
+@@||backup.oneplus.com^
+@@||backup.oneplus.net^
 @@||backupapi.lkong.com^$important
 @@||bad.news^
 @@||baixing.com^
@@ -5376,6 +5374,7 @@
 @@||cloud.heytap.com^
 @@||cloud.huawei.com^
 @@||cloud.oneplus.com^
+@@||cloud.oneplus.net^
 @@||cloud.oppo.com^
 @@||cloud.realme.com^
 @@||cloudcache.tencent-cloud.cn^
@@ -5393,6 +5392,7 @@
 @@||commimg.pddpic.com^
 @@||common.jbzj.com^
 @@||community.image.video.qpic.cn^
+@@||community.oneplus.com^
 @@||companymanager.microsoftonline.com^$important
 @@||components.unrealengine.com^
 @@||conf.hpplay.cn^
@@ -5493,6 +5493,8 @@
 @@||download.epicgames.com^$important
 @@||download.heytap.com^
 @@||download.jetbrains.com^
+@@||download.oneplus.com^
+@@||download.oneplus.net^
 @@||download.oppo.com^
 @@||download.uc.cn^
 @@||download.voicecloud.cn^
@@ -5573,6 +5575,9 @@
 @@||firstpartyapps.oaspapps.com^$important
 @@||flowus.cn^
 @@||flydigi.com^
+@@||forums.oneplus.com^
+@@||fota.oneplus.com^
+@@||fota.oneplus.net^
 @@||foundation.youdao.com^
 @@||fourhoi.com^
 @@||fourier-videoclip-eu.allawnos.com^
@@ -5599,6 +5604,8 @@
 @@||gameimg.qidian.com^
 @@||games-community-gl.heytapmobile.com^
 @@||games.mobileapi.hupu.com^
+@@||games.oneplus.com^
+@@||games.oneplus.net^
 @@||gateway.kugou.com^
 @@||gator.volces.com^
 @@||gdtimg.com^
@@ -5636,6 +5643,7 @@
 @@||hclips.com^
 @@||health.huawei.com^
 @@||healthkit.huawei.com^
+@@||help.oneplus.com^
 @@||hentaihand.com^
 @@||hermes.hupu.com^
 @@||heroku.com^
@@ -5907,6 +5915,8 @@
 @@||map.bmcx.com^
 @@||market.cloud.tencent.com^
 @@||market.heytap.com^
+@@||market.oneplus.com^
+@@||market.oneplus.net^
 @@||market.xiaomi.com^
 @@||marketplace.huaweicloud.com^
 @@||mb-mods.net^
@@ -6002,6 +6012,8 @@
 @@||noodlemagazine.com^
 @@||north-plus.net^
 @@||notification.vivo.com^
+@@||notify.oneplus.com^
+@@||notify.oneplus.net^
 @@||novelfm.changdunovel.com^
 @@||novelfm.zlink.toutiao.com^
 @@||nps.onyx.azure.net^$important
@@ -6054,6 +6066,12 @@
 @@||oneclient.sfx.ms^$important
 @@||onegoods.nosdn.127.net^
 @@||onekey1.cmpassport.com^
+@@||oneplus.force.com^
+@@||oneplus.helpshift.com^
+@@||oneplus.secure.force.com^
+@@||onepluscommunity.net^
+@@||oneplusid.oneplus.com^
+@@||oneplusid.oneplus.net^
 @@||open.douyin.com^
 @@||open.oppomobile.com^
 @@||openap-alps.51y5.net^
@@ -6065,12 +6083,17 @@
 @@||ossp.voicecloud.cn^
 @@||ota.coloros.com^
 @@||ota.oneplus.com^
+@@||ota.oneplus.net^
 @@||ota.oppo.com^
 @@||ota.realme.com^
 @@||ota.tv.xiaomi.com^
 @@||ota.vivo.com^
 @@||outlook.office.com^$important
 @@||outlook.office365.com^$important
+@@||oxygenos.oneplus.com^
+@@||oxygenos.oneplus.net^
+@@||oxygenos.update.oneplus.com^
+@@||oxygenos.update.oneplus.net^
 @@||p**-ppx.byteimg.com^
 @@||p*-ecom-fe.byteimg.com^
 @@||p*-ecop-imagex.byteimg.com^
@@ -6242,6 +6265,8 @@
 @@||puser.funshion.com^
 @@||push.chsi.com.cn^
 @@||push.heytap.com^
+@@||push.oneplus.com^
+@@||push.oneplus.net^
 @@||push.oppo.com^
 @@||push.oray.com^
 @@||push.realme.com^
@@ -6345,6 +6370,7 @@
 @@||security.realme.com^
 @@||security.vivo.com^
 @@||sentry.zhuanzhuan.com^
+@@||service.oneplus.com^
 @@||service.vivo.com^
 @@||sf1-cdn-tos.toutiaostatic.com^
 @@||sf3-cdn-tos.bdxiguastatic.com^
@@ -6428,6 +6454,8 @@
 @@||store.epicgames.com^$important
 @@||store.heytapimage.com^
 @@||store.is.autonavi.com^
+@@||store.oneplus.com^
+@@||store.oneplus.net^
 @@||store.oppo.com^
 @@||store.oppomobile.com^
 @@||store.realme.com^
@@ -6445,12 +6473,15 @@
 @@||summer-plus.net^
 @@||support.apple.com*^
 @@||support.huaweicloud.com^
+@@||support.oneplus.com^
 @@||support.vivo.com^
 @@||surrit.com^
 @@||survey.feelgood.cn^
 @@||sway.com^$important
 @@||swimg1.hstdyf.com^
 @@||sync.heytap.com^
+@@||sync.oneplus.com^
+@@||sync.oneplus.net^
 @@||sync.oppo.com^
 @@||syndicatedsearch.goog^$important
 @@||sysdk.cl2009.com^
@@ -6468,6 +6499,8 @@
 @@||thefantazy.com^
 @@||theme.heytap.com^
 @@||theme.heytapimage.com^
+@@||theme.oneplus.com^
+@@||theme.oneplus.net^
 @@||theme.oppo.com^
 @@||theme.realme.com^
 @@||theporndude.com^
@@ -6510,6 +6543,8 @@
 @@||update.360safe.com^
 @@||update.coloros.com^
 @@||update.hicloud.com^
+@@||update.oneplus.com^
+@@||update.oneplus.net^
 @@||update.oppo.com^
 @@||update.realme.com^
 @@||update.tv.xiaomi.com^
@@ -6586,6 +6621,8 @@
 @@||wallet.heytap.com^
 @@||wallet.realme.com^
 @@||wallpaper.heytap.com^
+@@||wallpaper.oneplus.com^
+@@||wallpaper.oneplus.net^
 @@||wallpaper.realme.com^
 @@||wallpaperm.cmcm.com^
 @@||wannianrili.bmcx.com^

@@ -420,10 +420,10 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: oisd big
     url: https://big.oisd.nl
   - name: ADG anti-AD
