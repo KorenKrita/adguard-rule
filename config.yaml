@@ -305,6 +305,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: uBlock Origin – Badware risks
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: Scam Blocklist by DurableNapkin
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: AdBlock Filter
@@ -315,8 +317,6 @@ filters:
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
-  - name: xinggsf
-    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: EasyPrivacy
@@ -335,8 +335,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
@@ -345,6 +343,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Mobile App Banners filter
@@ -424,10 +424,10 @@ dns:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
-  - name: ADG anti-AD
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: oisd big
     url: https://big.oisd.nl
+  - name: ADG anti-AD
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
