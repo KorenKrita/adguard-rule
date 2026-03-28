@@ -305,8 +305,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: uBlock Origin – Badware risks
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
-  - name: xinggsf
-    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: Scam Blocklist by DurableNapkin
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: AdBlock Filter
@@ -317,6 +315,8 @@ filters:
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: EasyPrivacy
@@ -420,16 +420,16 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
-  - name: oisd big
-    url: https://big.oisd.nl
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
