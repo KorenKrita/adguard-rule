@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-03-28 02:06:15 UTC
-! Total: 6855 rules
+! Updated: 2026-03-29 02:25:33 UTC
+! Total: 6851 rules
 ! Sources:
-!   - HyperADRules - Allow: 8723 total, 8723 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 8718 total, 8718 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3665 total, 3597 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -329,7 +329,6 @@
 @@||ad13.adfarm1.adition.com^$domain=1und1.de
 @@||ad3.adfarm1.adition.com^$domain=servustv.com,other
 @@||ad4.on.cc/web/www/delivery/ajs.php
-@@||ad4mat.*/cookie^$domain=ad4mat.net|youronlinechoices.com
 @@||ad71.adfarm1.adition.com/lt?nw=$domain=atv.at
 @@||adac.de/_common/js/adac.webtrekk.js
 @@||adap.tv/redir/javascript/vpaid.js
@@ -481,7 +480,6 @@
 @@||ahcdn.xyz^$stealth,media
 @@||ahd.ruten.com.tw/ahd/fetch_ad.php?zone=*%2C$domain=ruten.com.tw
 @@||ahhhhfs.com^$generichide
-@@||ahtapot.shop/cdn/$stealth=referrer
 @@||aiasahi.jp/ads/$image,domain=japan.zdnet.com
 @@||aile.gov.tr^$stealth=dpi
 @@||aimfar.solution.weborama.fr/fcgi-bin/oba.fcgi?action=opt$domain=youronlinechoices.com
@@ -555,6 +553,7 @@
 @@||analytics.digitalpfizer.com/js/prod/pcc/pf_appmeasurement.js$domain=pfizer-covid19-vaccine.jp
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.freetubeapp.io/index.php$domain=analytics.freetubeapp.io
+@@||analytics.google.com/analytics/$~third-party
 @@||analytics.itunes.apple.com^
 @@||analytics.kbjfree.com/js/plausible.js
 @@||analytics.ladmedia.fr/parismatch/xtcore_mod2.js$domain=parismatch.com
@@ -661,6 +660,7 @@
 @@||api.micloud.xiaomi.net^$important
 @@||api.mindbox.ru/scripts/v1/tracker.js$domain=xcom-shop.ru
 @@||api.miui.security.xiaomi.com^$important
+@@||api.mojang.com^$stealth=3p-auth
 @@||api.ok.ru/fb.do?application_key=*_advertisement.user_id
 @@||api.olx.$app=com.app.tokobagus.betterb
 @@||api.onedrive.com^
@@ -708,6 +708,7 @@
 @@||app.appsflyer.com^
 @@||app.axenthost.com^$generichide
 @@||app.clarity.so^$~third-party
+@@||app.focusmate.com^$stealth=webrtc
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.hype.it/assets/packages/mixpanel_flutter/assets/mixpanel.js$~third-party
 @@||app.market.xiaomi.com^$important
@@ -1348,7 +1349,6 @@
 @@||cloudimg.io/*/analytics.$script,domain=michelinman.com
 @@||cloudinary.com/perimeterx/$image,domain=perimeterx.com
 @@||club.tgfcer.com^$generichide
-@@||cluster1.rednbluelogistics.com^$stealth=3p-auth,domain=rednbluepty.com
 @@||cm-beacon.nakanohito.jp/cm/comment_$xmlhttprequest
 @@||cm-widget.nakanohito.jp/cm/$script,stylesheet
 @@||cm.ksmobile.com/api/GetCloudMsgAdv?pkg=com.cmcm.emoji
@@ -1533,6 +1533,7 @@
 @@||cxpublic.com/ToyoKeizai.js$domain=str.toyokeizai.net
 @@||cy.com/hz/*/ad
 @@||cybozu.com/*/event.gif?$~third-party
+@@||cz.mrezadosa.com^$xmlhttprequest,image,domain=playzone.cz
 @@||d-cache.microad.jp/js/td_iw_access.js$domain=watch.impress.co.jp
 @@||d.apkpure.com/b/APK/$stealth=ip
 @@||d.applovin.com^$app=ac.hush.app
@@ -2067,7 +2068,7 @@
 @@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
-@@||get.x-link.pl^$generichide
+@@||get.x-link.pl/*embed.html$stealth=referrer
 @@||getbootstrap.com/docs/*/assets/js/vendor/popper.min.js
 @@||getclicky.com/ajax/marketshare?$script
 @@||getflywheel.com/addons/google-analytics/$~third-party
@@ -2222,7 +2223,6 @@
 @@||haoweichi.com/Public/js/ads.js
 @@||happyride.se/img/admarket/
 @@||harvard.edu/scripts/ga_social_tracking.js
-@@||havuc4.shop/cdn/$stealth=referrer
 @@||hb.afl.rakuten.co.jp^
 @@||hb.improvedigital.com/pbw/gameDistributionV*.min.js$domain=html5.gamedistribution.com
 @@||hbbtv.kika.de^
@@ -3166,7 +3166,6 @@
 @@||networkworld.com^*/demandbase.js
 @@||new.abb.com/ruxitagentjs_$~third-party
 @@||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js
-@@||newkso.ru/*.php$stealth=searchqueries|referrer
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de
 @@||news-app.abumedia.yql.yahoo.com^
 @@||news.u17i.com/advert/
@@ -3211,7 +3210,6 @@
 @@||now.com/*/js/dfpAsset_prebid.js
 @@||nowscore.com/script/common/adHelper.js
 @@||noxgroup.com/noxinfluencer/sensor_sdk/$script,domain=noxinfluencer.com
-@@||np.community.playstation.net^$stealth=3p-auth
 @@||npr.org/sponsorship/targeting/$other,xmlhttprequest,domain=npr.org
 @@||nq-api.net^$stealth=referrer,domain=jellycat.com
 @@||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js
@@ -4364,7 +4362,6 @@
 @@||toutiaocdn.com^$important
 @@||toweroffantasy-global.com/events/accounttransfer/public/js/fingerprint.js$~third-party
 @@||towideo.pl/assets/ads_configs/sas_ad_config_vod.js
-@@||townhall.com/resources/dist/js/prebid-pjmedia.js$script,domain=pjmedia.com
 @@||townwork.net/js/AppMeasurement.js$~third-party
 @@||toy-people.com^$generichide
 @@||toyota.com/recall/static/js/custom/facebookPixel.js$~third-party
@@ -4456,7 +4453,6 @@
 @@||tvepg.pandora.xiaomi.com^$important
 @@||tvfreak.cz/*/pubfig.min.js
 @@||tvid.in/api/mediainfo/*.json?$stealth=referrer
-@@||tving.com^$stealth=ip
 @@||tvn24.pl^$generichide
 @@||tvnturbo.pl^$generichide
 @@||tvp.pl^$stealth=dpi
