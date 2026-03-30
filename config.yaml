@@ -343,10 +343,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: AdGuard Base
@@ -416,6 +416,8 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
@@ -426,8 +428,6 @@ dns:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
