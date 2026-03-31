@@ -400,6 +400,8 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: DanPollocksList
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: AdGuard DNS
@@ -416,8 +418,6 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
