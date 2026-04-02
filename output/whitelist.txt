@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-04-01 02:33:15 UTC
-! Total: 6844 rules
+! Updated: 2026-04-02 02:12:00 UTC
+! Total: 6850 rules
 ! Sources:
-!   - HyperADRules - Allow: 8716 total, 8716 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3665 total, 3598 used (98.2%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 8723 total, 8723 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3665 total, 3597 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -291,7 +291,6 @@
 @@||ad-block.dns.adguard.com^
 @@||ad-cdn.bilgin.pro/app/ad-*.min.js$domain=medyafaresi.com
 @@||ad-delivery.net/px.gif$domain=bildderfrau.de,xmlhttprequest
-@@||ad-emea.doubleclick.net/clk
 @@||ad-gone.com^
 @@||ad-ipd.sxp.smartclip.net/select$domain=tele5.de
 @@||ad-maven.com^$domain=ad-maven.com
@@ -354,7 +353,7 @@
 @@||adjust.com/adjust-latest.min.js$domain=anchor.fm
 @@||adm.10jqka.com.cn^
 @@||adm.crowdicity.com^
-@@||adm.fwmrm.net^$domain=revision3.com
+@@||adm.fwmrm.net/crossdomain.xml
 @@||admin.corrata.com/console/dcconsolews/event-log?$~third-party
 @@||admin.dable.io^
 @@||admin.mailchimp.com^
@@ -1039,6 +1038,7 @@
 @@||camerabay.tv/ads/entry/camerabay/fullbk/bg.jpg
 @@||camhub.cc/player/player_ads.html
 @@||camhub.world/player/player_ads.html
+@@||camif.fr/skin/m/
 @@||camsclips.com/player/stats.php?event=Init$image
 @@||camspacelive.com/widgets/$domain=lemoncams.com
 @@||camvideoshub.com/livejasmin.com.js$script
@@ -1452,6 +1452,7 @@
 @@||content.googleapis.com$document
 @@||content.ingbank.pl^
 @@||content.jwplatform.com^$domain=tomshardware.com
+@@||content.pouet.net/avatars/adx.gif$image,~third-party
 @@||content.s8bbs.com/ad/bbs/*.jpg
 @@||content.uplynk.com/preplay/*.json$stealth=referrer
 @@||content.viralize.tv^
@@ -1923,6 +1924,7 @@
 @@||file-static.com^$stealth=referrer,domain=eyny.com
 @@||file-upload.com/js/advertisement.js
 @@||file-upload.net/include/adserver.js
+@@||file.fm/f/$stealth=webrtc
 @@||file.market.xiaomi.com^$importantcdn.ark.qq.com
 @@||filecheck.ru^$elemhide
 @@||filecr.com/wp-content/plugins/holdback/$script,stylesheet
@@ -1946,7 +1948,6 @@
 @@||firefox.com.cn/media/img/mozcn/spread/468-60-
 @@||firmwaredrive.com/templates/default/html/en/assets/js/fingerprint2.min.js
 @@||firstdirect.com^*/logging-code.js
-@@||firstonetv.net^$generichide
 @@||flightradar24.com^$stealth=dpi
 @@||flipboard.com/*/videojs-contrib-ads.*.bundle.js
 @@||flormar.webinstats.com^$domain=flormar.com.tr
@@ -1988,7 +1989,6 @@
 @@||freehostedscripts.net/online/$script,~third-party
 @@||freeporn8.com/nb/frot_lod.js
 @@||freereceivesms.com/*.js
-@@||freeride.se/img/admarket/$~third-party
 @@||freundin.de/*_wrapper_format=drupal_ajax
 @@||friday.kodansha.co.jp/scripts/taboola.js$script,~third-party
 @@||friday.tw/backend/uploadpic/adindex/
@@ -2272,7 +2272,9 @@
 @@||hkjc.com/bannerad/
 @@||hlidacstatu.cz/scripts/highcharts-6/modules/heatmap.js
 @@||hlmod.ru^$xmlhttprequest,~third-party
+@@||hls*.*.*/hls*/*.PNG$stealth=referrer,xmlhttprequest,domain=kisskh.*
 @@||hls.exmarketplace.com/*.m3u8$domain=tvserial.it
+@@||hls0*.*.*.mp4?ip=$stealth=referrer,media,domain=kisskh.co
 @@||hlserve.com/Delivery/$domain=costco.com,script
 @@||hltv.org/vendor/font-awesome
 @@||hmvod.com.hk/website/static/skin/images/share/
@@ -2468,6 +2470,7 @@
 @@||instapundit.com^$generichide
 @@||instawp.xyz^$generichide
 @@||instreamvideo.ru/storage/InstreamVideoPlugin
+@@||insurance.wertgarantie.com/api/$stealth=3p-auth
 @@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source
 @@||int.mwbbiz.com/static/*/app.js$domain=91porny.com
 @@||integralyatirim.com.tr^$stealth=dpi
@@ -3215,7 +3218,7 @@
 @@||ntv.io/serve/load.js$domain=mcclatchydc.com
 @@||nu.nl^$generichide
 @@||nuggad.net^$domain=video.sport1.de
-@@||nv7s.com/key=*/referer=$media,stealth=referrer
+@@||nv7s.com/key=$stealth=referrer
 @@||nvidia.*/drivers/results/$stealth=3p-auth
 @@||nvidia.cn^*-300x250-
 @@||nvidia.com/*/drivers/results/$stealth=referrer
@@ -3427,7 +3430,7 @@
 @@||play.dlsite.com/csr/viewer/lib/newrelic.js
 @@||play.mylifetime.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||play.openhub.tv^$stealth=referrer
-@@||play.tv3.ee^$generichide
+@@||play.tv3.ee/static/scripts/adroot/imasdk.googleapis.com/js/sdkloader/ima3.js
 @@||play.tv3.lv^$generichide
 @@||play.vidyard.com^$stealth=referrer|webrtc
 @@||playcode.io^$generichide
@@ -3449,6 +3452,7 @@
 @@||player.vimeo.com/video^$stealth=referrer
 @@||player.ynet.co.il/*/flowplayer.ads.*.ynet.js$domain=ynet.co.il
 @@||players.brightcove.net/*/index.html?videoId=$domain=amp.usatoday.com
+@@||playnewserie.xyz^$stealth=referrer
 @@||playshakespeare.com/*/js/prebid-ads.js
 @@||playwire.com/bolt/js/zeus/embed.js$script,third-party
 @@||playy.online/log_event$~third-party,xmlhttprequest
@@ -3808,6 +3812,7 @@
 @@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth=referrer
 @@||securitykiss.com$document
 @@||securitytrails.com/app/api/$domain=securitytrails.com
+@@||seeitworks.com/advertisement.js
 @@||seg-cdn.pumpkin.care/analytics.js/$~third-party
 @@||segmentify.com^$script,stylesheet,xmlhttprequest,domain=puma.com
 @@||seguridad.compensar.com/lib/js/fingerprint2.js$domain=compensar.com
@@ -3937,6 +3942,7 @@
 @@||snssdk.com/video/drm/v*/play_licenses
 @@||snva.jp/javascripts/reco/$script,domain=store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
+@@||sobot.com^
 @@||soefart.dk^$generichide
 @@||soft8ware.com^$generichide
 @@||softblog.tw^$generichide
@@ -4424,6 +4430,7 @@
 @@||tubitv.com^$generichide
 @@||tui.click/js/ads.js
 @@||tunein.com/api/v1/comscore$~third-party
+@@||turbo.az^$stealth=referrer
 @@||turboplayers.xyz/t/$stealth=referrer
 @@||turbovid.vip^$subdocument,stealth=referrer
 @@||turbovidhls.com/t/$stealth=referrer
@@ -4508,7 +4515,6 @@
 @@||urbanmilwaukee.com/wp-content/themes/*/js/prebid-ads.js
 @@||urlcheck.hulu.com/crossdomain.xml
 @@||urldefense.com^$removeparam
-@@||usaa.com^$document
 @@||useinsider.com/ins.js$domain=pizzahut.jp
 @@||user.edenredplus.com/assets/packages/mixpanel_flutter/assets/mixpanel.js$script,~third-party
 @@||user.pnetlab.com/store/advs/check
@@ -4723,6 +4729,7 @@
 @@||wix-dashboard.visitor-analytics.net/backoffice/restricted-demo$domain=wix.com
 @@||wko.at^$stealth=dpi
 @@||wl.jd.com/joya.js
+@@||wmdportal.com/wp-content/uploads/2012/05/cars_banner.png
 @@||womensrunning.com^$stealth=dpi
 @@||wordpress.org/extend/plugins/wp-slimstat/screenshot-$image,~third-party
 @@||work.ink^$generichide
@@ -6404,7 +6411,6 @@
 @@||smtp.office365.com^$important
 @@||snzypic.com^
 @@||so.douyin.com^
-@@||sobot.com^
 @@||sogoucdn.com^$important
 @@||sourl.cn^
 @@||south-plus.net^
