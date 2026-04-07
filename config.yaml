@@ -416,10 +416,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
