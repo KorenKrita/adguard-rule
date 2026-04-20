@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-04-19 02:37:15 UTC
-! Total: 7139 rules
+! Updated: 2026-04-20 02:38:10 UTC
+! Total: 7146 rules
 ! Sources:
-!   - HyperADRules - Allow: 8896 total, 8896 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3862 total, 3795 used (98.3%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 8900 total, 8900 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3864 total, 3798 used (98.3%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -264,6 +264,7 @@
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||abv-p.com/Images/adv.png
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
+@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||accaii.com^$domain=kyuusai2nd.net
@@ -583,6 +584,7 @@
 @@||animego.org^$stealth=ip
 @@||animevost.org^$stealth=webrtc
 @@||anisearch.*^$generichide
+@@||anitube*.vip/playerricas.php$stealth=referrer
 @@||anizmstream*.com/cdn/down/$stealth=referrer,domain=anizmplayer.com|anizm.net
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
@@ -682,7 +684,6 @@
 @@||api.phnx.click/js/article-stat-v2.js$domain=smak.ua
 @@||api.playstation.com^$stealth=3p-auth
 @@||api.poki.com/ads/houseads/$domain=ninja.io
-@@||api.prod.bunnings.com.au^$stealth=3p-auth
 @@||api.production.k8s.y3o.tv/*/video-ads/$domain=yallo.tv
 @@||api.rikka.app^$important
 @@||api.schale.network^$stealth=referrer|3p-auth
@@ -885,6 +886,7 @@
 @@||basemapstyles-api.arcgis.com^$stealth=referrer,domain=radar.weather.gov
 @@||basinnow.com/upload/settings/advertise-img.jpg
 @@||bat.bing.com/bat.js$domain=airbnb.ru
+@@||batch.id/wp-content/plugins/lw-adblocker/assets/js/fuckadblock.min.js
 @@||bats.video.yahoo.com$app=com.yahoo.mobile.client.android.mail
 @@||battlecats-db.com^$generichide
 @@||battlecats-db.imgs-server.com^$stealth=referrer
@@ -1170,6 +1172,7 @@
 @@||cdn.duurzaam.greenchoice.nl^
 @@||cdn.dynamicyield.com^$domain=dafiti.com.co
 @@||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,domain=homedepot.ca
+@@||cdn.evolutionadv.it/money.it/*.mp4$domain=money.it
 @@||cdn.ex.co/player/$domain=reviewjournal.com
 @@||cdn.exmarketplace.com/bidder/video_scripts/video_updated_*.js$domain=tvserial.it
 @@||cdn.facil-iti.app/tags/faciliti-tag.min.js$script,domain=apec.fr|kyoto.travel
@@ -1675,6 +1678,7 @@
 @@||dingit.tv/dingit2/static/player/videojs.ads.js
 @@||directline.botframework.com^$stealth=referrer
 @@||directline.com/touchclarity/$script
+@@||directly.com/chat?cfgId=$stealth=referrer
 @@||discordapp.com/banners/$image
 @@||discordsays.com/?instance_id=$stealth=referrer
 @@||discoveryplus.com^$generichide
@@ -1918,6 +1922,7 @@
 @@||eyejokerdb.com^$stealth=dpi
 @@||ez3c.tw/js/adblockDetector.js
 @@||ezodn.com/cmp/gvl.json$xmlhttprequest
+@@||ezoic.net/tardisrocinante/screx.js$domain=doncorgi.com
 @@||ezsoftwarestorage.com^$image,media,domain=ezfunnels.com
 @@||f*.market.mi-img.com^$important
 @@||f*.market.xiaomi.com^$important
@@ -1952,7 +1957,6 @@
 @@||fdi.fiduciarydecisions.com/a/lib/gtag/gtag.js$script,~third-party
 @@||fdj.fr/oad/js/xiti/xtcore.js
 @@||fedex.com/apps/fedextrack$generichide
-@@||feed.adrelayer.com^
 @@||feedback-pa.clients6.google.com^$stealth=referrer
 @@||feedback.miui.com^$important
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
@@ -2119,14 +2123,12 @@
 @@||geoplugin.net/javascript.gp$domain=uptime.community
 @@||get-to.link^$stealth=referrer
 @@||get.cervell.io/api/$domain=cildimveben.com
-@@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
 @@||get.x-link.pl/*embed.html$stealth=referrer
 @@||getbootstrap.com/docs/*/assets/js/vendor/popper.min.js
 @@||getclicky.com/ajax/marketshare?$script
 @@||getflywheel.com/addons/google-analytics/$~third-party
-@@||getfree.co.in^$generichide
 @@||getgoods.de^*/emstrack.js
 @@||getintopc.com/*.js$domain=getintopc.com
 @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js
@@ -2504,6 +2506,7 @@
 @@||in.treasuredata.com/js/*?api_key$script,domain=retty.me
 @@||inapps.appsflyer.com^$app=se.prisjakt.pricespy
 @@||inazuma.co/campaign/js/heatmap.js$domain=monopoly.mcdonalds.co.uk
+@@||inbox.lv/advert/?actionID=imp_login
 @@||indeed.com/rpc/log/myjobs/$~third-party
 @@||independent.co.uk/_build/prebid.*.js$domain=independent.co.uk
 @@||indianrailways.info/js/adblocker.js
@@ -3524,6 +3527,7 @@
 @@||play.dlsite.com/csr/viewer/lib/newrelic.js
 @@||play.mylifetime.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||play.openhub.tv^$stealth=referrer
+@@||play.stream2.me/embed/$stealth=referrer
 @@||play.tv3.ee/static/scripts/adroot/imasdk.googleapis.com/js/sdkloader/ima3.js
 @@||play.tv3.lv^$generichide
 @@||play.vidyard.com^$stealth=referrer|webrtc
@@ -3592,7 +3596,6 @@
 @@||posttrack.com^$xmlhttprequest,~third-party
 @@||potalapalace.cn/upload/images/advertise/picture/131030000583.jpg
 @@||powerquality.eaton.com/include/js/elqScr.js$~third-party
-@@||powersports.honda.com/js/*/Popup2.js$~third-party
 @@||powvideo.net/$~third-party,popup
 @@||pp.lp4.io/app^$domain=berliner-zeitung.de
 @@||pp.myapp.com^$important
@@ -3709,6 +3712,7 @@
 @@||radiofrance.targetspot.com^
 @@||raenonx.cc^$generichide
 @@||raiffeisen.at^*/Logger.js
+@@||rakudaclub.com/img.php?url=https://img.rakudaclub.com/adv/$~third-party
 @@||rakuten-bank.co.jp/rb/ams/img/ad/$~third-party
 @@||ramnode.com/images/
 @@||randomhouse.com/book/css/certona.css
@@ -4035,6 +4039,7 @@
 @@||smotrim.ru/js/stat.js$script
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
+@@||smtp.focusgroupresearch.com^
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||snapchat.com/static/js/autotrack.js
@@ -4751,7 +4756,6 @@
 @@||walmart.com/__ssobj/core.js
 @@||walmart.com^*/track?event=$xmlhttprequest
 @@||walmartimages.com/webanalytics/omniture/omniture.jsp$domain=walmart.com
-@@||wan.douyu.com^
 @@||wancaibb.com/share/js/share.min.js
 @@||wandhi.com^$generichide
 @@||ware.shop.jd.com^$genericblock,generichide
@@ -5917,6 +5921,7 @@
 @@||img-hw.xvideos-cdn.com^
 @@||img-l3.xnxx-cdn.com^
 @@||img-l3.xvideos-cdn.com^
+@@||img-vip-ssl.a.88cdn.com^$important
 @@||img.cmvideo.cn^
 @@||img.doubao.com^
 @@||img.funshion.com^
@@ -6570,6 +6575,7 @@
 @@||res.openinstall.com^
 @@||res.oplist.org.cn^
 @@||res.oplist.org^
+@@||res.qhmsg.com^
 @@||res.qiyukf.net^
 @@||res.vmallres.com^
 @@||res.ximalaya.com^$important
@@ -6922,6 +6928,7 @@
 @@||wallpaper.oneplus.net^
 @@||wallpaper.realme.com^
 @@||wallpaperm.cmcm.com^
+@@||wan.douyu.com^
 @@||wannianrili.bmcx.com^
 @@||wap.cmpassport.com^
 @@||wap.zol.com.cn^
