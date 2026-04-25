@@ -424,10 +424,10 @@ dns:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
