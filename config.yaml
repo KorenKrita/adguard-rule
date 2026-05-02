@@ -327,8 +327,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard URL Tracking filter
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
@@ -345,6 +343,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyList Cookie List
@@ -400,6 +400,8 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: DanPollocksList
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: AdGuard DNS
@@ -412,20 +414,18 @@ dns:
     url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+  - name: PeterLoweFilter
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-  - name: PeterLoweFilter
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
