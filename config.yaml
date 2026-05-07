@@ -410,14 +410,14 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
   - name: SMAdHosts
     url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: AdBlock DNS
-    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
