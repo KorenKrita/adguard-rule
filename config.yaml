@@ -283,6 +283,8 @@ filters:
   urls:
   - name: HyperADRules - Rules
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
+  - name: all.txt
+    url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
   - name: AdRules AdBlock List Plus
     url: https://adrules.top/adblock_plus.txt
   - name: 混合规则(自动更新)
@@ -307,6 +309,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: Adblock Warning Removal List
+    url: https://filters.adtidy.org/extension/chromium/filters/207.txt
   - name: Scam Blocklist by DurableNapkin
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: Peter Lowe's Blocklist
@@ -343,10 +347,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
-  - name: Adblock Warning Removal List
-    url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: all.txt
-    url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
@@ -426,10 +426,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
