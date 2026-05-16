@@ -331,20 +331,20 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
-  - name: AdGuard Cookie Notices filter
-    url: https://filters.adtidy.org/extension/chromium/filters/18.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
-  - name: AdGuard Other Annoyances filter
-    url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
+  - name: AdGuard Cookie Notices filter
+    url: https://filters.adtidy.org/extension/chromium/filters/18.txt
+  - name: AdGuard Other Annoyances filter
+    url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyList Cookie List
