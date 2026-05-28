@@ -323,12 +323,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
-  - name: AdGuard Popups filter
-    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  - name: AdGuard Popups filter
+    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard URL Tracking filter
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
@@ -414,10 +414,10 @@ dns:
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
-  - name: uBlock₀ filters – Badware risks
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
   - name: AdBlock DNS
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+  - name: uBlock₀ filters – Badware risks
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD

@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-05-27 03:42:28 UTC
-! Total: 6860 rules
+! Updated: 2026-05-28 03:31:40 UTC
+! Total: 6850 rules
 ! Sources:
-!   - HyperADRules - Allow: 8917 total, 8917 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3494 total, 3430 used (98.2%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 8906 total, 8906 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3494 total, 3429 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -707,7 +707,6 @@
 @@||app.appsflyer.com^
 @@||app.axenthost.com^$generichide
 @@||app.clarity.so^$~third-party
-@@||app.clickfunnels.com/assets/lander.js$script,domain=painprophet.com|propanefitness.com
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.hype.it/assets/packages/mixpanel_flutter/assets/mixpanel.js$~third-party
 @@||app.khz.se/api/*&ad_type=preroll-channel$domain=ilikeradio.se
@@ -1088,7 +1087,6 @@
 @@||cbox.ws/box/$stealth
 @@||cbs.com^$generichide
 @@||cbsapi.tkgm.gov.tr^$stealth=dpi
-@@||cbsi.com/dist/optanon.js$script,domain=cbsnews.com|zdnet.com
 @@||cbsi.map.fastly.net^
 @@||cbsimg.net/js/cbsi/dw.js$domain=cbssports.com
 @@||cbsistatic.com/fly/bundles/flyjs/js/managers/clicktale-1.0.js$domain=cbsnews.com
@@ -1106,6 +1104,7 @@
 @@||cdn*.jianshu.io^$stealth=referrer
 @@||cdn*.movcdn.*^$xmlhttprequest,stealth=referrer|ip,domain=moeni.net
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
+@@||cdn-*.pixel-sus-4k-image.com/stream/$stealth=referrer
 @@||cdn-aitg.widerplanet.com/js/wp_astg_$script,domain=larocheposay.co.kr
 @@||cdn-fck.tnaflix.com^$removeparam
 @@||cdn-gl.imrworldwide.com/conf/*.js#name=nlsnInstance$domain=joyn.de
@@ -1273,6 +1272,7 @@
 @@||cfnode*.xyz/*.php?url=$stealth=referrer,domain=libvio.me|libvio.fun|libvio.cc
 @@||cgchannel.com/wp-content/uploads/*_Advertorial_*.jpg
 @@||cgmodel.com/plugin/share/
+@@||cgpub.zbjimg.com^$image,stealth=referrer,domain=zbj.com
 @@||chaintv.xyz/homestatic/js/adjs.js
 @@||chajianmi.com^$generichide
 @@||challenges.cloudflare.com/turnstile/$script
@@ -1369,7 +1369,6 @@
 @@||clouderrorreporting.googleapis.com^$domain=waze.com
 @@||cloudfam.io^$generichide
 @@||cloudflare.com/*/fingerprint2.min.js$domain=saavn.com
-@@||cloudflare.com^*/videojs-contrib-ads.js$domain=wtk.pl|zeam.com
 @@||cloudflare.net^$script,domain=colamanga.com
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=karnaval.com|livestream.com|luxuryrealestate.com
@@ -1422,7 +1421,6 @@
 @@||cohesionapps.com/cohesion/$domain=bankrate.com|frontier.com
 @@||coinadster.com^$script,stylesheet,xmlhttprequest,other,image,domain=coinadster.com
 @@||coinmarketcap.com/static/addetect/$script,~third-party
-@@||coinzillatag.com/lib/displayf.js$xmlhttprequest,domain=simplebits.io
 @@||cokcok.stream/play/$stealth=referrer
 @@||colamanga.com/js/*/load.js
 @@||colatour.com.tw/webDM/*/adbanner$~third-party
@@ -1749,6 +1747,7 @@
 @@||duihui.duoduocdn.com^$image,stealth=referrer,domain=zhibo8.cc
 @@||duplichecker.com^$generichide
 @@||dushu.ru^$script,domain=bhshu.net
+@@||dw.cbsi.com/anonc.js$domain=cbs.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|cnet.com|gamespot.com|tv.com
 @@||dw.de/js/xtcore.js
 @@||dwnserver.com/download/$stealth=referrer
@@ -1943,7 +1942,6 @@
 @@||fdi.fiduciarydecisions.com/a/lib/gtag/gtag.js$script,~third-party
 @@||fdj.fr/oad/js/xiti/xtcore.js
 @@||fedex.com/apps/fedextrack$generichide
-@@||feed.adrelayer.com^
 @@||feedback-pa.clients6.google.com^$stealth=referrer
 @@||feedback.miui.com^$important
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
@@ -1979,7 +1977,6 @@
 @@||filme.imyfone.com/assets/js/gatrack.js$~third-party
 @@||filmerotikizle.com/rek/katla2.gif
 @@||filmweb.pl^$generichide
-@@||findernet.com^$content
 @@||findlawimg.com^$stealth=referrer,domain=findlaw.cn
 @@||fingerprintjs.com^$generichide
 @@||firebase.google.com/docs/analytics/$~third-party
@@ -2522,7 +2519,6 @@
 @@||inporn.com/*/embed.js$script,~third-party
 @@||inpref.com/frosmo.xdm.html?
 @@||input.shouji.sogou.com^$important
-@@||inputmag.dk/wp-content/themes/jannah/js/advertisement.js
 @@||insidemarketing.eu/cdn/lib/js/adsframe.js
 @@||insideruser.microsoft.com^
 @@||insight.adsrvr.org/track/edaa^$domain=youronlinechoices.com
@@ -3097,7 +3093,6 @@
 @@||mobile.yangkeduo.com^$important
 @@||mobinovels.com^$generichide
 @@||modetour.com^$stealth=dpi
-@@||modulous.huffpost.com/static/js/prebid-ads.js
 @@||modyolo.com/?s$stealth=useragent
 @@||moea.gov.tw/EgisWeb/Scripts/google-analytics.js
 @@||moegirl.org.cn^$cookie=/^_ga_/
@@ -3292,7 +3287,6 @@
 @@||ntust.edu.tw/bin/showads.
 @@||ntv.io/serve/load.js$domain=mcclatchydc.com
 @@||nu.nl^$generichide
-@@||nuggad.net^$domain=video.sport1.de
 @@||nv7s.com/key=$stealth=referrer
 @@||nvidia.*/drivers/results/$stealth=3p-auth
 @@||nvidia.cn^*-300x250-
@@ -3419,6 +3413,7 @@
 @@||paramountplus.com^$generichide
 @@||parcel.app/webtrack.php?$~third-party
 @@||parsely.com/keys/$script,domain=wmmr.com|wrif.com
+@@||partner.everydays.de^
 @@||partner.market.yandex.ru^$stealth=referrer
 @@||partner1.cashback.zen.com/aff_
 @@||partnerads.ysm.yahoo.com/ypa/?ct=*suchmaschine.com$domain=suchmaschine.com
@@ -3765,7 +3760,6 @@
 @@||rest.edit.site/geoip-service/geoip$domain=systemshouse.com
 @@||retailmenot.com/__wsm.gif$ping,~third-party,xmlhttprequest
 @@||reutersmedia.net/resources^
-@@||revdownload.com/*.php$generichide
 @@||rfksrv.com/rfk$domain=spirithalloween.com
 @@||rg-tiles.b-cdn.net^$stealth=referrer
 @@||ric-ul.ru^$stealth=dpi
@@ -3878,7 +3872,6 @@
 @@||sdc.pingan.com^$~image
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
 @@||sdkapi.sms.mob.com^
-@@||sdltutorials.com/Data/Ads/AppStateBanner.jpg$~third-party
 @@||sdn-global-audio-adswizz-cache.3qsdn.com/*/files/$other,media,domain=noz.de
 @@||se.com/_uce_/immutable/chunks/google-analytics.$script
 @@||se.visilabs.net/Target.js$domain=boyner.com.tr
@@ -4322,7 +4315,7 @@
 @@||tb.mgtv.com/sdk/*/ad-sdk.js^$script
 @@||tbcdn.cn^*/click_track.js
 @@||tbmm.gov.tr^$stealth=dpi
-@@||tbs.com/modules/custom/ten_libraries/reusedFrom*/adHelper.js$~third-party
+@@||tbs.com/ajax/$stealth=ip,domain=tbs.com
 @@||tcbk.com/application/files/4316/7521/1922/Q1-23-CD-Promo-Banner-Ad.png^$~third-party
 @@||tcddtasimacilik.gov.tr^$stealth=dpi
 @@||tchibo.de^*/webtrekk_$xmlhttprequest
@@ -4661,7 +4654,6 @@
 @@||vegetariantimes.com^$stealth=dpi
 @@||verizon.com/images/track/track.gif?track=load&$xmlhttprequest
 @@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=skyscrapercity.com
-@@||vfsglobal.*/*/Track/*^$stealth=donottrack|useragent|ip
 @@||viamichelin.*/jQuery/ntpagetag.js
 @@||vidcache.net:*/*/*.mp4$stealth=referrer
 @@||vidembed.re/stream$stealth=referrer
@@ -4740,6 +4732,7 @@
 @@||walmart.com/__ssobj/core.js
 @@||walmart.com^*/track?event=$xmlhttprequest
 @@||walmartimages.com/webanalytics/omniture/omniture.jsp$domain=walmart.com
+@@||wan.douyu.com^
 @@||wancaibb.com/share/js/share.min.js
 @@||wandhi.com^$generichide
 @@||ware.shop.jd.com^$genericblock,generichide
@@ -4922,7 +4915,6 @@
 @@||yandex.go.link^$removeparam=adj_t
 @@||yandex.ru/ads/system/adsdk.js$domain=gisher.org
 @@||yandex.st/swfobject^
-@@||yandexcdn.com/ad/api/popunder.js$script
 @@||yantuchina.com/gg/tmp/hong.gif
 @@||yastatic.net/awaps-ad-sdk-js$domain=kinopoisk.ru|video.yandex.ru,script
 @@||yaytrade.com^*/chunks/pages/advert/$~third-party
@@ -4991,7 +4983,6 @@
 @@||zjjcxy.cn^*/ad.css?$stylesheet
 @@||zkres.myzaker.com^$important
 @@||zmdownload.zoho.com/zm/imagedisplay$stealth=dpi
-@@||zmovs.com/js/pop.js
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
 @@||zol-img.com.cn^$stealth=referrer,domain=zol.com.cn
 @@||zoominfo.com/c/amplitude-js$script,~third-party
@@ -6645,7 +6636,6 @@
 @@||w8.com.cn^
 @@||waapdg.jd.com^
 @@||wallpaperm.cmcm.com^
-@@||wan.douyu.com^
 @@||wannianrili.bmcx.com^
 @@||wap.cmpassport.com^
 @@||wap.zol.com.cn^
