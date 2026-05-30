@@ -319,8 +319,6 @@ filters:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Moblie
@@ -333,6 +331,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard Other Annoyances filter
