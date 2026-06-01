@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-05-31 03:43:51 UTC
-! Total: 6853 rules
+! Updated: 2026-06-01 03:58:53 UTC
+! Total: 6854 rules
 ! Sources:
-!   - HyperADRules - Allow: 8914 total, 8914 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3494 total, 3430 used (98.2%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 8915 total, 8915 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3494 total, 3429 used (98.1%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -347,7 +347,6 @@
 @@||addon.dismall.com/resource/*/ad
 @@||addons.opera.com/extensions/download/$stealth
 @@||addthis.com/*-angularjs.min.js$script,domain=ead.senac.br|missingkids.com|missingkids.org
-@@||adengine.rt.ru^$domain=rt.ru
 @@||adfurikun.jp/adfurikun/images/$~third-party
 @@||adguard.com^$stealth
 @@||adidas.com^*/adidasAnalytics.js?
@@ -414,6 +413,7 @@
 @@||ads.helisimmer.com/www/admin/assets/images/login-welcome.gif$domain=helisimmer.com
 @@||ads.imprezzer.com/js/$script,domain=mgronline.com
 @@||ads.julephosting.de/podcasts/$domain=open.spotify.com
+@@||ads.kbmax.com^$domain=adspipe.com
 @@||ads.korri.fr/index.js$domain=dogefaucet.com
 @@||ads.lingxing.com^
 @@||ads.listonic.com^
@@ -603,7 +603,6 @@
 @@||api-*.cludo.com/api/$stealth=referrer
 @@||api-*.mappy.net^$stealth=referrer
 @@||api-analytics.magstimconnect.net^$~third-party
-@@||api-b2b.backenster.com/b1/api/$stealth=3p-auth
 @@||api-edge.cognitive.microsofttranslator.com/translate?
 @@||api-js.datadome.co/js/$domain=account.samsung.com
 @@||api-maps.yandex.$stealth=referrer
@@ -757,7 +756,7 @@
 @@||asianporn.li^$generichide
 @@||ask.qcloudimg.com^$stealth=referrer,domain=cloud.tencent.com
 @@||assbbs.com^$generichide
-@@||asset*.coupangcdn.com^$stealth=referrer
+@@||asset*.coupangcdn.com^$stealth=referrer,domain=coupang.com
 @@||asset.pagefair.com/measure.min.js$domain=www.gamespot.com
 @@||assets-jpcust.jwpsrv.com^$domain=destructoid.com
 @@||assets.anyclip.com/anyclip-widget/$domain=zerotackle.com
@@ -892,6 +891,7 @@
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
 @@||bdimg.com/advert/js/advert.js$domain=music.baidu.com
 @@||bdstatic.com/??*,*,*,
+@@||bea4.v.fwmrm.net/ad/u$domain=nbcsports.com
 @@||beacon.cdn.qq.com/sdk/*/beacon_web.min.js$domain=guanjia.qq.com
 @@||beacon.guim.co.uk/accept-beacon?
 @@||beanfun.com/ADClient/
@@ -1899,7 +1899,6 @@
 @@||exacttarget.com^$domain=pub.msg.smbc.co.jp
 @@||exeygo.com^$generichide
 @@||exoclick.com/iframe.php?*=2596969&$domain=jav777.cc|jav777.xyz
-@@||exosrv.com/video-slider.js$domain=xfreehd.com
 @@||exp.sug.browser.miui.com^$important
 @@||expedia.com/minify/siteAnalytics-$script
 @@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xmlhttprequest,domain=dkb.de
@@ -2415,6 +2414,7 @@
 @@||idsly.com^$generichide
 @@||ieee.org^$stealth=donottrack|java|location|push|useragent|webrtc
 @@||iejima.org/ad-banner/$image,~third-party
+@@||ienohikari.net/ad/img/$~third-party
 @@||iface2.iqiyi.com^$important
 @@||ifengimg.com/a/201*Player
 @@||iflow.uc.cn^$important
@@ -2682,6 +2682,7 @@
 @@||kingofdown.com^$generichide
 @@||kingofshrink.com^$generichide
 @@||kingwar.cn^$image,stealth=referrer
+@@||kinogo.*/*.flv$stealth=ip
 @@||kion.ru/api/$stealth=ip
 @@||kissjav.$generichide
 @@||kissjav.com^$generichide
@@ -3880,6 +3881,7 @@
 @@||seal.globalsign.com^$app=jp.co.alc.eow
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||search-myfonts-api.monotype.com^$stealth=referrer
+@@||search.powergap.de/indexes/$stealth=3p-auth
 @@||search.spotxchange.com/vmap/*&content_page_url=www.bsfuji.tv$xmlhttprequest,domain=imasdk.googleapis.com
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||sec-cdn.static.xiaomi.net^$important
@@ -4029,6 +4031,7 @@
 @@||snssdk.com/video/drm/v*/play_licenses
 @@||snva.jp/javascripts/reco/$script,domain=abc-mart.net|store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
+@@||sobot.com^
 @@||soefart.dk^$generichide
 @@||soft8ware.com^$generichide
 @@||softblog.tw^$generichide
@@ -4057,7 +4060,6 @@
 @@||sozcu.com.tr/lib/adsv2_dist/postDetailPageClient_tr.js$script
 @@||sozi.cn/images/ad/tj
 @@||spanishdict.com^$generichide
-@@||spankbang.com^*/prebid-ads.js$domain=spankbang.com
 @@||spark.co.nz/content/*/utag.sync.js$domain=skinny.co.nz
 @@||spclient.wg.spotify.com^$important
 @@||speedcurve.com/js/lux.js$script,domain=tv8.it
@@ -4375,7 +4377,6 @@
 @@||themezon.net/link.php$stealth=referrer
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
 @@||thenextweb.com$generichide
-@@||theolivepress.es^$stealth=useragent
 @@||thepiratebay.*/ajax_
 @@||thepiratebay.org^$subdocument
 @@||thetvdb.com/banners/$image,domain=tvtime.com
@@ -4651,6 +4652,7 @@
 @@||vector.hereapi.com/v*/vectortiles/$stealth=referrer
 @@||veev.to^$generichide
 @@||vegetariantimes.com^$stealth=dpi
+@@||vembx.one/*embed$subdocument,stealth=referrer
 @@||verizon.com/images/track/track.gif?track=load&$xmlhttprequest
 @@||vertamedia.com/assets/img/adimage.png
 @@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=skyscrapercity.com
@@ -6432,7 +6434,6 @@
 @@||smtp.office365.com^$important
 @@||snzypic.com^
 @@||so.douyin.com^
-@@||sobot.com^
 @@||sogoucdn.com^$important
 @@||sourl.cn^
 @@||south-plus.net^
