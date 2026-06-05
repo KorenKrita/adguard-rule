@@ -325,6 +325,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard URL Tracking filter
@@ -345,8 +347,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Mobile App Banners filter
