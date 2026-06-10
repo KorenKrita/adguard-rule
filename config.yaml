@@ -333,8 +333,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
@@ -345,10 +343,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: AdGuard Widgets filter
@@ -404,10 +404,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: 去广告规则 - 酷安反馈反馈 DNS
     url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
-  - name: AdGuard DNS
-    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: AdRules DNS List
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
+  - name: AdGuard DNS
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: SMAdHosts
     url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
   - name: 大圣
