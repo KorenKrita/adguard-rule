@@ -404,12 +404,12 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: AdRules DNS List
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-  - name: 去广告规则 - 酷安反馈反馈 DNS
-    url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
   - name: AdGuard DNS
     url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: SMAdHosts
     url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: 去广告规则 - 酷安反馈反馈 DNS
+    url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter

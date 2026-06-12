@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-06-11 03:54:47 UTC
-! Total: 6933 rules
+! Updated: 2026-06-12 03:53:17 UTC
+! Total: 6940 rules
 ! Sources:
-!   - HyperADRules - Allow: 9018 total, 9018 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 9027 total, 9027 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3514 total, 3458 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -385,6 +385,7 @@
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=sky.it
 @@||adobedtm.com^*_source.min.js$domain=ally.com|americanexpress.com|as.com|backcountry.com|crave.ca|disneyplus.disney.co.jp|hilton.com|hl.co.uk|homedepot.ca|kroger.com|mora.jp|nbarizona.com|pnc.com|tatacliq.com|telus.com
 @@||adobelogin.com^$stealth=3p-cookie|3p-auth
+@@||adobesparkpost-web.app.link/e$stealth=useragent
 @@||adobetag.com/d1/ewscripps/live/SNIFoodCategory.js$domain=food.com
 @@||adobetag.com^*/amc.js$script
 @@||adobetag.com^*s_code.js$domain=fnac.com
@@ -589,9 +590,7 @@
 @@||animevost.org^$stealth=webrtc
 @@||anisearch.*^$generichide
 @@||anitasrecipes.com/Content/Images/Recipes/$image,~third-party
-@@||anitube*.vip/playerricas.php$stealth=referrer
 @@||aniview.com/api/$script,xmlhttprequest,domain=gamingbible.co.uk|ladbible.com|stirr.com
-@@||anizmstream*.com/cdn/down/$stealth=referrer,domain=anizmplayer.com|anizm.net
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
 @@||anonymousemail.me/*.js$~third-party
@@ -712,6 +711,7 @@
 @@||api.zhuti.xiaomi.com^$important
 @@||api2.branch.io/v1/open$domain=flickplay.co
 @@||apim.canadiantire.ca^$stealth=referrer
+@@||apim.prd.natlot.be^$stealth=3p-auth
 @@||apimeishi.meituan.com/meishi/poi$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
 @@||apis.google.com
 @@||apiservices.krxd.net/click_tracker^
@@ -1215,6 +1215,7 @@
 @@||cdn.permutive.com/*-web.js$domain=independent.co.uk
 @@||cdn.petametrics.com/*-nbc.js$script,domain=bringmethenews.com
 @@||cdn.plyr.io/*/plyr.svg$domain=akwam.*
+@@||cdn.plytv.me/scripts/embed.min.js
 @@||cdn.polarbyte.com^$domain=bab.la
 @@||cdn.popt.in/pixel.js$domain=userstyles.org
 @@||cdn.privacy.paramount.com^$stealth=ip,domain=southparkstudios.*
@@ -1398,6 +1399,7 @@
 @@||clouderrorreporting.googleapis.com^$domain=waze.com
 @@||cloudfam.io/assets/ads/adnetwork-sync.js
 @@||cloudflare.com/*/fingerprint2.min.js$domain=saavn.com
+@@||cloudflare.com^*/videojs-contrib-ads.js$domain=wtk.pl|zeam.com
 @@||cloudflare.net^$script,domain=colamanga.com
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=karnaval.com|livestream.com|luxuryrealestate.com
@@ -1985,7 +1987,7 @@
 @@||feeds.tildaapi.com/api/getfeed/$stealth=referrer
 @@||feilusw.com/search.html$genericblock,generichide
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
-@@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
+@@||feliz.data.tm-awx.com/smile-web-v*/$domain=ok.co.uk
 @@||fengkongcloud.com/fpv2.js
 @@||festyy.com^$generichide
 @@||fga0.market.xiaomi.com^$important
@@ -2588,6 +2590,7 @@
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||ipv4.seeip.org/jsonip$domain=empire-streaming.app
 @@||iqiyi.com/*.html$stealth=webrtc
+@@||island.lk/userfiles/image/danweem/island.gif
 @@||istanbulsenin.istanbul^$stealth=dpi
 @@||isub.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
 @@||itc.cn/site/share/
@@ -2697,6 +2700,7 @@
 @@||kaspersky.com/advert/
 @@||kataweb.it/wt/wt.js?http$domain=gelocal.it|video.huffingtonpost.it|video.ilsecoloxix.it|video.lastampa.it|video.repubblica.it
 @@||katfile.com/js/*ad*.js
+@@||kaufdex.com/detroitchicago/dayton.js
 @@||kayixin.com^*/advert
 @@||kdpic.pchome.com.tw/img/js/xpcadshow.js$script,domain=10co.xyz
 @@||keibana.com/wp-content/uploads/*/300x250_$~third-party
@@ -2771,6 +2775,7 @@
 @@||laosu.tech^$generichide
 @@||laotiesao.vip^$generichide
 @@||laprovence.com/sites/all/modules/GHM/xiti_oas/js/xtcore.js
+@@||larena.it/gfx/siti/*/images/advertising_banner_300.gif
 @@||lasicilia.it/wp-content/plugins/digistream/digiplayer/js/videojs.ga.js?$script,~third-party
 @@||lastpass.com/ads.php$subdocument,domain=chrome-extension-scheme
 @@||latimes.com/hive/javascripts/loggingService.js
@@ -2779,8 +2784,10 @@
 @@||lcs.naver.com/*?u=*service_id$image,domain=smartstore.naver.com
 @@||ldxinyong.com^$generichide
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
+@@||leaklinks.com/js/prebid-ads.js
 @@||leanplum.com^$domain=arkadium.com
 @@||learn.khanacademy.org^
+@@||learnmania.org^$generichide
 @@||lefile.cn/??*,
 @@||legendstracking.com/js/legends-tracking.js$~third-party
 @@||lemall.com/adspace/
@@ -2819,6 +2826,7 @@
 @@||link.sylikes.com^
 @@||link.theplatform.com/*/tracker.log?
 @@||linka.page^
+@@||linkbucks.com/tmpl/$image,stylesheet
 @@||linkjust.com^$generichide
 @@||linkneverdie.com^$generichide
 @@||links.e.theatlantic.com^
@@ -3037,6 +3045,7 @@
 @@||mediamarkt.com.tr^$genericblock
 @@||mediamarkt.de/*/shop^
 @@||mediaplex.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
+@@||mediateka.pl/media/desktop/zpr_footer/js/adblock_detector.js
 @@||mediav.com/js/feed_ts.js$domain=china.com|mini.yyrtv.com
 @@||medium.com^$stealth=referrer
 @@||medonet.pl/*&srcc=ucs$removeparam=utm_source
@@ -3449,7 +3458,7 @@
 @@||pages.dev^$stealth=referrer
 @@||palmettostatearmory.com/static/$script,~third-party
 @@||pals.pa.gov/vendor/analytics/$~third-party
-@@||pandora.com/images/public/devicead/$image
+@@||pandora.com/static/ads/
 @@||panel.flops.ru/js/member/evercookie_init.js
 @@||panel.play.hosting/js/jquery.openxtag.js
 @@||papalah.com^$generichide
@@ -4263,7 +4272,6 @@
 @@||stream4free.live^$generichide
 @@||streamdata.vaplayer.ru^$xmlhttprequest,stealth=referrer,domain=brightpathsignals.com
 @@||streamlive.to^$generichide
-@@||streampeaker.org/DDL/$media,stealth=referrer
 @@||streamtape.com^$popup,domain=streamtape.to
 @@||streamwish.com/js/dnsads.js?ads
 @@||streanplay.cc^$stealth
@@ -4398,7 +4406,6 @@
 @@||terminvereinbarung.leipzig.de^$stealth=dpi
 @@||testufo.com^$generichide
 @@||texasroadhouse.com/common/javascript/google-analytics.js
-@@||textbin.net/js/prebid-ads.js
 @@||textfree.us^$generichide
 @@||tgc1.ru^$stealth=dpi
 @@||tgfcer.com/advert.js
@@ -4424,7 +4431,7 @@
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
 @@||thenextweb.com$generichide
 @@||thepiratebay.*/ajax_
-@@||thepiratebay.org^$subdocument
+@@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
 @@||thetvdb.com/banners/$image,domain=tvtime.com
 @@||theverge.com/_next/data/*.json
 @@||thirdwx.qlogo.cn^$important
@@ -4491,6 +4498,7 @@
 @@||torproject.org^
 @@||torrage.info/torrent.php$popup,third-party
 @@||torrentsafe.com/fingerprint2.min.js
+@@||tortuga.wtf^$stealth=referrer
 @@||torupload.com/token/gettoken.php$domain=torupload.com
 @@||totheglory.im/pic/ttg_logo
 @@||toutiaocdn.com^$important
@@ -4512,7 +4520,6 @@
 @@||track.nzz.ch/*/api/auth_v*/
 @@||track.rutarget.ru^
 @@||track.sendlane.com/track/form/$domain=momentprocamera.com
-@@||track.ukrposhta.ua^$stealth=ip
 @@||track.webgains.com/click.html?$popup,domain=pepper.*
 @@||track2.royalmail.com^
 @@||trackcmp.net^|
