@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-06-20 03:35:37 UTC
-! Total: 7030 rules
+! Updated: 2026-06-21 04:08:12 UTC
+! Total: 7028 rules
 ! Sources:
-!   - HyperADRules - Allow: 9131 total, 9131 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 9133 total, 9133 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3537 total, 3481 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -102,6 +102,7 @@
 @@url.cn
 @@verify.sec.xiaomi.com
 @@yandex.*/user-id?$stealth=referrer|searchqueries
+@@|forefront.ai^$stealth=3p-cookie
 @@|http$script,~third-party,domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@|http*://*.*/*.$image,third-party,domain=a2zupload.com
 @@|ws://*$websocket,domain=flirt4free.com
@@ -270,7 +271,6 @@
 @@||about-australia.com/*/clickheat.js
 @@||about.smartnews.com/ja/wp-content/assets/img/advertisers/ad_$~third-party
 @@||absciss.algonoew.online/?token_movie=$stealth=referrer
-@@||abstream.to^$stealth=useragent
 @@||abt.nike.com^$domain=nike.com
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
@@ -817,7 +817,6 @@
 @@||asset*.coupangcdn.com^$stealth=referrer,domain=coupang.com
 @@||asset.pagefair.com/measure.min.js$domain=www.gamespot.com
 @@||assets*.akamai.coub.com/assets/
-@@||assets-jpcust.jwpsrv.com^$domain=destructoid.com
 @@||assets.anyclip.com/anyclip-widget/$domain=zerotackle.com
 @@||assets.ctfassets.net^$media,domain=ads.spotify.com
 @@||assets.customer.io/assets/track.js$domain=buffer.com
@@ -1307,6 +1306,7 @@
 @@||cdn.videoplaza.tv/contrib/de-ipd/svm/homadConfigVideoplaza-rtl.json$domain=rtl.de
 @@||cdn.viglink.com/api/vglnk.js$domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co
 @@||cdn.vox-cdn.com/packs/js/concert_ads-*.js$domain=arrowheadpride.com
+@@||cdn.watch.aetnd.com^$domain=fyi.tv|cdn.watch.aetnd.com
 @@||cdn.wazimo.com/engine/common/js/$domain=lastnighton.com
 @@||cdn.wgchrrammzv.com/prod/ajc/loader.min.js$domain=journal-news.com
 @@||cdn.witchhut.com/network-js/witch-afg/ima3.js$domain=witchhut.com
@@ -1523,7 +1523,6 @@
 @@||commons.wikimedia.org/w/api.php?$~third-party,xmlhttprequest
 @@||community-wscdn.xmwol.com^$stealth=referrer,image,stylesheet
 @@||community.brave.app/t/$xmlhttprequest
-@@||community.fandom.com^$stealth=flash
 @@||component-vvs.glomex.com/embed^$popup
 @@||components2.corriereobjects.it/rcs_tealium/v1/distro/corriere/preprod/utag.*js?$domain=corriere.it
 @@||computemaster.bxcearth.com^$important
@@ -1692,6 +1691,7 @@
 @@||daziba.cn/Images/share.css
 @@||dby*.xyz^$stealth=referrer,domain=molystream.*
 @@||dc.services.visualstudio.com/v2/track$xmlhttprequest,domain=aiskillsnavigator.microsoft.com
+@@||dcdirtylaundry.com/cdn-cgi/challenge-platform/$~third-party
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=abcnews.go.com
 @@||dcinfos.abtasty.com/geolocAndWeather.php^$domain=tf1.fr
 @@||dcinside.com$cookie=_ga
@@ -2475,7 +2475,6 @@
 @@||i*-tb.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
 @@||i*.gmx.com/image
 @@||i*.imagetwist.com^$image,domain=imagetwist.com
-@@||i-funbox.com/images/
 @@||i-sdk.mediation.unity3d.com^$app=jp.step_official
 @@||i.doodcdn.io/ads/ad.js
 @@||i.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
@@ -2563,7 +2562,6 @@
 @@||img.soft98.ir/*/300x250.
 @@||img.soutula.com^$stealth=referrer,domain=fabiaoqing.com
 @@||img.tfd.com/ads.js
-@@||img.tile.expert/*/*_300x600_$image,~third-party
 @@||img.ui-portal.de/fallback/$domain=dl.web.de|dl.gmx.net|dl.gmx.at|dl.gmx.de
 @@||img.zcool.cn/ad_manager/location/$domain=zcool.com.cn
 @@||img.zuoyebang.cc^$important
@@ -2854,6 +2852,8 @@
 @@||leanplum.com^$domain=arkadium.com
 @@||learn.khanacademy.org^
 @@||learnmania.org^$generichide
+@@||lecteurvideo.com/embed.php?id=$stealth=referrer
+@@||leerolymp.com/_nuxt/300-250.$script,~third-party
 @@||lefile.cn/??*,
 @@||legendstracking.com/js/legends-tracking.js$~third-party
 @@||lemall.com/adspace/
@@ -3626,7 +3626,6 @@
 @@||play.*.com/vendor/VisitorAPI.js$domain=play.aetv.com|play.mylifetime.com
 @@||play.dlsite.com/csr/viewer/lib/newrelic.js
 @@||play.fyi.tv^$cookie=/^AMCVS?_.*AdobeOrg/
-@@||play.geforcenow.com/mall/$stealth=webrtc
 @@||play.moviehd.cfd/play/$stealth=referrer
 @@||play.mylifetime.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||play.openhub.tv^$stealth=referrer
@@ -3643,12 +3642,10 @@
 @@||player.clevercast.com/players/video-js/video-js-plugins/videojs.ads.min.js
 @@||player.enetres.net/js/videojs-plugins/videojs-ads-contrib/videojs.ads.js
 @@||player.ex.co/config$domain=pagesix.com
-@@||player.foxdcg.com/*/js/playback.js?*^ad$xmlhttprequest,domain=fox.com
 @@||player.glomex.com/integration^$domain=t-online.de
 @@||player.mediavitrina.ru^$stealth=referrer
 @@||player.odycdn.com/api/$xmlhttprequest,domain=odysee.com
 @@||player.pl^$generichide
-@@||player.pstatic.gr/adman-video.js$domain=webtv.ert.gr
 @@||player.smotrim.ru/js/piwik.js
 @@||player.starlight.digital^$stealth=referrer
 @@||player.vgtrk.com/js/stat.js?
@@ -4103,6 +4100,7 @@
 @@||simba.taobao.com/?name=mcad$script
 @@||simcotools.app/assets/adsense-*.js$~third-party
 @@||simg.sinajs.cn^$important
+@@||similarweb.com/website/data/
 @@||simkl.com^$xmlhttprequest,elemhide,jsinject,extension
 @@||simpforselti.com/captcha.js$domain=simpcity.cr
 @@||simple.ripley.cl$generichide
@@ -4169,6 +4167,7 @@
 @@||sohotheatre.com^*/PageView.js$~third-party
 @@||sohu.com/cityjson$domain=51credit.com|castech.com|e-learn.cn|eduyun.cn|ems.com.cn|jdboshi.com|jialingmm.net|lcm88.com|mop.com|platinum-pen.com.cn|shouji.com.cn|skk.moe|vivo.com.cn
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
+@@||solutions.cdn.optable.co/ezoic/sdk.js$domain=open.video
 @@||solve-all-problems.info/googleads.js
 @@||som.aeroplan.com/b/ss/
 @@||somewheresouth.net/banner/banner.php$image
@@ -6586,7 +6585,6 @@
 @@||shouji.bmcx.com^
 @@||shouji.sougou.com^
 @@||signup.live.com^$important
-@@||similarweb.com^
 @@||site.tiantiantiaosheng.com^
 @@||siwazywcdn2.com^
 @@||siyuannote.com^
