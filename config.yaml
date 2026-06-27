@@ -339,12 +339,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: Peter Lowe's Blocklist
@@ -416,20 +416,20 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: PeterLoweFilter
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
+  - name: PeterLoweFilter
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: AdBlock DNS
-    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
