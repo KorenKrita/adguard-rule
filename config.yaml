@@ -319,12 +319,12 @@ filters:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
-  - name: AdGuard Experimental filter
-    url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  - name: AdGuard Experimental filter
+    url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard URL Tracking filter
@@ -400,10 +400,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
-  - name: AdRules DNS List
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
   - name: DanPollocksList
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
+  - name: AdRules DNS List
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
   - name: AdGuard DNS
     url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   - name: SMAdHosts
