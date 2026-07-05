@@ -319,6 +319,8 @@ filters:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Moblie
@@ -343,8 +345,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyList Cookie List
