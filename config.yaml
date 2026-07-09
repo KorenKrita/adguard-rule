@@ -283,8 +283,6 @@ filters:
   urls:
   - name: all.txt
     url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
-  - name: HyperADRules - Rules
-    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
   - name: AdRules AdBlock List Plus
     url: https://adrules.top/adblock_plus.txt
   - name: Phishing URL Blocklist
@@ -305,30 +303,32 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: uBlock Origin – Badware risks
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
-  - name: Scam Blocklist by DurableNapkin
-    url: https://filters.adtidy.org/extension/chromium/filters/256.txt
+  - name: AdGuard URL Tracking filter
+    url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: AdBlock Filter
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
+  - name: AdGuard Moblie
+    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  - name: Scam Blocklist by DurableNapkin
+    url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
-  - name: Fanboy's Anti-Facebook List
-    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+  - name: Fanboy's Anti-Facebook List
+    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
-  - name: AdGuard Moblie
-    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
-  - name: AdGuard URL Tracking filter
-    url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
@@ -337,12 +337,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: HyperADRules - Rules
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
@@ -424,12 +424,12 @@ dns:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
