@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-07-11 02:32:44 UTC
-! Total: 7093 rules
+! Updated: 2026-07-12 02:39:12 UTC
+! Total: 7091 rules
 ! Sources:
-!   - HyperADRules - Allow: 9230 total, 9230 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 9228 total, 9228 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3538 total, 3482 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -377,7 +377,6 @@
 @@||adm.10jqka.com.cn^
 @@||adm.crowdicity.com^
 @@||adm.fwmrm.net/p/cracklecom_flash_live/AdManager.swf^$domain=crackle.com
-@@||adm.fwmrm.net^*/TremorAdRenderer.$object,domain=go.com
 @@||admin.corrata.com/console/dcconsolews/event-log?$~third-party
 @@||admin.dable.io^
 @@||admin.mailchimp.com^
@@ -397,7 +396,6 @@
 @@||adobedtm.com^*-source.min.js$script,domain=53.com|aarp.org|aircanada.com|ally.com|americanexpress.com|as.com|atresplayer.com|automobiles.honda.com|backcountry.com|bbva.com.ar|bbvacib.com|bbvauk.com|bestbuy.ca|bose.ae|bose.at|bose.ca|bose.ch|bose.cl|bose.co|bose.co.jp|bose.co.nz|bose.co.uk|bose.com|bose.com.au|bose.de|bose.dk|bose.es|bose.fi|bose.fr|bose.hk|bose.hu|bose.ie|bose.it|bose.lu|bose.mx|bose.nl|bose.no|bose.pe|bose.pl|bose.se|boseapac.com|bosebelgium.be|boselatam.com|bt.com|cadenaser.com|churchofjesuschrist.org|cibc.com|crave.ca|currys.co.uk|deutsche-bank.de|dollargeneral.com|etihad.com|eurosport.de|fedex.com|guitarcenter.com|healthsafe-id.com|healthy.kaiserpermanente.org|helvetia.com|hgtv.com|hilton.com|homedepot.ca|ihg.com|imsa.com|ing.com.au|ingrammicro.com|kroger.com|lenovo.com|lifetime.life|lowes.com|manager-magazin.de|marriott.com|medscape.com|mtvuutiset.fi|mybell.bell.ca|natwest.com|nbarizona.com|news.sky.com|philips.com|plasticsnews.com|pnc.com|poweredbycovermore.com|ralphlauren.com|samsung.com|sephora.com|snsbank.nl|ssrn.com|starwarscelebration.com|subway.com|tatacliq.com|telegraph.co.uk|telus.com|verizon.com|virginplus.ca|walgreens.com|xfinity.com
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=sky.it
 @@||adobedtm.com^*_source.min.js$domain=ally.com|americanexpress.com|as.com|backcountry.com|crave.ca|disneyplus.disney.co.jp|hilton.com|hl.co.uk|homedepot.ca|kroger.com|mora.jp|nbarizona.com|pnc.com|tatacliq.com|telus.com
-@@||adobesparkpost-web.app.link/e$stealth=useragent
 @@||adobetag.com/d1/ewscripps/live/SNIFoodCategory.js$domain=food.com
 @@||adobetag.com^*/amc.js$script
 @@||adobetag.com^*s_code.js$domain=fnac.com
@@ -821,7 +819,7 @@
 @@||asianporn.li^$generichide
 @@||ask.qcloudimg.com^$stealth=referrer,domain=cloud.tencent.com
 @@||assbbs.com^$generichide
-@@||asset*.coupangcdn.com^$stealth=referrer,domain=coupang.com
+@@||asset*.coupangcdn.com^$stealth=referrer
 @@||asset.pagefair.com/measure.min.js$domain=www.gamespot.com
 @@||assets*.akamai.coub.com/assets/
 @@||assets.anyclip.com/anyclip-widget/$domain=zerotackle.com
@@ -1809,7 +1807,6 @@
 @@||docs.expo.io/*/static/*/pages/versions/latest/sdk/*.js$domain=docs.expo.io
 @@||docs.google.com/*/viewdata$~third-party
 @@||docs.rucml.ru/e.gif?$~third-party
-@@||docs.woopt.com/wgact/$image,~third-party,xmlhttprequest
 @@||doda.jp/cmn_web/img/brand/ad/ad_top_3.mp4
 @@||dodo.ac/np/images/$image,domain=nookipedia.com
 @@||dogus-ads-cdn.dygdigital.com/daion/daion-videojs-hlsjs-*.min.js
@@ -1940,6 +1937,7 @@
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
 @@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
+@@||embed.fbsbx.com/embed_vidyard.php$subdocument,stealth=referrer
 @@||embed.nana2play.com^$subdocument,stealth=referrer
 @@||embed.new.video^$stealth=referrer|ip
 @@||embed.redditmedia.com/widgets/platform.js$domain=gamerant.com
@@ -2098,7 +2096,7 @@
 @@||firmwaredrive.com/templates/default/html/en/assets/js/fingerprint2.min.js
 @@||firstdirect.com^*/logging-code.js
 @@||flightradar24.com^$stealth=dpi
-@@||flipboard.com/*/videojs-contrib-ads.*.bundle.js
+@@||flipboard.com/*/vendors~videojs-contrib-ads.*.bundle.js
 @@||flormar.webinstats.com^$domain=flormar.com.tr
 @@||fltaradio.com/js/ads.js
 @@||flyert.com/plug/socialShare/js/social-share.
@@ -2123,7 +2121,6 @@
 @@||forums.windowscentral.com^$script,~third-party
 @@||fotbolltransfers.com^$generichide
 @@||fotor.com.cn/static/web/share/js/
-@@||fourfourtwo.com/vite/assets/Ads/Ads.ts-BXJqYWBm.js$domain=fourfourtwo.com
 @@||fourhoi.com^$image,media,stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*|missav01.com
 @@||fplay.online/log_event$~third-party,xmlhttprequest
 @@||fpnpmcdn.net/v*/*/loader_*.js$domain=member.neofinancial.com
@@ -2455,7 +2452,6 @@
 @@||homedepot.com/static/scripts/resxclsa.js
 @@||hood.de^$cookie=DSID
 @@||hopto.org/js/prebid-ads.
-@@||horriblesubs.info/static/hs.js
 @@||hostlogr.com/etc/geo.php?
 @@||hosts-file.net/ad_servers.txt
 @@||hotmail.com/mail/*/i2a.js
@@ -2792,7 +2788,7 @@
 @@||kaspersky.ru/advert/
 @@||kataweb.it/wt/wt.js?http$domain=gelocal.it|video.huffingtonpost.it|video.ilsecoloxix.it|video.lastampa.it|video.repubblica.it
 @@||katfile.com/js/*ad*.js
-@@||kaufdex.com/detroitchicago/dayton.js
+@@||kaufdex.com/porpoiseant/banger.js
 @@||kayixin.com^*/advert
 @@||kdpic.pchome.com.tw/img/js/xpcadshow.js$script,domain=10co.xyz
 @@||keibana.com/wp-content/uploads/*/300x250_$~third-party
@@ -2880,7 +2876,6 @@
 @@||leaklinks.com/js/prebid-ads.js
 @@||leanplum.com^$domain=arkadium.com
 @@||learn.khanacademy.org^
-@@||learnmania.org^$generichide
 @@||lecteurvideo.com/embed.php?id=$stealth=referrer
 @@||leerolymp.com/_nuxt/300-250.$script,~third-party
 @@||leffatykki.com/media/banners/tykkibanneri-728x90.png$image,~third-party
@@ -3447,6 +3442,7 @@
 @@||ntust.edu.tw/bin/showads.
 @@||ntv.io/serve/load.js$domain=mcclatchydc.com
 @@||nu.nl^$generichide
+@@||nutritiondata.self.com/ads/js/cn.dart.bun.min.js
 @@||nv7s.com/key=$stealth=referrer
 @@||nvidia.*/drivers/results/$stealth=3p-auth
 @@||nvidia.cn^*-300x250-
@@ -4561,6 +4557,7 @@
 @@||thetvdb.com/banners/$image,domain=tvtime.com
 @@||thewatchcartoononline.tv/inc/videojs-qualityselector/videojs-qualityselector.min.js
 @@||thirai*.com/*/$subdocument,stealth=referrer,domain=tamildhool.net
+@@||thirdparty.aliexpress.com^$stealth=flash
 @@||thirdwx.qlogo.cn^$important
 @@||thisav.com^$generichide
 @@||thisiswaldo.com/static/js/$script,domain=bestiefy.com
@@ -4624,7 +4621,6 @@
 @@||torproject.org^
 @@||torrage.info/torrent.php$popup,third-party
 @@||torrentsafe.com/fingerprint2.min.js
-@@||tortuga.wtf^$stealth=referrer
 @@||torupload.com/token/gettoken.php$domain=torupload.com|nathanmichaelphoto.com
 @@||totheglory.im/pic/ttg_logo
 @@||toutiaocdn.com^$important
@@ -4781,6 +4777,7 @@
 @@||uploadcloud.pro^$generichide
 @@||uploadex.com^$elemhide
 @@||uploadnow.*/share$removeparam=utm_source
+@@||uploads-ssl.webflow.com/*/css/adcentral.webflow.*.css$domain=joinadcentral.com
 @@||ups.com/*/WebTracking/track&dcs
 @@||ups.ksmobile.net^$app=com.cleanmaster.security
 @@||ups.xplosion.de/ctx$domain=ingame.de
@@ -4863,6 +4860,7 @@
 @@||vidhidepro.com^$stealth=referrer
 @@||vidhidevip.com/embed/$subdocument,stealth=referrer
 @@||vidible.tv^*/ComScore.StreamSense.js
+@@||vidload.site^$stealth=referrer
 @@||vidmixi.com/embed/$stealth=referrer
 @@||vidmoly.to/embed-$stealth=referrer|ip
 @@||vidnest-*.workers.dev/mp4-proxy$stealth=referrer

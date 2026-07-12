@@ -343,10 +343,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
@@ -426,10 +426,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: AWAvenueAdsRule
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   - name: oisd big
     url: https://big.oisd.nl
+  - name: AWAvenueAdsRule
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
