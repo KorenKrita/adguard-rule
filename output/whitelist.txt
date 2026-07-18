@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-07-17 02:32:32 UTC
-! Total: 7111 rules
+! Updated: 2026-07-18 02:23:47 UTC
+! Total: 7107 rules
 ! Sources:
-!   - HyperADRules - Allow: 9224 total, 9224 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - HyperADRules - Allow: 9218 total, 9218 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - 去广告规则 - 酷安反馈反馈 Allow: 3574 total, 3518 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -491,7 +491,6 @@
 @@||adverts.ie/css/
 @@||advertserve.com^$domain=lewdninja.com
 @@||adx.yiche.com/cityindex.ashx
-@@||aeradot.ismcdn.jp/resources/aeradigital/css/smartphone/ad.css?$domain=dot.asahi.com
 @@||aeries.net^*/require/analytics/views/$script,~third-party
 @@||aestheticcanvas.site^$stealth=referrer
 @@||aetv.com^$generichide
@@ -627,6 +626,7 @@
 @@||animevost.org^$stealth=webrtc
 @@||anisearch.*^$generichide
 @@||anitasrecipes.com/Content/Images/Recipes/$image,~third-party
+@@||anitube*.vip/playerricas.php$stealth=referrer
 @@||aniview.com/api/$script,xmlhttprequest,domain=gamingbible.co.uk|ladbible.com|stirr.com
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
@@ -650,7 +650,6 @@
 @@||api*.branch.io^$app=com.reddit.frontpage
 @@||api-*.cludo.com/api/$stealth=referrer
 @@||api-*.mappy.net^$stealth=referrer
-@@||api-*.spot.im/v*/config/launcher/sp_*/vendor,init,conversation$domain=bizpacreview.com
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-edge.cognitive.microsofttranslator.com/translate?
 @@||api-gw.spot.im/v*/feed/spot/sp_*/$domain=bizpacreview.com
@@ -735,6 +734,7 @@
 @@||api.slightcommunicativeinterconnectedness.xyz^
 @@||api.smartystreets.com/lookup$stealth=referrer,domain=att.com
 @@||api.spendino.de/admanager^
+@@||api.splice.com/www/advertisement/community-explore$domain=splice.com
 @@||api.spotify.com^$stealth=3p-auth
 @@||api.sprig.com/sdk/$domain=paypal.com
 @@||api.taboola.com/2.0/json/*/recommendations.$domain=azby.fmworld.net
@@ -752,7 +752,6 @@
 @@||api.zhihu.com^$important
 @@||api.zhuti.xiaomi.com^$important
 @@||api2.branch.io/v1/open$domain=flickplay.co
-@@||apibhx.tgdd.vn^$domain=bachhoaxanh.com,stealth=3p-auth
 @@||apim.canadiantire.ca^$stealth=referrer
 @@||apimeishi.meituan.com/meishi/poi$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
 @@||apis.google.com
@@ -1037,7 +1036,6 @@
 @@||bogi.ru/comments_widget.php$stealth=referrer
 @@||bokecc.com/flash/playlog?
 @@||bolha.com/clicktracker/
-@@||bombhopper.io/prebid.js
 @@||bonuscloud.io^$important
 @@||book.com.tw/image/getImage?
 @@||booklive.jp/vcentry/landing?$removeparam=vc_lpp
@@ -1190,7 +1188,6 @@
 @@||cdn-manga.com^$image,stealth=referrer
 @@||cdn-net.com/cc.js
 @@||cdn-pci.optimizely.com/public/*/sales_snippet.js$domain=talktalk.co.uk
-@@||cdn-static.pornhd.com/pornhd/*/css/dist/main.css$domain=pornhd.com
 @@||cdn-surfline.com/quiver/*/scripts/$domain=surfline.com
 @@||cdn.*.exponea.com/production*/consent?$subdocument,domain=proffsmagasinet.se|staypro.*
 @@||cdn.7tv.app^$stealth=dpi
@@ -1231,6 +1228,7 @@
 @@||cdn.cxense.com/cx*.js$domain=bangkokpost.com
 @@||cdn.datatables.net^
 @@||cdn.deviceinf.com^$domain=etail.market
+@@||cdn.digiteka.com/player/PrebidLibrary.js$domain=ultimedia.com
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dsmcdn.com/sfx/mergen/*.js$domain=trendyol-milla.com
 @@||cdn.duurzaam.greenchoice.nl^
@@ -1380,7 +1378,6 @@
 @@||checkfresh.com/js/prebid-ads.js
 @@||checkoutshopper-live-us.adyen.com^$stealth=referrer
 @@||checkoutshopper-live.adyen.com/checkoutshopper/*/securedFields.html$stealth=referrer
-@@||chemicalbook.com^$stealth=ip
 @@||cherrymx.de^$stealth=dpi
 @@||cheshi-img.com/ad/csad_2019.js
 @@||chili.com/api/v*/ad-manager/avod/metadata?*videoAssetId=
@@ -1981,7 +1978,6 @@
 @@||ets2.gr/js/siropu/am/ads.min.js
 @@||etsy.com/api/v3/ajax/bespoke/*log_performance_metrics=$~third-party
 @@||ettoday.net^$generichide
-@@||eu-tools.dmarcmanager.app/widgets/$stealth=referrer
 @@||eu.spgo.io/*~/aaa$~image
 @@||eu4cn.com^$generichide
 @@||ev.tpocdm.com^$xmlhttprequest,domain=wowma.jp
@@ -2618,7 +2614,6 @@
 @@||inbox.lv/advert/?actionID=imp_login
 @@||indeed.com/rpc/log/myjobs/$~third-party
 @@||independent.co.uk/_build/prebid.*.js$domain=independent.co.uk
-@@||indiaeveryday.com/staticcontent/ads/googleads.js^
 @@||indianrailways.info/js/adblocker.js
 @@||indiansgetfucked.com$generichide
 @@||indiatimes.com/configspace/
@@ -2786,7 +2781,6 @@
 @@||karte.io/libs/tracker.$domain=online.ysroad.co.jp|zf1.tohoku-epco.co.jp|zozo.jp
 @@||kaspersky.co$content
 @@||kaspersky.com/advert/
-@@||kaspersky.ru/advert/
 @@||kataweb.it/wt/wt.js?http$domain=gelocal.it|video.huffingtonpost.it|video.ilsecoloxix.it|video.lastampa.it|video.repubblica.it
 @@||katfile.com/js/*ad*.js
 @@||kayixin.com^*/advert
@@ -3207,7 +3201,6 @@
 @@||mistore.jp/content/dam/isetan_mitsukoshi/advertise/$~third-party
 @@||mitsubishiclub.cz^$generichide
 @@||miui.com/unlock/$stealth=referrer
-@@||miuipro.ru/advert.js
 @@||mivideo.cdn.pandora.xiaomi.com^$important
 @@||mixdrop.ps/e/$subdocument,stealth=referrer
 @@||mixpanel.com/public/$subdocument,domain=iframely.net
@@ -3580,7 +3573,6 @@
 @@||pastebin.com/etc/geo.php?
 @@||patreonusercontent.com/*.gif?token-$image,domain=patreon.com
 @@||patrick-wied.at/static/heatmapjs/src/heatmap.js
-@@||paula2.com/WS2/dnfiles/Banners/
 @@||pay.citylink.pro/stats/services/$~third-party
 @@||pay.yandex.ru/web/sdk/$stealth=referrer
 @@||payload.cargocollective.com^$image,~third-party
@@ -3929,6 +3921,7 @@
 @@||rmfon.pl^$stealth
 @@||rollbar.com^*/rollbar.min.js$domain=rollingstone.com|variety.com|wwd.com
 @@||rollingstone.de/resources/js/webtrekk.js
+@@||roomlala.*/assets/myspace/myprofile/sponsorship_controller-*.js
 @@||rosefile.net^$generichide
 @@||router.asus.com^$document
 @@||routerlogin.com^$document
@@ -4328,6 +4321,7 @@
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
 @@||static.trbo.com/img/$domain=o2online.de
 @@||static.truex.com/js/client.js$domain=schoolcheats.net
+@@||static.videostar.pl/static/assets/js/adcheck.min.js^
 @@||static.vidgyor.com/live/dai/js/videojs.ads.min.js
 @@||static.vocstatic.com/*/voonto.js$domain=secure.hoy.es
 @@||static.webshark.pl/adserver/*/main_script.js?advertise_check=1
@@ -4393,6 +4387,7 @@
 @@||sumologic.com^$domain=sumologic.com
 @@||sundaysky.com/sundaysky.js?$domain=lenovo.com
 @@||sundaysky.com^*/default/sundaysky.js$domain=lenovo.com
+@@||sundaysportclassifieds.com/ads/$image,~third-party
 @@||suning.cn/project/msIndex/js/??
 @@||suo.im^$important
 @@||supercachecdn.com/play/$media,stealth=referrer,domain=pornmedium.com|pornammo.com
@@ -5032,6 +5027,7 @@
 @@||wwe.com/sites/all/modules/wwe/wwe_analytics/s_wwe_code.js
 @@||www.chemdraw.com.cn^$important
 @@||www.dogpile.com^
+@@||www.door2windows.com^$stealth=referrer
 @@||www.fbsbx.com^
 @@||www.gdata.pl^$elemhide
 @@||www.googleadservices.*/aclk?*&adurl=$~third-party
