@@ -1,9 +1,9 @@
 ! Title: Merged Whitelist
-! Updated: 2026-07-22 02:32:48 UTC
-! Total: 7106 rules
+! Updated: 2026-07-23 02:37:51 UTC
+! Total: 7129 rules
 ! Sources:
-!   - HyperADRules - Allow: 9216 total, 9216 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3574 total, 3518 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - HyperADRules - Allow: 9215 total, 9215 used (100.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3595 total, 3539 used (98.4%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
 [Adblock Plus 2.0]
@@ -1657,6 +1657,7 @@
 @@||d.applovin.com^$app=ac.hush.app
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$domain=pointclub.line.me
 @@||d.line-scdn.net^*/torimochi.js$script,domain=demae-can.com
+@@||d.socdm.com/adsv/*/tver_splive$xmlhttprequest,domain=imasdk.googleapis.com
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||da.mgtv.com/m/player?
@@ -1774,7 +1775,6 @@
 @@||dlh.net/_application/modules/Standard/Adv/assets/advertisement.js
 @@||dlkoo.cc/down/*/*.htm$popup
 @@||dlkoo.com/down/Copyright.js
-@@||dloady.com/js/*/ad-banner.js
 @@||dlpanda.com^$generichide
 @@||dlvideo.*/prebid.js$domain=bigbtc.win|shrink.icu
 @@||dmcdn.net^$app=com.dailymotion.dailymotion
@@ -2404,7 +2404,6 @@
 @@||hello.myfonts.net/count/$stylesheet,domain=cfr.org
 @@||hellomagazine.com^$stealth=dpi
 @@||hellporno.net/_a_ht/s/s/js/ssu.v2.js
-@@||help.ea.com^$stealth
 @@||help.twilio.com^$cookie=_dd_s
 @@||henread.xyz^$image,xmlhttprequest,stealth=referrer,domain=hentairead.com
 @@||hentaicdn.com^$stealth=referrer,domain=hentai2read.com
@@ -3295,6 +3294,7 @@
 @@||my.beeline.ru/resources/js/webtrends.js?$script,~third-party
 @@||my.foxnews.com^$stealth=referrer
 @@||my.goabode.com/assets/js/fp2.min.js$script,~third-party
+@@||my.microsoftpersonalcontent.com^$stealth=3p-auth
 @@||my.nextdns.io^$stealth=dpi
 @@||my.onvista.de^$stealth=dpi
 @@||my.prom.ua/*/iframe$stealth=referrer
@@ -4019,6 +4019,7 @@
 @@||sdc.pingan.com^$~image
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
 @@||sdkapi.sms.mob.com^
+@@||sdltutorials.com/Data/Ads/AppStateBanner.jpg$~third-party
 @@||sdn-global-audio-adswizz-cache.3qsdn.com/*/files/$other,media,domain=noz.de
 @@||sdn.cz^$stealth=referrer,domain=televizeseznam.cz
 @@||se.com/_uce_/immutable/chunks/google-analytics.$script
@@ -4062,6 +4063,7 @@
 @@||service-public.fr^*/assets/js/eulerian/eulerian.js$~third-party
 @@||service.apport.net/apport-spa-common/src/tracking/tracking.js$~third-party
 @@||service.collarity.com/cust/nbcu/ucs.js$xmlhttprequest
+@@||service.hotstar.com/vs/getad.php?*adspot=
 @@||service.maxymiser.net/api/eu/mediamarkt.tr/*/mmapi.js$domain=mediamarkt.com.tr
 @@||services.bilsyndication.com^$domain=atozmath.com,~media
 @@||services.chipotle.com/__imp_apg__/$~third-party
@@ -4299,6 +4301,7 @@
 @@||static.ex.co/pb-play/production/*/playbuzz-viewer-play.es5.js
 @@||static.expressbpd.com/rsjs/ads.js
 @@||static.finncdn.no/*/travel/*/_next/static/chunks/pages/ad.html-*.js$domain=finn.no
+@@||static.flight-report.com/static/js/adsAPI.js$domain=flight-report.com
 @@||static.foxnews.com/static/orion/html/video/iframe$stealth=referrer
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
 @@||static.h-bid.com/prebid/*/prebid.js$domain=makeuseof.com
@@ -4597,7 +4600,7 @@
 @@||toolfk.com/tools/js/share/js/jquery.share.min.js
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||tools.pinpoll.com^$script,subdocument,domain=iframely.net
-@@||tools.services.tvn.pl/maertsg.js$domain=tvn24.pl
+@@||tools.services.tvn.pl/_ads/advert.js
 @@||toolsforworkingwood.com/blogimg/
 @@||top.list.ru/counter?id=$domain=crimea-kurort.com
 @@||topembed.pw^$stealth=referrer
@@ -4794,7 +4797,6 @@
 @@||uverseonline.att.net/report/click_tracking_nes.json
 @@||uwants.com/include/*/swfaddress.js
 @@||uwufufu.com/_nuxt/mixpanel.$~third-party
-@@||uze-ads.com/ads/$~third-party
 @@||v*-dc-ad.ixigua.com^$important
 @@||v.gqyy8.com:*.php?vid=$stealth=referrer
 @@||v.me/personal/assets/ntpagetag-$script
@@ -4851,13 +4853,13 @@
 @@||vidible.tv^*/ComScore.StreamSense.js
 @@||vidload.site^$stealth=referrer
 @@||vidmixi.com/embed/$stealth=referrer
-@@||vidmoly.to/embed-$stealth=referrer|ip
 @@||vidnest-*.workers.dev/mp4-proxy$stealth=referrer
 @@||vidnest.io^$generichide
 @@||vidoza.net/embed-*.html$subdocument
 @@||vidrame.pro^$subdocument,stealth=referrer
 @@||vidsrc.*/embed/$stealth=referrer
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
+@@||vidtub.kotocdn.site^$xmlhttprequest,stealth=referrer,domain=vidtube.site
 @@||vidtube.pro/embed$subdocument,stealth=referrer
 @@||vipi.tv/ads.js
 @@||vipstatic.com/img/share/blank.png
@@ -5128,7 +5130,7 @@
 @@||youchien.net/ad/*/ad/img/$~third-party
 @@||youku.com/cms/player/userinfo/
 @@||youmaker.com/js/prebid.js$domain=epochtimes.com
-@@||youmath.it/*/prebid/prebid_*.js
+@@||youmath.it/_*.js$script
 @@||youneed.win^$generichide
 @@||youporn.com/embed/$subdocument
 @@||youtu.be^$important
@@ -5205,12 +5207,20 @@
 @@||*.cloud.microsoft^
 @@||*.cortana.ai^
 @@||*.cup.com.cn^
+@@||*.dbankcdn.cn^
+@@||*.dbankcdn.com^
+@@||*.dbankcloud.asia^
+@@||*.dbankcloud.cn^
+@@||*.dbankcloud.com^
+@@||*.dbankcloud.eu^
+@@||*.dbankcloud.ru^
 @@||*.dlied1.cdntips.net^
 @@||*.entrust.net^
 @@||*.forgecdn.net^
 @@||*.geotrust.com^
 @@||*.googleusercontent.com^
 @@||*.heytapdownload.com^
+@@||*.hicloud.com^
 @@||*.hip.live.com^
 @@||*.in-addr.arpa^
 @@||*.ke.com^
@@ -5344,6 +5354,7 @@
 @@||account.live.com^$important
 @@||account.oneplus.com^
 @@||account.oppo.com^
+@@||account.qzhua.net^
 @@||account.realme.com^
 @@||account.vivo.com^
 @@||account.wps.cn^
@@ -5402,6 +5413,7 @@
 @@||aod-cn-lb.itunes-apple.com.akadns.net^$important
 @@||aod.cos.tx.xmcdn.com^
 @@||aod.itunes.g.aaplimg.com^$important
+@@||ap-*-*.agora.io^
 @@||ap.6wz.co^
 @@||apd-pcdniegwzlogin.teg.tencent-cloud.net^
 @@||apd-pcdnwxstat.teg.tencent-cloud.net^
@@ -5418,6 +5430,7 @@
 @@||api-pay.soulapp.cn^
 @@||api-pda.jdl.com^
 @@||api-shoulei-ssl.xunlei.com^
+@@||api.agora.io^
 @@||api.airpush.com^
 @@||api.amemv.com^
 @@||api.apple-cloudkit.com^$important
@@ -5757,10 +5770,13 @@
 @@||doc.oplist.org.cn^
 @@||doc.oplist.org^
 @@||dockerstatic.com^
+@@||docs.chmlfrp.net^
 @@||docs.doudou.fun^
 @@||docs.idqqimg.com^
 @@||docs.live.net^$important
 @@||docs.scriptcat.org^
+@@||docs.trae.ai^
+@@||docs.trae.cn^
 @@||docs.vilinko.com^
 @@||domains-ws.revved.com^
 @@||dorado.xiaojukeji.com^
@@ -5854,6 +5870,7 @@
 @@||firstpartyapps.oaspapps.com^$important
 @@||flowus.cn^
 @@||flydigi.com^
+@@||forum.trae.cn^
 @@||forums.oneplus.com^
 @@||foundation.youdao.com^
 @@||fourier-videoclip-eu.allawnos.com^
@@ -6070,6 +6087,7 @@
 @@||kwimgs.com^
 @@||l36.gdl.netease.com^
 @@||l36.update.netease.com^
+@@||l36.update.nieapps.com^
 @@||laohuangli.bmcx.com^
 @@||laomaotao.net^
 @@||laowang.vip^
@@ -6445,6 +6463,7 @@
 @@||p6-sign.douyinpic.com^
 @@||p6-webcast-sign.douyinpic.com^
 @@||p6.douyinpic.com^
+@@||p9-arcosite.byteimg.com^
 @@||p9-catpcha.byteimg.com^
 @@||p9-dcd-sign.byteimg.com^
 @@||p9-dcd.byteimg.com^
@@ -6461,6 +6480,7 @@
 @@||p9.douyinpic.com^
 @@||pan.quark.cn^
 @@||pan.xunlei.com^
+@@||panel.chmlfrp.net^
 @@||papegames.qiyukf.com^
 @@||parking.namesilo.com^
 @@||partnerservices.getmicrosoftkey.com^$important
@@ -6941,6 +6961,7 @@
 @@||www.bqgyy.com^
 @@||www.chinaunicom.com.cn^
 @@||www.chinaunicom.com^
+@@||www.chmlfrp.net^
 @@||www.cloudflare-cn.com^
 @@||www.cloudns.net^
 @@||www.cmpassport.com^
@@ -6957,6 +6978,7 @@
 @@||www.dxmpay.com^
 @@||www.e0734.com^
 @@||www.easyicon.net^$important
+@@||www.emojiall.com^
 @@||www.enigmaprotector.cn^
 @@||www.enigmaprotector.com^
 @@||www.epicgames.com^
@@ -6996,6 +7018,7 @@
 @@||www.lsds.cn^
 @@||www.maimemo.com^
 @@||www.maserati.com^
+@@||www.mefrp.com^
 @@||www.mercedes-benz.com.cn^
 @@||www.mercedes-benz.com^
 @@||www.mhzd.net^
