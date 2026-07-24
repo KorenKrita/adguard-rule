@@ -333,10 +333,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
-  - name: EasyPrivacy
-    url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
+  - name: EasyPrivacy
+    url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: AdGuard Chinese
@@ -426,10 +426,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: AWAvenueAdsRule
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   - name: oisd big
     url: https://big.oisd.nl
+  - name: AWAvenueAdsRule
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
