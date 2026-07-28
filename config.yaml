@@ -289,8 +289,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/255.txt
   - name: Fanboy's Annoyances
     url: https://filters.adtidy.org/extension/chromium/filters/122.txt
-  - name: HyperADRules - Rules
-    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
   - name: 混合规则(自动更新)
     url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
   - name: Dandelion Sprout's Annoyances List
@@ -305,30 +303,32 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: uBlock Origin – Badware risks
     url: https://filters.adtidy.org/extension/chromium/filters/257.txt
-  - name: Scam Blocklist by DurableNapkin
-    url: https://filters.adtidy.org/extension/chromium/filters/256.txt
+  - name: AdGuard URL Tracking filter
+    url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: AdBlock Filter
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
+  - name: AdGuard Moblie
+    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  - name: Scam Blocklist by DurableNapkin
+    url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
-  - name: Fanboy's Anti-Facebook List
-    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+  - name: Fanboy's Anti-Facebook List
+    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
-  - name: AdGuard Moblie
-    url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  - name: AdGuard Chinese
+    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
-  - name: AdGuard URL Tracking filter
-    url: https://filters.adtidy.org/extension/chromium/filters/17.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
@@ -339,16 +339,16 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Fanboy's Social Blocking List
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
-  - name: AdGuard Chinese
-    url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
+  - name: HyperADRules - Rules
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: AdGuard Widgets filter
@@ -363,10 +363,10 @@ filters:
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
 whitelist:
   urls:
-  - name: HyperADRules - Allow
-    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
   - name: 去广告规则 - 酷安反馈反馈 Allow
     url: https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+  - name: HyperADRules - Allow
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
   manual_rules:
   - '@@||pan.quark.cn^'
   - '@@||316.coolapk1s.com^'
@@ -398,30 +398,28 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt
   - name: HageziPro++
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
-  - name: HyperADRules - DNS
-    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
-  - name: DanPollocksList
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: AdRules DNS List
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-  - name: AdGuard DNS
-    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  - name: SMAdHosts
-    url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: DanPollocksList
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: 去广告规则 - 酷安反馈反馈 DNS
     url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
+  - name: AdGuard DNS
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
+  - name: SMAdHosts
+    url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
-  - name: AdBlock DNS
-    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: DNS拒绝清单
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: PeterLoweFilter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
@@ -430,6 +428,8 @@ dns:
     url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: HyperADRules - DNS
+    url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
   - 127.0.0.1 c.sayhi.360.cn
   - 127.0.0.1 ggs.myzaker.com
