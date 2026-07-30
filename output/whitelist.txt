@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-07-29 02:31:21 UTC
-! Total: 3290 rules
+! Updated: 2026-07-30 02:13:13 UTC
+! Total: 3310 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3595 total, 3595 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3638 total, 3638 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -135,6 +135,7 @@
 @@||*ad*.ksyungslb.com^
 @@||*akamaiedge.net*^
 @@||*akamaihd.net^
+@@||*apk.cosama.cn^
 @@||*apple.com*^
 @@||*cdn.onenote.net^
 @@||*epicgames*myqcloud.com*^
@@ -246,6 +247,7 @@
 @@||accscdn4public.m.taobao.com^
 @@||acg02.cc^
 @@||acs-m.koubei.com^
+@@||acs.m.goofish.com^
 @@||acs.m.taobao.com^
 @@||acs.youku.com^
 @@||acs4baichuan.m.taobao.com^
@@ -586,6 +588,7 @@
 @@||bluehost.com^
 @@||blueskyxn.com^
 @@||bmap6.cn^
+@@||bodian.kuwo.cn^
 @@||bonuscloud.io^
 @@||book.qidian.com^
 @@||bookcover.yuewen.com^
@@ -1051,6 +1054,7 @@
 @@||download3.epicgames.com^$important
 @@||download4.epicgames.com^$important
 @@||downloads.marketplace.jetbrains.com^
+@@||downmobile.kugou.com^
 @@||downpack.baidu.com^
 @@||downum.game.uc.cn^
 @@||downv6.qq.com^
@@ -1320,6 +1324,7 @@
 @@||h42.update.netease.com^
 @@||h5.dianping.com^
 @@||h5.hpplay.com.cn^
+@@||h5.kugou.com^
 @@||h5.m.goofish.com^
 @@||h5.m.taobao.com^
 @@||h5.sinaimg.cn^
@@ -1329,6 +1334,8 @@
 @@||h5api.m.tmall.com^
 @@||h5fs.coloros.com^
 @@||h5offline.zhuanzhuan.com^
+@@||h5s.kuwo.cn^
+@@||h5static.kuwo.cn^
 @@||hanime1.me^
 @@||haohuo.snssdk.com^
 @@||haoka.lot-ml.com^
@@ -1466,6 +1473,7 @@
 @@||ime-store-cdn.gtimg.com^
 @@||imeclient.openspeech.cn^
 @@||img*.funshion.com^
+@@||img*.kuwo.cn^
 @@||img-bss.csdnimg.cn^
 @@||img-cf.xnxx-cdn.com^
 @@||img-home.csdnimg.cn^
@@ -1506,6 +1514,7 @@
 @@||img3.tapimg.com^
 @@||img4.qy0.ru^
 @@||imgcache.qq.com^
+@@||imgessl.kugou.com^
 @@||imgservices-1252317822.image.myqcloud.com^
 @@||imgsrc.baidu.com^
 @@||imgx.mediav.com^
@@ -1548,6 +1557,7 @@
 @@||ipv6.ping0.cc^
 @@||ipw.cn^
 @@||ipxx.pro^
+@@||ir.tencentmusic.com^
 @@||is-hl.snssdk.com^
 @@||is.snssdk.com^
 @@||is1-ssl.mzstatic.com^
@@ -1583,6 +1593,7 @@
 @@||jmacs.cn-zhangjiakou.aliyuncs.com^
 @@||jnn-pa.googleapis.com^
 @@||jobs.bytedance.com^
+@@||join.tencentmusic.com^
 @@||jomodns.com^
 @@||jp.pornhub.com^
 @@||jp.spankbang.com^
@@ -1611,6 +1622,7 @@
 @@||kdocs.cn^
 @@||keepassxc.org^
 @@||kemono.party^
+@@||kg.qq.com^
 @@||klclick*.com^
 @@||klpbbs.com^
 @@||knet.cn^
@@ -1618,7 +1630,9 @@
 @@||knowsex.net^
 @@||konachan.com^
 @@||kubernetes.io^
+@@||kugou.com^
 @@||kunlunpi.com^
+@@||kuwo.cn^
 @@||kwimgs.com^
 @@||kyaru-concat.now.sh^
 @@||l.qq.com^
@@ -1630,6 +1644,7 @@
 @@||laomaotao.net^
 @@||laowang.vip^
 @@||laowangappb93ibiu.cihiu487giuew87lk.xyz^
+@@||laudio-cdn.tencentmusic.com^
 @@||launcher-public-service-prod06.ol.epicgames.com^$important
 @@||launcher-website-prod07.ol.epicgames.com^$important
 @@||launcher.store.epicgames.com^$important
@@ -1657,6 +1672,8 @@
 @@||lf-cdn-tos.bytescm.com^
 @@||lf-douyin-search-fe.bytetos.com^
 @@||lf-dy-sourcecdn-tos.bytegecko.com^
+@@||lf-luna-release.qishui.com^
+@@||lf-luna.qishui.com^
 @@||lf-sourcecdn-tos.bytegecko.com^
 @@||lf-webcast-gr-sourcecdn.bytegecko.com^
 @@||lf-webcast-platform.bytetos.com^
@@ -1678,6 +1695,7 @@
 @@||lf6-cdn2-tos.bytegoofy.com^
 @@||lf6-imcloud-file-sign.bytetos.com^
 @@||lf6-mgsdk-sign.dailygn.com^
+@@||lf9-apk.ugapk.cn^
 @@||lf9-mgsdk-sign.dailygn.com^
 @@||lf9-open-ma-pkg-sign.bytemastatic.com^
 @@||liangcang-material.alicdn.com^
@@ -1925,8 +1943,6 @@
 @@||mobile.ximalaya.com^
 @@||mobile.xunlei.com^
 @@||mobile.yangkeduo.com^
-@@||mobilelog.kugou.com^
-@@||mobilist.kuwo.cn^
 @@||modfile.mcmod.cn^
 @@||modrinth.com^
 @@||modyolo.com^
@@ -1938,6 +1954,7 @@
 @@||mooc-image.nosdn.127.net^
 @@||mos.m.taobao.com^
 @@||mp.163.com^
+@@||mp.tencentmusic.com^
 @@||mp.yidianzixun.com^
 @@||mparticle.uc.cn^
 @@||mpay-web.g.mkey.163.com^
@@ -1967,6 +1984,7 @@
 @@||mumu.163.com^
 @@||music.163.com^
 @@||music.apple.com^
+@@||music.douyin.com^
 @@||mv6.music.tc.qq.com^
 @@||mwappimgs.cc^
 @@||mwfimsvfast2.cc^
@@ -1992,7 +2010,6 @@
 @@||nas.xunlei.com^
 @@||nav.browser.miui.com^
 @@||nav.porsche.com^
-@@||ncomment.kuwo.cn^
 @@||nd-static.bdstatic.com^
 @@||necaptcha.nosdn.127.net^
 @@||netease.com^
@@ -2011,7 +2028,6 @@
 @@||nimg.ws.126.net^
 @@||nishub1.10010.com^
 @@||njavtv.com^
-@@||nmobi.kuwo.cn^
 @@||noodlemagazine.com^
 @@||north-plus.net^
 @@||notification.vivo.com^
@@ -2288,6 +2304,7 @@
 @@||pingma.qq.com^
 @@||pingtas.qq.com^
 @@||pitaya.bytedance.com^
+@@||pixpin.cn^
 @@||pkg.biligame.com^
 @@||pkg.sinaimg.cn^
 @@||pl-ali.youku.com^
@@ -2519,7 +2536,6 @@
 @@||sdkapi.sms.mob.com^
 @@||se*.360simg.com^
 @@||search.doubao.com^
-@@||search.kuwo.cn^
 @@||search.mcmod.cn^
 @@||search.sogoucdn.com^
 @@||search.ximalaya.com^
@@ -2842,6 +2858,7 @@
 @@||udpolimenew.baidu.com^
 @@||uee.me^
 @@||ugame.9game.cn^
+@@||ugapk.com^
 @@||ugurl.cn^
 @@||uiam.unionpayintl.com^
 @@||uland.taobao.com^
@@ -2948,7 +2965,6 @@
 @@||vip.iqiyi.com^
 @@||vip.xunlei.com^
 @@||vip.youku.com^
-@@||vip1.kuwo.cn^
 @@||vjav.com^
 @@||vjav0.ahcdn.com^
 @@||vm.gtimg.cn^
@@ -3066,6 +3082,7 @@
 @@||www.cloudflare.com^
 @@||www.cloudns.net^
 @@||www.cmpassport.com^
+@@||www.cosama.cn^
 @@||www.crossoverchina.com^
 @@||www.cup.com.cn^
 @@||www.curseforge.com^
@@ -3141,6 +3158,7 @@
 @@||www.mousouzoku-av.com^
 @@||www.msftconnecttest.com^
 @@||www.msn.com^
+@@||www.mydockfinder.com^
 @@||www.nodeseek.com^
 @@||www.novelfm.com^
 @@||www.npmjs.com^
@@ -3167,6 +3185,7 @@
 @@||www.pzds.com^
 @@||www.qdmm.com^
 @@||www.qidian.com^
+@@||www.qishui.com^
 @@||www.recaptcha.net^
 @@||www.siyuan-note.club^
 @@||www.so.com^
@@ -3177,6 +3196,7 @@
 @@||www.taptap.io^
 @@||www.tencent.com^
 @@||www.tencent.net.cn^
+@@||www.tencentmusic.com^
 @@||www.thinkdifferent.us^
 @@||www.tiantiantiaosheng.com^
 @@||www.toutiao.com^
