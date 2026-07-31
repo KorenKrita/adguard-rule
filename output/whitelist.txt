@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-07-30 02:13:13 UTC
-! Total: 3310 rules
+! Updated: 2026-07-31 02:42:38 UTC
+! Total: 3311 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3638 total, 3638 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3639 total, 3639 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -2221,6 +2221,7 @@
 @@||p9-catpcha.byteimg.com^
 @@||p9-dcd-sign.byteimg.com^
 @@||p9-dcd.byteimg.com^
+@@||p9-dy.byteimg.com^
 @@||p9-faceu-img-sign.byteimg.com^
 @@||p9-flow-imagex-sign.byteimg.com^
 @@||p9-heycan-hgt-sign.byteimg.com^
