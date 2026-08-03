@@ -313,10 +313,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
@@ -416,6 +416,8 @@ dns:
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: uBlock₀ filters – Badware risks
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
   - name: DNS拒绝清单
@@ -426,8 +428,6 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
