@@ -424,10 +424,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: AWAvenueAdsRule
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   - name: oisd big
     url: https://big.oisd.nl
+  - name: AWAvenueAdsRule
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
