@@ -313,16 +313,18 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
-  - name: 自用规则3.0
-    url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+  - name: 自用规则3.0
+    url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
-  - name: xinggsf
-    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Experimental filter
@@ -341,14 +343,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: Peter Lowe's Blocklist
+    url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: HyperADRules - Rules
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
-  - name: Peter Lowe's Blocklist
-    url: https://filters.adtidy.org/extension/chromium/filters/204.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: AdGuard Widgets filter
@@ -424,10 +424,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
