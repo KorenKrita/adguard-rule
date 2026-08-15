@@ -313,10 +313,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: xinggsf
@@ -335,6 +335,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
+  - name: EasyList Cookie List
+    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Fanboy's Social Blocking List
@@ -345,8 +347,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
-  - name: EasyList Cookie List
-    url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: HyperADRules - Rules
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt
   - name: AdGuard Mobile App Banners filter
