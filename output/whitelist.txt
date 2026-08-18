@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-08-17 01:10:18 UTC
-! Total: 3350 rules
+! Updated: 2026-08-18 01:08:13 UTC
+! Total: 3357 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3678 total, 3678 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3685 total, 3685 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -374,6 +374,7 @@
 @@||api-novel.uc.cn^$important
 @@||api-pay.soulapp.cn^
 @@||api-pda.jdl.com^
+@@||api-play.amemv.com^
 @@||api-push.meizu.com^
 @@||api-shoulei-ssl.xunlei.com^
 @@||api-unionid.meituan.com^
@@ -1291,6 +1292,7 @@
 @@||genshin.hoyoverse.com^
 @@||get.shouji.sogou.com^
 @@||get.sogou.com^
+@@||getbootstrap.com^
 @@||gg.apple.com^$important
 @@||ggpht.com^
 @@||gia.jd.com^
@@ -1712,6 +1714,7 @@
 @@||lf1-cdn-tos.bytegoofy.com^
 @@||lf1-cdn-tos.bytescm.com^
 @@||lf3-card-system.searchpstatp.com^
+@@||lf3-cdn-tos.bdxiguastatic.com^
 @@||lf3-cdn-tos.bytecdntp.com^
 @@||lf3-cdn-tos.bytegoofy.com^
 @@||lf3-cdn-tos.bytescm.com^
@@ -1810,6 +1813,7 @@
 @@||m.intl.taobao.com^
 @@||m.ip138.com^
 @@||m.iqiyi.com^
+@@||m.ixigua.com^
 @@||m.jd.com^
 @@||m.jf.10010.com^
 @@||m.jingxi.com^
@@ -2227,6 +2231,7 @@
 @@||p3-tt.byteimg.com^
 @@||p3-webcast-sign.douyinpic.com^
 @@||p3-webcast.douyinpic.com^
+@@||p3.bdxiguaimg.com^
 @@||p3.dcarimg.com^
 @@||p3.douyinpic.com^
 @@||p4-ad.adukwai.com^
@@ -3167,6 +3172,7 @@
 @@||www.ip138.com^
 @@||www.iqiyi.com^
 @@||www.itools.info^
+@@||www.ixigua.com^
 @@||www.javbangers.com^
 @@||www.jd.com^
 @@||www.jetbrains.com.cn^
@@ -3337,6 +3343,7 @@
 @@||yybadaccess.3g.qq.com^
 @@||yys.163.com^
 @@||yzg.wavee.cn^
+@@||z.ixigua.com^
 @@||z3.cnzz.com^
 @@||zazhipu.com^
 @@||zconfig.alibabausercontent.com^
