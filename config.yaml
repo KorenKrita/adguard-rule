@@ -319,10 +319,10 @@ filters:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
-  - name: xinggsf
-    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Experimental filter
@@ -331,6 +331,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard Other Annoyances filter
@@ -341,8 +343,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/123.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyList Cookie List
@@ -424,10 +424,10 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt
   - name: ADG anti-AD
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
