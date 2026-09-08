@@ -325,10 +325,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
-  - name: AdGuard Tracking Protection filter
-    url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  - name: AdGuard Tracking Protection filter
+    url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: CJX's Annoyances List
