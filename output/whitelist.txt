@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-09-14 03:30:11 UTC
-! Total: 3357 rules
+! Updated: 2026-09-15 03:31:39 UTC
+! Total: 3370 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3685 total, 3685 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3698 total, 3698 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
 !
@@ -26,6 +26,10 @@
 @@||*-www.sway-extensions.com^
 @@||*.*.szbdyd.com^
 @@||*.1e100.net1^
+@@||*.4399.com^
+@@||*.5054399.com^
+@@||*.7k7k.com^
+@@||*.7k7kimg.cn^
 @@||*.95516.com^
 @@||*.a.yximgs.com^
 @@||*.aadrm.com^
@@ -78,6 +82,7 @@
 @@||*.hicloud.com^
 @@||*.hip.live.com^
 @@||*.img.mobile.sina.cn^
+@@||*.img4399.com^
 @@||*.in-addr.arpa^
 @@||*.ke.com^
 @@||*.keydelivery.mediaservices.windows.net^
@@ -1546,6 +1551,7 @@
 @@||img3.cache.netease.com^
 @@||img3.tapimg.com^
 @@||img4.qy0.ru^
+@@||imga*.5054399.com^
 @@||imgcache.qq.com^
 @@||imgessl.kugou.com^
 @@||imgservices-1252317822.image.myqcloud.com^
@@ -2392,6 +2398,7 @@
 @@||proxy-tf-all-ws.bilivideo.com^
 @@||pss.bdstatic.com^
 @@||psstatic.cdn.bcebos.com^
+@@||ptlogin.4399.com^
 @@||ptlogin.yuewen.com^
 @@||pttn.m3pd.com^
 @@||ptx.cdntrex.com^
@@ -2519,6 +2526,7 @@
 @@||s0.meituan.net^
 @@||s01.mifile.cn^
 @@||s1.hdslb.com^
+@@||s1.img4399.com^
 @@||s1.kskwai.com^
 @@||s1.meituan.net^
 @@||s1.voicecloud.cn^
@@ -3097,7 +3105,12 @@
 @@||www.163.com^
 @@||www.17173.com^
 @@||www.360simg.com^
+@@||www.4399.cn^
+@@||www.4399.com^
+@@||www.5054399.com^
 @@||www.54647.io^
+@@||www.7k7k.com^
+@@||www.7k7kjs.cn^
 @@||www.9game.cn^
 @@||www.acompli.com^$important
 @@||www.agiso.com^
