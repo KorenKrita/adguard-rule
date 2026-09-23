@@ -331,8 +331,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
@@ -345,6 +343,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: EasyList Cookie List
