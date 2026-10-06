@@ -317,20 +317,20 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: AdGuard Tracking Protection filter
     url: https://filters.adtidy.org/extension/chromium/filters/3.txt
-  - name: AdGuard Popups filter
-    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: AdGuard Experimental filter
     url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  - name: AdGuard Popups filter
+    url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: CJX's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/220.txt
   - name: AdGuard Cookie Notices filter
@@ -414,8 +414,6 @@ dns:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
-  - name: oisd big
-    url: https://big.oisd.nl
   - name: AdGuard DNS Popup Hosts filter
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
   - name: uBlock₀ filters – Badware risks
@@ -428,6 +426,8 @@ dns:
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt
   - name: AWAvenueAdsRule
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+  - name: oisd big
+    url: https://big.oisd.nl
   - name: HyperADRules - DNS
     url: https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt
   manual_rules:
