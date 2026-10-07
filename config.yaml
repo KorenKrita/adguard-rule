@@ -291,6 +291,8 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/122.txt
   - name: 混合规则(自动更新)
     url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
+  - name: Online Malicious URL Blocklist
+    url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: Dandelion Sprout's Annoyances List
     url: https://filters.adtidy.org/extension/chromium/filters/250.txt
   - name: 去广告规则 - 酷安反馈反馈
@@ -299,8 +301,6 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/201.txt
   - name: AdGuard Social Media filter
     url: https://filters.adtidy.org/extension/chromium/filters/4.txt
-  - name: Online Malicious URL Blocklist
-    url: https://filters.adtidy.org/extension/chromium/filters/208.txt
   - name: AdGuard Moblie
     url: https://filters.adtidy.org/extension/chromium/filters/11.txt
   - name: uBlock Origin – Badware risks
