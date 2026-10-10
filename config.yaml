@@ -406,12 +406,12 @@ dns:
     url: https://raw.githubusercontent.com/qq5460168/666/master/dns.txt
   - name: AdGuard DNS
     url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  - name: AdBlock DNS
+    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
   - name: SMAdHosts
     url: https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/refs/heads/master/SMAdHosts
-  - name: AdBlock DNS
-    url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
   - name: 大圣
     url: https://raw.githubusercontent.com/jdlingyu/ad-wars/refs/heads/master/hosts
   - name: AdGuard DNS Popup Hosts filter
