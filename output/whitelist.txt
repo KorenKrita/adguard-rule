@@ -1,10 +1,10 @@
 ! Title: Merged Whitelist
-! Updated: 2026-10-13 05:35:40 UTC
-! Total: 3372 rules
+! Updated: 2026-10-14 03:38:38 UTC
+! Total: 3398 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3700 total, 3700 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3699 total, 3699 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
-!   - Manual Rules: 24 total, 1 used (4.2%) - config.yaml
+!   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
 [个人合并 2.0]
 @@||"*.streaming.mediaservices.windows.net^
@@ -201,7 +201,6 @@
 @@||1tian.kuaishou.com^
 @@||22.do^
 @@||316.coolapk1s.com^
-@@||360.cn^
 @@||360buyimg.com^
 @@||360kuai.com^
 @@||3975.com^
@@ -479,6 +478,8 @@
 @@||app.bilibili.com^
 @@||app.biligame.com^
 @@||app.chat.xiaomi.net^
+@@||app.home.360.cn^
+@@||app.huabao.360.cn^
 @@||app.market.xiaomi.com^
 @@||app.toutiao.com^
 @@||app.zhuanzhuan.com^
@@ -626,6 +627,7 @@
 @@||broadcastlv.chat.bilibili.com^
 @@||broccoli.uc.cn^
 @@||broker.mina.mi.com^$important
+@@||browser.360.cn^
 @@||browser.events.data.msn.com^
 @@||browser.pipe.aria.microsoft.com^
 @@||bs-origin.pull.yximgs.com^
@@ -833,6 +835,7 @@
 @@||cloudauth.cn-beijing.aliyuncs.com^
 @@||cloudauth.cn-shanghai.aliyuncs.com^
 @@||cloudcache.tencent-cloud.cn^
+@@||cloudcontrol.live.360.cn^
 @@||clouddrive-activity.uc.cn^
 @@||cloudflare-dns.com^
 @@||cloudflareinsights.com^
@@ -1064,6 +1067,7 @@
 @@||dorado.xiaojukeji.com^
 @@||dorangesource.alicdn.com^
 @@||doris.yidianzixun.com^
+@@||dot.360.cn^
 @@||douyincdn.com^
 @@||douyinstatic.com^
 @@||down-tencent.huorong.cn^
@@ -1095,6 +1099,7 @@
 @@||downpack.baidu.com^
 @@||downum.game.uc.cn^
 @@||downv6.qq.com^
+@@||dp.push.dc.360.cn^
 @@||dpmtpush.dianping.com^
 @@||dpurl.cn^
 @@||dragate-cn.dc.heytapmobi.com^
@@ -1199,6 +1204,7 @@
 @@||fanyi.baidu.com^
 @@||fast.com^$important
 @@||fastcdn.hoyoverse.com^
+@@||fastconn-api.iot.360.cn^
 @@||fastly-download.epicgames.com^$important
 @@||fba.apple.com^$important
 @@||fc.kejiweixun.com^
@@ -1352,6 +1358,7 @@
 @@||gvt2.com^
 @@||gw-paopao.iqiyi.com^
 @@||gw.alicdn.com^
+@@||gw.shouji.360.cn^
 @@||gweb-gettingstartedguide.appspot.com^$important
 @@||gx-target-experiments-frontend-api.gx.nvidia.com^
 @@||h-adashx.ut.taobao.com^
@@ -1365,6 +1372,7 @@
 @@||h5.kugou.com^
 @@||h5.m.goofish.com^
 @@||h5.m.taobao.com^
+@@||h5.mse.360.cn^
 @@||h5.sinaimg.cn^
 @@||h5.sm.cn^$important
 @@||h5api.m.goofish.com^
@@ -1620,6 +1628,7 @@
 @@||j.gamersky.com^
 @@||javfinder.ai^
 @@||jhk-cdn-mampic.hismarttv.com^
+@@||jia.360.cn^
 @@||jianghu.163.com^
 @@||jiaoyimao.com^
 @@||jiathis.com^
@@ -1808,6 +1817,7 @@
 @@||m..bilibili.com^
 @@||m.163.com^
 @@||m.17173.com^
+@@||m.360.cn^
 @@||m.360video.so.com^
 @@||m.anjuke.com^
 @@||m.bilibili.com^
@@ -1872,6 +1882,7 @@
 @@||mail.qq.com^
 @@||main.m.taobao.com^
 @@||mairuan.com^
+@@||mall.360.cn^
 @@||mall.bilibili.com^
 @@||mall.csdn.net^
 @@||mam.netease.com^
@@ -1915,6 +1926,7 @@
 @@||mcs.zijieapi.com^
 @@||mdevstat.qqlive.qq.com^
 @@||mdgram.app^
+@@||mdm.openapi.360.cn^
 @@||mdmenrollment.apple.com^$important
 @@||me-api.jd.com^
 @@||med-fe.cdn.bcebos.com^
@@ -2009,6 +2021,7 @@
 @@||msdk.qq.com^
 @@||msdn.itellyou.cn^
 @@||msdn.microsoft.com^$important
+@@||mse.360.cn^
 @@||msec.opposhop.cn^
 @@||msedown.360safe.com^
 @@||msfwifi.3g.qq.com^
@@ -2027,6 +2040,7 @@
 @@||music.apple.com^
 @@||music.douyin.com^
 @@||mv6.music.tc.qq.com^
+@@||mvconf.f.360.cn^
 @@||mwappimgs.cc^
 @@||mwfimsvfast2.cc^
 @@||mwfimsvfast3.cc^
@@ -2285,6 +2299,7 @@
 @@||parking.namesilo.com^
 @@||partnerservices.getmicrosoftkey.com^$important
 @@||party.163.com^
+@@||passport.360.cn^
 @@||passport.baidu.com^
 @@||passport.bilibili.com^
 @@||passport.goofish.com^
@@ -2569,17 +2584,21 @@
 @@||sbanh.com^
 @@||sbfast.com^
 @@||sbfull.com^
+@@||scan.call.f.360.cn^
 @@||scene.cup.com.cn^
 @@||school.apple.com^$important
 @@||scone-pa.clients6.google.com^$important
 @@||scriptcat.org^
+@@||sd.360.cn^
 @@||sdk-api.beizi.biz^
 @@||sdk.jinrishici.com^
+@@||sdk.live.360.cn^
 @@||sdk.mihoyo.com^
 @@||sdk.open.talk.gepush.com^
 @@||sdk.xyapi.game.qq.com^
 @@||sdkapi.sms.mob.com^
 @@||se*.360simg.com^
+@@||se.360.cn^
 @@||search.doubao.com^
 @@||search.mcmod.cn^
 @@||search.sogoucdn.com^
@@ -2619,6 +2638,7 @@
 @@||shopping.ele.me^$important
 @@||short-video.kakamobi.cn^$important
 @@||short.weixin.qq.com^
+@@||shouji.360.cn^
 @@||shouji.bmcx.com^
 @@||shouji.sogou.com^
 @@||shouji.sougou.com^
@@ -2634,6 +2654,7 @@
 @@||skl.apple.com^$important
 @@||sky.vip.youku.com^
 @@||sm.cn^
+@@||smart.360.cn^
 @@||smartcard.apps.coloros.com^
 @@||smarthome-drcn.dbankcdn.com^
 @@||smartrobot-drcn.dbankcdn.com^
@@ -2649,6 +2670,7 @@
 @@||sobot.com^
 @@||sofire.baidu.com^
 @@||sofire.bdstatic.com^
+@@||soft.360.cn^
 @@||soft.imtt.qq.com^
 @@||sogoucdn.com^$important
 @@||soup.v.qq.com^
@@ -2662,6 +2684,7 @@
 @@||spaceship-cdn.com^
 @@||spclient.wg.spotify.com^
 @@||spcsz.cdn.bcebos.com^
+@@||speed.live.360.cn^
 @@||spoprod-a.akamaihd.net^$important
 @@||sports.163.com^
 @@||spotify.com^
@@ -3069,6 +3092,7 @@
 @@||webtor.io^
 @@||weibo.com^
 @@||weidian.com^
+@@||weishi.360.cn^
 @@||weixin.qq.com^
 @@||wenxue.iqiyi.com^
 @@||wg.wavee.cn^
@@ -3106,6 +3130,7 @@
 @@||www.126.com^
 @@||www.163.com^
 @@||www.17173.com^
+@@||www.360.cn^
 @@||www.360simg.com^
 @@||www.4399.cn^
 @@||www.4399.com^
@@ -3378,3 +3403,4 @@
 @@||zmde.yijoys.com^
 @@||zodgame.xyz^
 @@||ztgame.com^
+@@||360.cn^
