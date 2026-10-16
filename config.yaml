@@ -283,6 +283,8 @@ filters:
   urls:
   - name: AdRules AdBlock List Plus
     url: https://adrules.top/adblock_plus.txt
+  - name: all.txt
+    url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
   - name: 混合规则(自动更新)
     url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
   - name: Phishing URL Blocklist
@@ -345,8 +347,6 @@ filters:
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
   - name: Adblock Warning Removal List
     url: https://filters.adtidy.org/extension/chromium/filters/207.txt
-  - name: all.txt
-    url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
   - name: EasyList Cookie List
     url: https://filters.adtidy.org/extension/chromium/filters/241.txt
   - name: AdGuard Mobile App Banners filter
