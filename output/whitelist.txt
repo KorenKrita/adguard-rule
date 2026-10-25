@@ -1,12 +1,11 @@
 ! Title: Merged Whitelist
-! Updated: 2026-10-24 03:24:06 UTC
-! Total: 3398 rules
+! Updated: 2026-10-25 03:19:10 UTC
+! Total: 3397 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3699 total, 3699 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3698 total, 3698 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
-[个人合并 2.0]
 @@||"*.streaming.mediaservices.windows.net^
 @@||"mlccdn.blob.core.windows.net^
 @@||*-album.uc.cn^
