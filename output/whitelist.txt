@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-10-28 04:07:18 UTC
-! Total: 3397 rules
+! Updated: 2026-10-29 04:30:03 UTC
+! Total: 3407 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 3698 total, 3698 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 3708 total, 3708 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
@@ -480,7 +480,9 @@
 @@||app.home.360.cn^
 @@||app.huabao.360.cn^
 @@||app.market.xiaomi.com^
+@@||app.mi.com^
 @@||app.toutiao.com^
+@@||app.xiaomi.com^
 @@||app.zhuanzhuan.com^
 @@||appattest.apple.com^$important
 @@||appcenter.ms^
@@ -521,6 +523,7 @@
 @@||apzones.com^$important
 @@||aq.qq.com^
 @@||archive.biliimg.com^
+@@||archive.stardock.com^
 @@||arenascan.com^
 @@||article.zlink.toutiao.com^
 @@||as.weixin.qq.com^
@@ -897,6 +900,7 @@
 @@||contentcenter-vali-drcn.dbankcdn.com^
 @@||coolapk-oss-image.oss-cn-hangzhou.aliyuncs.com^
 @@||coop.voicecloud.cn^
+@@||copilot.tencent.com^
 @@||core.tantanapp.com^
 @@||cos.ap-bangkok.myqcloud.com^
 @@||cos.ap-beijing-1.myqcloud.com^
@@ -1245,6 +1249,8 @@
 @@||fonts.gstatic.com^
 @@||forum.trae.cn^
 @@||forums.oneplus.com^
+@@||forums.stardock.com^
+@@||forums.stardock.net^
 @@||foundation.youdao.com^
 @@||fourhoi.com^
 @@||fourier-videoclip-eu.allawnos.com^
@@ -1482,6 +1488,7 @@
 @@||id.uc.cn^
 @@||id6.me^
 @@||identity.apple.com^$important
+@@||identity.stardock.com^
 @@||idmb.register.xmpush.global.xiaomi.com^
 @@||idmsa.apple.com^
 @@||idv-prod1.apple.com^$important
@@ -2943,6 +2950,7 @@
 @@||upage.imtt.qq.com^
 @@||updata.miui.com^
 @@||update.360safe.com^
+@@||update.appstore.vivo.com.cn^
 @@||update.hicloud.com^
 @@||update.huorong.cn^
 @@||update.intl.miui.com^$important
@@ -3275,6 +3283,8 @@
 @@||www.siyuan-note.club^
 @@||www.so.com^
 @@||www.spaceship.com^
+@@||www.stardock.com^
+@@||www.stardock.net^
 @@||www.sygjx.com^
 @@||www.taobao.com^
 @@||www.taptap.cn^
