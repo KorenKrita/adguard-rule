@@ -285,10 +285,10 @@ filters:
     url: https://adrules.top/adblock_plus.txt
   - name: all.txt
     url: https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt
-  - name: Phishing URL Blocklist
-    url: https://filters.adtidy.org/extension/chromium/filters/255.txt
   - name: Fanboy's Annoyances
     url: https://filters.adtidy.org/extension/chromium/filters/122.txt
+  - name: Phishing URL Blocklist
+    url: https://filters.adtidy.org/extension/chromium/filters/255.txt
   - name: 混合规则(自动更新)
     url: https://jihulab.com/foreseeable_boy/adblock_auto/-/raw/main/Rules/adblock_auto.txt
   - name: Online Malicious URL Blocklist
@@ -315,12 +315,12 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: Fanboy's Anti-Facebook List
     url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Chinese
