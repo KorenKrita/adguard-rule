@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-11-09 04:46:25 UTC
-! Total: 3570 rules
+! Updated: 2026-11-10 06:00:51 UTC
+! Total: 3575 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 4116 total, 4116 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 4121 total, 4121 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
@@ -1056,6 +1056,8 @@
 @@||pull-m1.wxlivecdn.com^
 @@||push.chsi.com.cn^
 @@||puui.qpic.cn^
+@@||pvp.icreate.qq.com^
+@@||pvp.qq.com^
 @@||qcaptcha.so.com^
 @@||qcloudimg.tencent-cloud.cn^
 @@||qdfepccdn.qidian.com^
@@ -1396,6 +1398,7 @@
 @@||wk.idey.cn^
 @@||wl.jd.com^
 @@||world.qpic.cn^
+@@||world.qq.com^
 @@||wpvip.duba.net^
 @@||wq.360buyimg.com^
 @@||write.qq.com^
@@ -1563,6 +1566,7 @@
 @@||wx4.sinaimg.cn^
 @@||wxaurl.cn^
 @@||wxmini-api.uyouqu.com^
+@@||wxq.qq.com^
 @@||wxsnsdy.wxs.qq.com^
 @@||x0.ifengimg.com^
 @@||x19.update.netease.com^
@@ -1577,6 +1581,7 @@
 @@||yande.re^
 @@||yeah.163.com^
 @@||yep.com^
+@@||yingdi.qq.com^
 @@||ym.163.com^
 @@||youdata.163.com^
 @@||young.duba.net^
