@@ -1,5 +1,5 @@
 ! Title: Merged Whitelist
-! Updated: 2026-11-10 06:00:51 UTC
+! Updated: 2026-11-11 04:49:17 UTC
 ! Total: 3575 rules
 ! Sources:
 !   - 去广告规则 - 酷安反馈反馈 Allow: 4121 total, 4121 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
