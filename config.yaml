@@ -313,14 +313,14 @@ filters:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
   - name: Scam Blocklist by DurableNapkin
     url: https://filters.adtidy.org/extension/chromium/filters/256.txt
-  - name: AdGuard Base
-    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: AdGuard Cookie Notices filter
     url: https://filters.adtidy.org/extension/chromium/filters/18.txt
   - name: AdGuard Popups filter
     url: https://filters.adtidy.org/extension/chromium/filters/19.txt
   - name: Peter Lowe's Blocklist
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
+  - name: AdGuard Base
+    url: https://filters.adtidy.org/extension/chromium/filters/2.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: TT拒绝列表
@@ -335,10 +335,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
   - name: anti-AD
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
-  - name: Fanboy's Anti-Facebook List
-    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
+  - name: Fanboy's Anti-Facebook List
+    url: https://filters.adtidy.org/extension/chromium/filters/225.txt
   - name: AdGuard Mobile App Banners filter
     url: https://filters.adtidy.org/extension/chromium/filters/20.txt
   - name: AdGuard Widgets filter

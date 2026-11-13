@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-11-12 05:51:21 UTC
-! Total: 3575 rules
+! Updated: 2026-11-13 05:12:06 UTC
+! Total: 3580 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 4121 total, 4121 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 4125 total, 4125 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
@@ -349,6 +349,7 @@
 @@||ddyunbo.com^
 @@||detail.meizu.com^
 @@||detail.zol.com.cn^
+@@||dev.mi.com^
 @@||dev.miuiflash.com^
 @@||developer.extscreen.com^
 @@||devuploads.com^
@@ -547,6 +548,7 @@
 @@||hub5idx.v6.shub.sandai.net^
 @@||hub5pn.wap.sandai.net^
 @@||huluxia.com^
+@@||hyperos.developer.xiaomi.com^
 @@||i.dell.com^
 @@||i.gtimg.cn^
 @@||i.imgur.com^
@@ -597,6 +599,7 @@
 @@||img.qidian.com^
 @@||img.siwazywimg.com^
 @@||img.sogoucdn.com^
+@@||img.ssl.msdk.qq.com^
 @@||img.tapimg.com^
 @@||img.youpin.mi-img.com^
 @@||img01.sogoucdn.com^
@@ -621,6 +624,7 @@
 @@||inporn.com^
 @@||instant.io^
 @@||intro.limestart.cn^
+@@||iot.mi.com^
 @@||ip*.ahcdn.com^
 @@||ip.900cha.com^
 @@||ip.cn^
@@ -811,6 +815,7 @@
 @@||message.bilibili.com^
 @@||mgbsdk.matrix.netease.com^
 @@||midas.gtimg.cn^
+@@||mimo.mi.com^
 @@||miniapp.gtimg.cn^
 @@||mip.xiachufang.com^
 @@||mirrors.163.com^
