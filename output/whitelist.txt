@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-11-14 05:01:34 UTC
-! Total: 3580 rules
+! Updated: 2026-11-15 04:55:25 UTC
+! Total: 3579 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 4125 total, 4125 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 4124 total, 4124 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
@@ -2574,7 +2574,6 @@
 @@||p9-sign.toutiaoimg.com^
 @@||p26-sign.toutiaoimg.com^
 @@||p6-shortvideo-sign.toutiaoimg.com^
-@@||open.snssdk.com^
 @@||broccoli.uc.cn^
 @@||api2-album.quark.cn^
 @@||quark.cn^
