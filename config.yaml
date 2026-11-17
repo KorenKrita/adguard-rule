@@ -323,18 +323,18 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: xinggsf
     url: https://filters.adtidy.org/extension/chromium/filters/228.txt
+  - name: EasyPrivacy
+    url: https://filters.adtidy.org/extension/chromium/filters/118.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: NoAppDownload
     url: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
-  - name: EasyPrivacy
-    url: https://filters.adtidy.org/extension/chromium/filters/118.txt
+  - name: anti-AD
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: 自用规则3.0
     url: https://gitee.com/qiufengsf/ad---advertising/raw/main/自用规则3.0.txt
   - name: AdGuard Chinese
     url: https://filters.adtidy.org/extension/chromium/filters/224.txt
-  - name: anti-AD
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
   - name: AdGuard Other Annoyances filter
     url: https://filters.adtidy.org/extension/chromium/filters/21.txt
   - name: AdGuard Mobile App Banners filter
@@ -396,10 +396,10 @@ dns:
   urls:
   - name: OISD_Blocklist_Big
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt
-  - name: AdRules DNS List
-    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
   - name: HageziPro++
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt
+  - name: AdRules DNS List
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
   - name: DanPollocksList
     url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt
   - name: AdBlock DNS
