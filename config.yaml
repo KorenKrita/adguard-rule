@@ -321,10 +321,10 @@ filters:
     url: https://filters.adtidy.org/extension/chromium/filters/204.txt
   - name: EasyPrivacy
     url: https://filters.adtidy.org/extension/chromium/filters/118.txt
-  - name: xinggsf
-    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: AdGuard Base
     url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  - name: xinggsf
+    url: https://filters.adtidy.org/extension/chromium/filters/228.txt
   - name: TT拒绝列表
     url: https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/TT拒绝列表清单 (更新中).txt
   - name: NoAppDownload
