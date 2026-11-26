@@ -1,8 +1,8 @@
 ! Title: Merged Whitelist
-! Updated: 2026-11-25 07:05:50 UTC
-! Total: 3807 rules
+! Updated: 2026-11-26 06:57:24 UTC
+! Total: 3809 rules
 ! Sources:
-!   - 去广告规则 - 酷安反馈反馈 Allow: 4413 total, 4413 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
+!   - 去广告规则 - 酷安反馈反馈 Allow: 4415 total, 4415 used (100.0%) - https://raw.githubusercontent.com/qq5460168/666/master/allow.txt
 !   - HyperADRules - Allow: 0 total, 0 used (0.0%) - https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt
 !   - Manual Rules: 24 total, 2 used (8.3%) - config.yaml
 !
@@ -2456,6 +2456,8 @@
 @@||douyincdn.com^
 @@||verify.snssdk.com^
 @@||vcs.snssdk.com^
+@@||mum.alibabachengdun.com^
+@@||mum.alibabachengdun.net^
 @@||render.amap.com^
 @@||render-prod-backup-tile.amap.com^
 @@||m5.amap.com^
